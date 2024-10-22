@@ -2,9 +2,9 @@
 
 ## How do I install these formulae?
 
-`brew install szampier/pipelines/<formula>`
+`brew install eso/pipelines/<formula>`
 
-Or `brew tap szampier/pipelines` and then `brew install <formula>`.
+Or `brew tap eso/pipelines` and then `brew install <formula>`.
 
 ### Pipelines (recipe plugins + static data)
 * esopipe-cr2re
