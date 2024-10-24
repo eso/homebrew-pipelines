@@ -17,6 +17,8 @@ class CfitsioAT420 < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux: "52973416c34b3876b717809ec5bb3e9f816579916d9ecaa430e39b3eb44e0242"
   end
 
+  keg_only :versioned_formula
+
   uses_from_macos "zlib"
 
   def install

@@ -6,7 +6,7 @@ class EsopipeIiinstrument < Formula
   license "GPL-2.0-or-later"
 
   livecheck do
-    url :homepage
+    url "https://ftp.eso.org/pub/dfs/pipelines/instruments/iiinstrument/"
     regex(/href=.*?iiinstrument-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 

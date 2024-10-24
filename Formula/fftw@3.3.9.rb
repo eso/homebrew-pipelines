@@ -18,6 +18,8 @@ class FftwAT339 < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux: "f1d5554d9933cbdeff393de3f6b3e742e89c8fabe023581ab156e8d3e08b932d"
   end
 
+  keg_only :versioned_formula
+
   depends_on "open-mpi"
 
   on_macos do

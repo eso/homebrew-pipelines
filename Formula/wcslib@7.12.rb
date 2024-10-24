@@ -18,6 +18,8 @@ class WcslibAT712 < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux: "d1edf2d82be34477dfab5a4e1aaaccd9131b34e7dc8ba4b0109ca53e848d3efe"
   end
 
+  keg_only :versioned_formula
+
   depends_on "cfitsio@4.2.0"
 
   def install
