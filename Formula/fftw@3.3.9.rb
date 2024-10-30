@@ -86,7 +86,7 @@ class FftwAT339 < Formula
       }
     EOS
 
-    system ENV.cc, "-o", "fftw", "fftw.c", "-L#{lib}", "-lfftw3"
+    system ENV.cc, "-o", "fftw", "fftw.c", "-I#{include}", "-L#{lib}", "-lfftw3"
     system "./fftw"
   end
 end
