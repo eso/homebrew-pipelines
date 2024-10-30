@@ -12,10 +12,11 @@ class WcslibAT712 < Formula
   end
 
   bottle do
-    root_url "https://github.com/szampier/homebrew-pipelines/releases/download/wcslib@7.12-7.12_2"
-    sha256 cellar: :any,                 arm64_sonoma: "a4bfa83190f8e28128540575b83988da794f5458b1549cbcc7392504ed39ae5e"
-    sha256 cellar: :any,                 ventura:      "2f9a2af79facb1cd5959263866d411f2b0abd86dd6c830b92dabc27045299881"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "d1edf2d82be34477dfab5a4e1aaaccd9131b34e7dc8ba4b0109ca53e848d3efe"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/wcslib@7.12-7.12_3"
+    sha256 cellar: :any,                 arm64_sequoia: "3c5093f452e99d9bb132b0119b60359aaa60c3b2adcefdc6b1f73ba561afd702"
+    sha256 cellar: :any,                 arm64_sonoma:  "5f776fb906c429bd271c23faa33be18b342c64fe4f0c02302ff66b023dc62e11"
+    sha256 cellar: :any,                 ventura:       "838ce1232740ca69e5af046254ed6c90f595dacb1f1e2e5432eaa7aeff0a2a4b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "44501fba394ae4d5d64dc243bdad4d9072818a64ef09695c064ebb26d59652e9"
   end
 
   keg_only :versioned_formula
