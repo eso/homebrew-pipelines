@@ -12,10 +12,11 @@ class FftwAT339 < Formula
   end
 
   bottle do
-    root_url "https://github.com/szampier/homebrew-pipelines/releases/download/fftw@3.3.9-3.3.9_1"
-    sha256 cellar: :any,                 arm64_sonoma: "4dcad3f0d956d9a64d1aa3a2b8fada0753d2fd4b199600cd981b7fa3618c04f5"
-    sha256 cellar: :any,                 ventura:      "e2775cf826ab444cb0598da60b45a529f8da0c2daf19bf807310b710da91527a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "f1d5554d9933cbdeff393de3f6b3e742e89c8fabe023581ab156e8d3e08b932d"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/fftw@3.3.9-3.3.9_2"
+    sha256 cellar: :any,                 arm64_sequoia: "d280908cad84243616fe61caaf9367fce4703d66f6fe193ce8f1c58d463b5261"
+    sha256 cellar: :any,                 arm64_sonoma:  "d4d2761259d05bdc2b3ff0d85e8b716300957c6777e4e8f5103fbdf32687bb05"
+    sha256 cellar: :any,                 ventura:       "967d93e3118d0b880d1daec9964a145a972f876de0ea15faec43ae896e73b4c2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8cfc8615aff566929424b9c38666a298e8f8fdb4833ee92dc86c17f2efad2614"
   end
 
   keg_only :versioned_formula
