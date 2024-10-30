@@ -4,7 +4,7 @@ class FftwAT339 < Formula
   url "https://fftw.org/fftw-3.3.9.tar.gz"
   sha256 "bf2c7ce40b04ae811af714deb512510cc2c17b9ab9d6ddcf49fe4487eea7af3d"
   license all_of: ["GPL-2.0-or-later", "BSD-2-Clause"]
-  revision 1
+  revision 2
 
   livecheck do
     url :homepage
