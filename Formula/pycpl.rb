@@ -12,10 +12,11 @@ class Pycpl < Formula
   end
 
   bottle do
-    root_url "https://github.com/szampier/homebrew-pipelines/releases/download/pycpl-1.0.0_1"
-    sha256 cellar: :any,                 arm64_sonoma: "915c0f5353475f0e9929600af26bf6310c227d2596e2dc757203b067ac26d529"
-    sha256 cellar: :any,                 ventura:      "2b23fa35b5ebc44e24e82d3735f9c4445fb22ca52788fc195e122c0621237bbc"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "a7020886c8ba61959f71edd41075233158f4762a1f7ecd9df5922365842201a8"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/pycpl-1.0.0_2"
+    sha256 cellar: :any,                 arm64_sequoia: "65eaecc51b17d4d3f17515bf1642da76ffcad28ab9b731a9cb602994b8b3dbfe"
+    sha256 cellar: :any,                 arm64_sonoma:  "f3263d915e2f1cffbc089b55eedf76e772ea2c6a0bad213037cf5b2c0d07b84d"
+    sha256 cellar: :any,                 ventura:       "96e8d70de586737eb2d098b53ac3fd4ec6edc16aef5b8721912b421c5b326f9f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d51cfa0855909b8963741115353a67b84447c8e4e6ca281e4a8f4f73f3e181c7"
   end
 
   depends_on "cmake" => :build
