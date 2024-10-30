@@ -14,12 +14,11 @@ class Pyesorex < Formula
   end
 
   bottle do
-    root_url "https://github.com/szampier/homebrew-pipelines/releases/download/pyesorex-1.0.0"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "d9089ebced8b22f7a300861542931f2bf8fa6f687866bf5b480e36a46697372b"
-    sha256 cellar: :any_skip_relocation, arm64_ventura: "5f010083f44ac19e675ec51f09c29acaf58537a8eaa67c0604c404e16d59c161"
-    sha256 cellar: :any_skip_relocation, ventura:       "b1ee718c48832466a5d7a5e699d7dcd0ac62143988e105268f06d9a13547e847"
-    sha256 cellar: :any_skip_relocation, monterey:      "1d36d506259d4a0af16692f3d5bf312b9fc6cb0f82046cdbbd149a8f0cc1f160"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d163d8ff437d6f49e17a36478c5ad8d708e42ab66b9b160a236efc30fbdafcc5"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/pyesorex-1.0.0_1"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "e1365fd264eb14ff737258600fbcefefcd1dd005900cf790829b433af34e4c5c"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "40b03f19f87718122a460ed97e832fcfac210204d8f051e4b4e9f6ff6db85d24"
+    sha256 cellar: :any_skip_relocation, ventura:       "cb733e97bdc021c2588573bcf83fdcc1dfa05432b4130e22d7af56846e3347c8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3883b6f9ec737b8103dd5057ad6ef8e28b2c8014d312b638296e94f7c8985c80"
   end
 
   depends_on "pycpl"
