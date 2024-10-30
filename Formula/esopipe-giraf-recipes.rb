@@ -4,7 +4,7 @@ class EsopipeGirafRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/giraffe/giraf-kit-2.16.12.tar.gz"
   sha256 "6920f5a672fd2f8bb312180e922707707e747661e6767897bb229afa4da89a04"
   license "GPL-2.0-or-later"
-  revision 1
+  revision 2
 
   livecheck do
     url :homepage
