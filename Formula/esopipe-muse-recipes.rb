@@ -12,10 +12,11 @@ class EsopipeMuseRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/szampier/homebrew-pipelines/releases/download/esopipe-muse-recipes-2.10.10_1"
-    sha256 cellar: :any,                 arm64_sonoma: "5b9afa7689dce4f0e27565b710b63553b597d24cfc4782e45943e966e7a4353e"
-    sha256 cellar: :any,                 ventura:      "4abe854c3a8e13f64fd00dd9257e3fc9335b240e172d7ecf4b7c8107b34ee9f6"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "2c073b55d473e84ff030a4f308e3ce957286e3506c2d9f22a756d1b0acb5809c"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-muse-recipes-2.10.10_2"
+    sha256 cellar: :any,                 arm64_sequoia: "917783d69a89f21c8623e18476683aaacb0c75d3efc817d52df7901217e17f17"
+    sha256 cellar: :any,                 arm64_sonoma:  "0389f6afef3198e656991dcf4b271ddeb19d40d424f2ce789c3be377b0b17b48"
+    sha256 cellar: :any,                 ventura:       "d3210f5dc8da93163507d685327864bb48544c464c53784684e011daa18be428"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9efcc674a1eda22e0dfe30bc558d5f0e431fd1aadbe9191206332b2e32552405"
   end
 
   depends_on "pkg-config" => :build
