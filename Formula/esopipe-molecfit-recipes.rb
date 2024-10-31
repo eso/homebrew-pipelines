@@ -12,10 +12,11 @@ class EsopipeMolecfitRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/szampier/homebrew-pipelines/releases/download/esopipe-molecfit-recipes-4.3.3"
-    sha256 cellar: :any,                 arm64_sonoma: "f55fe564bba4e6dbbdc1ac09f5d562695dbd4e179e230e2ddf9283d726151ee7"
-    sha256 cellar: :any,                 ventura:      "190a72e58636bb7be76f17f1e4969a009b5a78831fd60a53d27c5c901c01ac79"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "e028dfc63a404dcf05a95e4dfd91496ad156ba5fb3d9e176580d2cff86cadcc1"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-molecfit-recipes-4.3.3_1"
+    sha256 cellar: :any,                 arm64_sequoia: "89c4651ca670c6b9fb1c9b60ce9cb84f201e73ba1e49cf6a181e3193fbf6abf6"
+    sha256 cellar: :any,                 arm64_sonoma:  "03d124a69901189b0e9c0295614184b89387ea0522c08c96568a41cf46ed083b"
+    sha256 cellar: :any,                 ventura:       "5e063d9feac7df497e780e095c2bb9681f2bb84a807f332fa38b741f39f13cde"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "17b6a29daca3953ff7ec8f6e2ca8d98597dcd37ea995af0edc8e0bcef9ab3d5c"
   end
 
   depends_on "pkg-config" => :build
