@@ -12,10 +12,11 @@ class EsopipeGirafRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/szampier/homebrew-pipelines/releases/download/esopipe-giraf-recipes-2.16.12_1"
-    sha256 cellar: :any,                 arm64_sonoma: "8c4eb499ef2af4f0910f6f325ea7b354c3a89e065b77d85f970fc1ab6cbc28cc"
-    sha256 cellar: :any,                 ventura:      "62df1fb985b8064e2493692624353774e051920a33b594d6363594c2c147f183"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "e7ea3509c8daa59d42f2ec8decf6e765341730d460977f86678e4946c96e5bb1"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-giraf-recipes-2.16.12_2"
+    sha256 cellar: :any,                 arm64_sequoia: "8c937d9f77ceb5a29875174e64e5e51df2f42f51e5f30a0b93d488a6dcd1a6c4"
+    sha256 cellar: :any,                 arm64_sonoma:  "b3a8d98cf13bbab1fa0c2f3dddd9d625dee3a2896398f6763c72ab6a822910e0"
+    sha256 cellar: :any,                 ventura:       "209167a42012a196e2f7d9eed58e73432c31c8ac16128a92d70972f8330c9c03"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d445c9cb144dbddc923f31e02cc3eefbb9df3e0eb37b922b93fcbb71ecb14d14"
   end
 
   depends_on "pkg-config" => :build
