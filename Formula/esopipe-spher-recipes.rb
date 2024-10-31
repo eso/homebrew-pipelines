@@ -12,10 +12,11 @@ class EsopipeSpherRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-spher-recipes-0.56.0"
-    sha256 cellar: :any,                 arm64_sonoma: "5fc4252b23c472d117c3ae36ede86ff82d2ff160044dc9784b8d549085fbf205"
-    sha256 cellar: :any,                 ventura:      "68111e96e9e23c645b76a8d6653bebf2d45e7b63eabf32ece844986e073d4c58"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "f6913515be1bb779b562ddf1a52f75e6288a6ebcd46a5d58a3f43a3a15f941f3"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-spher-recipes-0.56.0_1"
+    sha256 cellar: :any,                 arm64_sequoia: "91ad8516b068659afd54d21a0c01e226d63d6d843694766ed1bc44443e3f3be8"
+    sha256 cellar: :any,                 arm64_sonoma:  "19878a3956a111d8e314e1fff315af1504af9b346f4adbf1aa26772779def106"
+    sha256 cellar: :any,                 ventura:       "65ec96cd234b9f6033cdf4e27002b08e5d76388d6056ad12369f0498301dd2c7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d42d43554c30bc14c8a2138079ca7ae0f21f0b02f05ffa3ffd4848e3241d4c64"
   end
 
   depends_on "pkg-config" => :build
