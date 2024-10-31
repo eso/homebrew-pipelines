@@ -12,10 +12,11 @@ class EsopipeIiinstrumentRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/szampier/homebrew-pipelines/releases/download/esopipe-iiinstrument-recipes-0.1.14-50"
-    sha256 cellar: :any,                 arm64_sonoma: "4da844c5f8b09260b55dbefc8ee30584be4b51f1aaab564e1b05d0a7d7b087da"
-    sha256 cellar: :any,                 ventura:      "46f14d06b162a5c12ae89b7fdf9642ab82a2e5f1a5976b30d564ef7350ef6133"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "fab48087d7c83baad6fe9c3a861d70c1e0a20fda77d17e7a908bada759752927"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-iiinstrument-recipes-0.1.14-50_1"
+    sha256 cellar: :any,                 arm64_sequoia: "20128aec1b94234386b8ee0a073fd09b8df103c0f881dbd4907ddb66770e8be9"
+    sha256 cellar: :any,                 arm64_sonoma:  "2a9a7dad92a8e98415cc7c53985becb6ebf2d52a56aaa6ab281ecd4951da03a3"
+    sha256 cellar: :any,                 ventura:       "97f05ed8c0c38f6e463246340ea63c42c0753f9b40f3d3c49fcf6a85b2b8fc2a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f21e98c67026794f20fbd46e0fe159f6b2ca1b79ba7b82ca95e1900ed951d27f"
   end
 
   depends_on "cpl@7.3.2"
