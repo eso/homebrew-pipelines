@@ -12,10 +12,11 @@ class EsopipeVisirRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/szampier/homebrew-pipelines/releases/download/esopipe-visir-recipes-4.4.5"
-    sha256 arm64_sonoma: "e62773ca8d8af8a55fe0ca4906ddfd2e48016cb3ad8ca4aade6d04c88d84ebda"
-    sha256 ventura:      "241f7dde1aa3c32dad9f63f6df615b8a991b2a2dbe681e6665f43bf65294849f"
-    sha256 x86_64_linux: "30c60e8d4afbed591c149d26b6b68a6b756289a985c5304b93b3801306b61656"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-visir-recipes-4.4.5_1"
+    sha256 arm64_sequoia: "9ba007dd5c08ed7e60eb3710ea93d25b3470f3008307357170e3a10cc900c398"
+    sha256 arm64_sonoma:  "54505374fbbe73763fb6d89e46b48676920d9fdf0f8446539b08a26f035e5549"
+    sha256 ventura:       "1962500a55b43ce114fd685a591c5bd3bc26e609e425729f725821a6ce856d13"
+    sha256 x86_64_linux:  "3ba363971b79265f0effdfe94193af07c609d40eaa37bf1b9e49994e7e0be8e5"
   end
 
   depends_on "pkg-config" => :build
