@@ -12,10 +12,11 @@ class EsopipeCr2reRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/szampier/homebrew-pipelines/releases/download/esopipe-cr2re-recipes-1.4.4"
-    sha256 cellar: :any,                 arm64_sonoma: "eb0ea078a0a3ff9e245799c9df77cf1dbc303a76039d4aee2950c66119c7a21a"
-    sha256 cellar: :any,                 ventura:      "5ffab45ce21b35046c220a43d885e9023b1d6ac05ea81e22eeedbfa8dfdae0e4"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "a3fd42dc3669cfdd561f738d38757c31f8ff99dad90044ba34e03e7f2d863730"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-cr2re-recipes-1.4.4_1"
+    sha256 cellar: :any,                 arm64_sequoia: "e807ff01d68fff5446ffd5eaaa740d25d0bae5f0957ace62bfaffda257adf7cf"
+    sha256 cellar: :any,                 arm64_sonoma:  "c38b6fbf13903d4d37f8732ed0cfc38f19422f4d8e0ebeb5cc44cee6e29755f9"
+    sha256 cellar: :any,                 ventura:       "46d6e8151d64c457880db93fb9dc4633a246c5fdaad7ff583bc4beec504ca0d0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "34028957a93f870f16dd85f70bd41c4d962e2cc840d198d66f13c8ea0ff0d2bc"
   end
 
   depends_on "pkg-config" => :build
