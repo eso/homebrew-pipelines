@@ -12,10 +12,11 @@ class EsopipeUvesRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/szampier/homebrew-pipelines/releases/download/esopipe-uves-recipes-6.4.6_1"
-    sha256 cellar: :any,                 arm64_sonoma: "193a41df15cc8beef38df29d910a18929269049d6810ad2daa971ece19121162"
-    sha256 cellar: :any,                 ventura:      "38ec8226dbb625a53f20f460ff91fc814553ea586db6de87703e45b559ce3fb3"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "fda43a01e86c75119c596e5d9034844a0612061f87873706c5c655058a068c2d"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-uves-recipes-6.4.6_2"
+    sha256 cellar: :any,                 arm64_sequoia: "95cc240d8d7efb2b8873f925f3f7c1dd2da27b0989b53964aafab8acd4a3edd9"
+    sha256 cellar: :any,                 arm64_sonoma:  "fe65b2449058ff62b4516d45347551bfa5dadda5624329d679b2e4496ea53c24"
+    sha256 cellar: :any,                 ventura:       "1a3b485749db90f53de1d2dfaa2f9fd770db5883350d7e91373ea975eb2a0328"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a372c70d7b2490c63058ce5300b216d9163a6132b2a911d50e8a4d03c34fa4ec"
   end
 
   depends_on "pkg-config" => :build
