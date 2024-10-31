@@ -16,10 +16,11 @@ class EsopipeDetmonRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/szampier/homebrew-pipelines/releases/download/esopipe-detmon-recipes-1.3.14_1"
-    sha256 cellar: :any,                 arm64_sonoma: "f962c7255f3b096ad2a813d589156a6333295e63268a3c08d57996f537c670b6"
-    sha256 cellar: :any,                 ventura:      "a17f7a7f9b47e57e3fd271747b3af819db394df4a89da89e2b795f6368a85f67"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "4f68173e401f90fea71144735a50adc2e47eae2391578346df0815e4f7e5d8d8"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-detmon-recipes-1.3.14_2"
+    sha256 cellar: :any,                 arm64_sequoia: "0919ed520ea70bce62bb8a9c95d495abfa0188ef86d163573471ea324a33be71"
+    sha256 cellar: :any,                 arm64_sonoma:  "5ad6ce0843b0c47b584b519e41dee0dc10b91c2e220c577f335e930c0ff1d333"
+    sha256 cellar: :any,                 ventura:       "b04cac730c438b70af10d688db590f434908934ccd69196b70648890ff80be05"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "49da6e66c2b75f0684391d0085e391c30c2e6b3f1771493b0ba87101cd5076e8"
   end
 
   depends_on "pkg-config" => :build
