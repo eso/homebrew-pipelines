@@ -12,10 +12,11 @@ class EsopipeMatisseRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/szampier/homebrew-pipelines/releases/download/esopipe-matisse-recipes-2.0.2-1"
-    sha256 cellar: :any,                 arm64_sonoma: "93ba7705486e15495ad91b6e4c00256219883f29db5cff11f47a47a62a932cac"
-    sha256 cellar: :any,                 ventura:      "33cbb04b9da67e98f862a03ee37838a55beb827988d83aa28cb97c33411ab1e0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "023b86016105e505f28f4ddc161b70654e384998f68911c941d39aaf8f11def6"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-matisse-recipes-2.0.2-1_1"
+    sha256 cellar: :any,                 arm64_sequoia: "0d804b6839adfcde9e611e79b486049050b3fc5cc6d34b239923a57a1bd42429"
+    sha256 cellar: :any,                 arm64_sonoma:  "114cdb0b5cf0e6167fb744f1015bd8b8482e9ec69b6f57306f68162a12263f71"
+    sha256 cellar: :any,                 ventura:       "6d0377f064fa214263355e757ace999b07e6dca7390613e87fbd8926d86ac82c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "98612854e1509a73edc81219b042cec7437b7a84b66bcf7b610c6a3f2b055d57"
   end
 
   depends_on "pkg-config" => :build
