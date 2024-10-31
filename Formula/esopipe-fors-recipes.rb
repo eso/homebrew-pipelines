@@ -12,10 +12,11 @@ class EsopipeForsRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/szampier/homebrew-pipelines/releases/download/esopipe-fors-recipes-5.6.5-7_1"
-    sha256 arm64_sonoma: "e01aff407ec59360978dfb92b59c34c1f6964122f846f2d0bf302a68d086b0be"
-    sha256 ventura:      "e35ce4d7f416f0908766d5faa1bff29de672af9f7cec197e7938d0ad85bef64b"
-    sha256 x86_64_linux: "74d8c9d43fe51eaf23a306dbbb672a681214247dff55d76c1f7cca4ce5b1d591"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-fors-recipes-5.6.5-7_2"
+    sha256 arm64_sequoia: "b89b5b037d7f334c3906300f0711929e539c519d2d2ced6c18bf1983bce4d343"
+    sha256 arm64_sonoma:  "8324ca10d225e51fd636649308a380b30d916b8d5cf9a99fe8582af89b3c3323"
+    sha256 ventura:       "6b07e89e49c84915773f0a38db4160cd548e8ae16000c6cd5741d137d07aeac2"
+    sha256 x86_64_linux:  "3d3bc1e9b99f857b3d8e870f81a2dd05b6211d0a3def000f08759992010c1d91"
   end
 
   depends_on "pkg-config" => :build
