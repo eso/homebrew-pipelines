@@ -42,6 +42,15 @@ class EsopipeUvesRecipes < Formula
     end
   end
 
+  def post_install
+    version_norevision = version.to_s[/(\d+(?:[.]\d+)+)/i, 1]
+    workflow_dir = HOMEBREW_PREFIX/"share/reflex/workflows/uves-#{version_norevision}"
+    workflow_dir.glob("*.xml").each do |workflow|
+      inreplace workflow, "CALIB_DATA_PATH_TO_REPLACE", HOMEBREW_PREFIX/"share/esopipes/datastatic"
+      inreplace workflow, "ROOT_DATA_PATH_TO_REPLACE", "#{Dir.home}/reflex_data"
+    end
+  end
+
   test do
     version_norevision = version.to_s[/(\d+(?:[.]\d+)+)/i, 1]
     assert_match "uves_cal_mbias -- version #{version_norevision}", shell_output("#{HOMEBREW_PREFIX}/bin/esorex --man-page uves_cal_mbias")
