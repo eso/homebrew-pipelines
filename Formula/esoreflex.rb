@@ -91,7 +91,8 @@ class Esoreflex < Formula
     rm_r(pkgshare/"common/src")
     rm_r(pkgshare/"ptolemy/src/bin/macContents/Contents/MacOS/JavaApplicationStub")
     rm_r(pkgshare/"build-area/resources/installer/launch4j")
-    system "#{HOMEBREW_PREFIX}/bin/python3.11", "-m", "pip", "install", "astropy", "matplotlib"
+    system "#{HOMEBREW_PREFIX}/bin/python3.11", "-m", "pip", "install",
+     "astropy", "matplotlib", "numpy", "packaging", "wxpython", "pyyaml"
   end
 
   test do
