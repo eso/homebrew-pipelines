@@ -13,7 +13,7 @@ class Esoreflex < Formula
   depends_on "cpl@7.3.2"
   depends_on "esorex"
   depends_on "openjdk@11"
-  depends_on "python@3.9"
+  depends_on "python@3.11"
 
   def install
     pkgshare.install Dir["*"]
@@ -55,7 +55,7 @@ class Esoreflex < Formula
       esoreflex.esorex-recipe-config=#{etc}/esoreflex_default_recipe_config.rc
 
       # The command used to launch python.
-      esoreflex.python-command=#{HOMEBREW_PREFIX}/bin/python3.9
+      esoreflex.python-command=#{HOMEBREW_PREFIX}/bin/python3.11
 
       # Additional search paths for python modules. PYTHONPATH will be set to this
       # value if esoreflex.inherit-environment=FALSE. However, the contents of
@@ -91,7 +91,7 @@ class Esoreflex < Formula
     rm_r(pkgshare/"common/src")
     rm_r(pkgshare/"ptolemy/src/bin/macContents/Contents/MacOS/JavaApplicationStub")
     rm_r(pkgshare/"build-area/resources/installer/launch4j")
-    system "#{HOMEBREW_PREFIX}/bin/python3.9", "-m", "pip", "install", "astropy", "matplotlib"
+    system "#{HOMEBREW_PREFIX}/bin/python3.11", "-m", "pip", "install", "astropy", "matplotlib"
   end
 
   test do
