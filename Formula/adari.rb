@@ -6,6 +6,7 @@ class Adari < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/libraries/adari_core/adari_core-0.6.0.tar.gz"
   sha256 "2380261c6f688c84417a968d9a8c311427440a75b1a2e0fcbfe4416ea27c16d1"
   license "BSD-3-Clause"
+  revision 1
 
   livecheck do
     url "https://ftp.eso.org/pub/dfs/pipelines/libraries/adari_core/"
