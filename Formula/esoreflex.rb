@@ -21,12 +21,9 @@ class Esoreflex < Formula
     rm_r "build-area/resources/installer/launch4j"
     rm "ptolemy/src/vendors/jogl/lib/natives/macosx-universal/libgluegen-rt.jnilib"
     rm "ptolemy/src/vendors/jogl/lib/natives/macosx-universal/libnativewindow_awt.jnilib"
+    rm "common/lib/libgdalactor.jnilibPPC"
     pkgshare.install Dir["*"]
 
-    touch pkgshare/"common/lib/libgdal.1.dylib"
-    lib.install_symlink pkgshare/"common/lib/libgdal.1.dylib"
-    lib.install_symlink pkgshare/"common/lib/libgeos.2.dylib"
-    lib.install_symlink pkgshare/"common/lib/libproj.0.dylib"
     bin.install_symlink pkgshare/"esoreflex/bin/esoreflex"
 
     kepler_workflows = "~/KeplerData/workflows/MyWorkflows"
