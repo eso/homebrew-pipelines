@@ -16,9 +16,27 @@ class Esoreflex < Formula
   depends_on "python@3.11"
 
   def install
+    rm_r "common/src"
+    rm_r "ptolemy/src/bin/macContents/Contents/MacOS/JavaApplicationStub"
+    rm_r "build-area/resources/installer/launch4j"
+    rm "ptolemy/src/vendors/jogl/lib/natives/macosx-universal/libgluegen-rt.jnilib"
+    rm "ptolemy/src/vendors/jogl/lib/natives/macosx-universal/libnativewindow_awt.jnilib"
     pkgshare.install Dir["*"]
+
+    touch pkgshare/"common/lib/libgdal.1.dylib"
+    lib.install_symlink pkgshare/"common/lib/libgdal.1.dylib"
+    lib.install_symlink pkgshare/"common/lib/libgeos.2.dylib"
+    lib.install_symlink pkgshare/"common/lib/libproj.0.dylib"
     bin.install_symlink pkgshare/"esoreflex/bin/esoreflex"
+
     kepler_workflows = "~/KeplerData/workflows/MyWorkflows"
+    inreplace pkgshare/"esoreflex/bin/esoreflex" do |s|
+      s.gsub! "$(dirname $0)/../..", HOMEBREW_PREFIX/"share/esoreflex"
+      s.gsub! kepler_workflows, HOMEBREW_PREFIX/"share/reflex/workflows:#{kepler_workflows}"
+      s.gsub! "/etc/esoreflex.rc", etc/"esoreflex.rc"
+      s.gsub! 'LOAD_ESOREX_CONFIG=""', "LOAD_ESOREX_CONFIG=#{HOMEBREW_PREFIX}/etc/esorex.rc"
+      s.gsub! 'LOAD_ESOREX_RECIPE_CONFIG=""', "LOAD_ESOREX_CONFIG=#{etc}/esoreflex_default_recipe_config.rc"
+    end
 
     (prefix/"etc").mkpath
 
@@ -79,18 +97,6 @@ class Esoreflex < Formula
       # esoreflex.
       esoreflex.library-path=
     EOS
-
-    inreplace pkgshare/"esoreflex/bin/esoreflex" do |s|
-      s.gsub! "$(dirname $0)/../..", HOMEBREW_PREFIX/"share/esoreflex"
-      s.gsub! kepler_workflows, HOMEBREW_PREFIX/"share/reflex/workflows:#{kepler_workflows}"
-      s.gsub! "/etc/esoreflex.rc", etc/"esoreflex.rc"
-      s.gsub! 'LOAD_ESOREX_CONFIG=""', "LOAD_ESOREX_CONFIG=#{HOMEBREW_PREFIX}/etc/esorex.rc"
-      s.gsub! 'LOAD_ESOREX_RECIPE_CONFIG=""', "LOAD_ESOREX_CONFIG=#{etc}/esoreflex_default_recipe_config.rc"
-    end
-
-    rm_r(pkgshare/"common/src")
-    rm_r(pkgshare/"ptolemy/src/bin/macContents/Contents/MacOS/JavaApplicationStub")
-    rm_r(pkgshare/"build-area/resources/installer/launch4j")
   end
 
   def post_install
