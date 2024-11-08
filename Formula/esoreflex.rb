@@ -22,6 +22,7 @@ class Esoreflex < Formula
     rm "ptolemy/src/vendors/jogl/lib/natives/macosx-universal/libgluegen-rt.jnilib"
     rm "ptolemy/src/vendors/jogl/lib/natives/macosx-universal/libnativewindow_awt.jnilib"
     rm "common/lib/libgdalactor.jnilibPPC"
+    rm "common/lib/libptmatlab.so"
     pkgshare.install Dir["*"]
 
     bin.install_symlink pkgshare/"esoreflex/bin/esoreflex"
