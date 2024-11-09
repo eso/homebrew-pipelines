@@ -121,6 +121,25 @@ class Esoreflex < Formula
     end
   end
 
+  def caveats
+    on_linux do
+      <<~EOS
+        On Linux please install the following packages using the system package manager:
+          Python 3.11
+          astropy
+          wxPython
+          matplotlib
+          fv
+
+        On Ubuntu and Debian run:
+          sudo apt install -y python3-matplotlib python3-wxgtk4.0 python3-astropy
+
+        See also:
+          https://www.eso.org/sci/software/pipelines/installation/software_prerequisites.html#software_prerequisites_reflex
+      EOS
+    end
+  end
+
   test do
     system "true"
   end
