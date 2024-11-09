@@ -13,7 +13,17 @@ class Esoreflex < Formula
   depends_on "cpl@7.3.2"
   depends_on "esorex"
   depends_on "openjdk@11"
-  depends_on "python@3.11"
+  on_macos do
+    depends_on "python@3.11"
+  end
+
+  def python3
+    if OS.mac?
+      HOMEBREW_PREFIX/"bin/python3.11"
+    else
+      "/usr/bin/python3"
+    end
+  end
 
   def install
     rm_r "common/src"
@@ -73,7 +83,7 @@ class Esoreflex < Formula
       esoreflex.esorex-recipe-config=#{etc}/esoreflex_default_recipe_config.rc
 
       # The command used to launch python.
-      esoreflex.python-command=#{HOMEBREW_PREFIX}/bin/python3.11
+      esoreflex.python-command=#{python3}
 
       # Additional search paths for python modules. PYTHONPATH will be set to this
       # value if esoreflex.inherit-environment=FALSE. However, the contents of
@@ -100,13 +110,15 @@ class Esoreflex < Formula
   end
 
   def post_install
-    system "#{HOMEBREW_PREFIX}/bin/python3.11", "-m", "pip", "install",
-      "astropy",
-      "matplotlib",
-      "numpy",
-      "packaging",
-      "wxpython",
-      "pyyaml"
+    if OS.mac?
+      system python3, "-m", "pip", "install",
+             "astropy",
+             "matplotlib",
+             "numpy",
+             "packaging",
+             "wxpython",
+             "pyyaml"
+    end
   end
 
   test do
