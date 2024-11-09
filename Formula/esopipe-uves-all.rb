@@ -16,6 +16,10 @@ class EsopipeUvesAll < Formula
     (prefix/"share/esopipes/datademo").install Dir["*"]
   end
 
+  def post_install
+    system "brew", "cleanup", "--prune=all", "esopipe-uves-all"
+  end
+
   test do
     system "true"
   end
