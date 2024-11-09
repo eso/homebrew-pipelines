@@ -13,6 +13,7 @@ class Esoreflex < Formula
   depends_on "cpl@7.3.2"
   depends_on "esorex"
   depends_on "openjdk@11"
+  depends_on "xterm"
   on_macos do
     depends_on "python@3.11"
   end
@@ -132,7 +133,7 @@ class Esoreflex < Formula
           fv
 
         On Ubuntu and Debian run:
-          sudo apt install -y python3-matplotlib python3-wxgtk4.0 python3-astropy
+          sudo apt install -y python3-matplotlib python3-wxgtk4.0 python3-astropy ftools-fv
 
         See also:
           https://www.eso.org/sci/software/pipelines/installation/software_prerequisites.html#software_prerequisites_reflex
