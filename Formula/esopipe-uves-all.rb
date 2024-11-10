@@ -13,7 +13,7 @@ class EsopipeUvesAll < Formula
   depends_on "esopipe-uves"
 
   def install
-    (prefix/"share/esopipes/datademo").install Dir["*"]
+    (prefix/"share/esopipes/datademo/uves").install Dir["*"]
   end
 
   def post_install
