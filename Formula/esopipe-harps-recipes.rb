@@ -16,11 +16,11 @@ class EsopipeHarpsRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-harps-recipes-3.2.0_1"
-    sha256 arm64_sequoia: "14ea6b6b75ed72ff163f2e7a491f47598c544bccb421857ec2c2558c0a3e95c9"
-    sha256 arm64_sonoma:  "16728d421e0358cadf8d9b15388a58287c60afef75797821c7d8c03ad7d58051"
-    sha256 ventura:       "d03263fa64ebcf7cf98868f3d1cc04521ace1c7920ab6d1733a8aea3fee50c54"
-    sha256 x86_64_linux:  "25aa266b1cb44acbd5657e9269b201fe150b06a5f7752b58eb6757b26feaa48a"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-harps-recipes-3.2.0_2"
+    sha256 arm64_sequoia: "594182b93ad2fac65c7fc10120ef1ed2c5fc066fdbb0c08d5a429b2821de4166"
+    sha256 arm64_sonoma:  "a73129c2a69114079c77e8d2df3c014f1cf1a3f65c98c0c2198740fe9cb786db"
+    sha256 ventura:       "1df98d75e5da56c27340387a57bd2319c5a16e00f895c6bc01a5eacf2819f9da"
+    sha256 x86_64_linux:  "7d6d49a86881e6b10b496b9b945cee305b54f572636c65ff07a858d5f1647fed"
   end
 
   depends_on "pkg-config" => :build
