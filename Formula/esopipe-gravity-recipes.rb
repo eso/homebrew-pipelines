@@ -21,10 +21,11 @@ class EsopipeGravityRecipes < Formula
 
   depends_on "pkg-config" => :build
   depends_on "cpl@7.3.2"
-  depends_on "curl"
   depends_on "erfa"
   depends_on "esorex"
   depends_on "gsl@2.6"
+
+  uses_from_macos "curl"
 
   def install
     version_norevision = version.to_s[/(\d+(?:[.]\d+)+)/i, 1]

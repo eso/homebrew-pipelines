@@ -22,10 +22,11 @@ class EsopipeSpherRecipes < Formula
   depends_on "pkg-config" => :build
   depends_on "cfitsio@4.2.0"
   depends_on "cpl@7.3.2"
-  depends_on "curl"
   depends_on "erfa"
   depends_on "esorex"
   depends_on "gsl@2.6"
+
+  uses_from_macos "curl"
 
   def install
     ENV.prepend "LDFLAGS", "-L#{Formula["fftw@3.3.9"].opt_lib}"
