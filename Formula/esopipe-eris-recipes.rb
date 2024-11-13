@@ -4,7 +4,7 @@ class EsopipeErisRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/eris/eris-kit-1.6.0.tar.gz"
   sha256 "00c5947cb3e7d7390a10b2c9e7865ce33c1aeb10f7562c01f6748f35c52b5822"
   license "GPL-2.0-or-later"
-  revision 2
+  revision 3
 
   def name_version
     "eris-#{version.major_minor_patch}"
