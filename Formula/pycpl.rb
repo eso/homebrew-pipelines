@@ -12,11 +12,11 @@ class Pycpl < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/pycpl-1.0.0_2"
-    sha256 cellar: :any,                 arm64_sequoia: "65eaecc51b17d4d3f17515bf1642da76ffcad28ab9b731a9cb602994b8b3dbfe"
-    sha256 cellar: :any,                 arm64_sonoma:  "f3263d915e2f1cffbc089b55eedf76e772ea2c6a0bad213037cf5b2c0d07b84d"
-    sha256 cellar: :any,                 ventura:       "96e8d70de586737eb2d098b53ac3fd4ec6edc16aef5b8721912b421c5b326f9f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d51cfa0855909b8963741115353a67b84447c8e4e6ca281e4a8f4f73f3e181c7"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/pycpl-1.0.0_3"
+    sha256 cellar: :any,                 arm64_sequoia: "789eaa91548f50c996032c140b4cc1ac18f5b0c2035926b9e176506f87340725"
+    sha256 cellar: :any,                 arm64_sonoma:  "26ff606b0adb384cde6cd8fe8adcfa25d5e0bab226958d2fa48b30a5920b8faf"
+    sha256 cellar: :any,                 ventura:       "3c24538e5f8e699df682ba328ceae6c5d5633631df8eb47b3de636c8edbcc5f7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e30c247efd3a94a1ff810b58c8eba8d8029e041d1b2d0a94c84873973fa68623"
   end
 
   depends_on "cmake" => :build
