@@ -16,11 +16,11 @@ class EsopipeNirpsRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-nirps-recipes-3.2.0_1"
-    sha256 arm64_sequoia: "56d0ef29b76fbbaae861e4c21bf609c4dc4f5cef46deca944d625862af389d71"
-    sha256 arm64_sonoma:  "ff965389f32f3a6bb5062a252ed6943edbf516263934296fcc8864a4ea90c695"
-    sha256 ventura:       "86d79bc235fbc649a831011d84d991e3adfbc328f3e8865196bcdf1f0f941ea7"
-    sha256 x86_64_linux:  "1bfa04bdb4d7cace646192bfb5cc3221439cdb4d84e69ad4e1361c4720ae761b"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-nirps-recipes-3.2.0_2"
+    sha256 arm64_sequoia: "582f7a09f4b67f684eaccabf464b264c21ee99fda864f45b49b99f74345390d4"
+    sha256 arm64_sonoma:  "4d5bef631c841d4ee109c532747f7b6ec49fc8dc6ef30a666d68fcabc9f5d331"
+    sha256 ventura:       "ce44aa0b7134d0bb0d4cedc0254113075520db2ca65749ecf446af10cfedf506"
+    sha256 x86_64_linux:  "a41b351048f9f80565a51ea67366356a762aaa0ff505b6f816a722bfd117803f"
   end
 
   depends_on "pkg-config" => :build
