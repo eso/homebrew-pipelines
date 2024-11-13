@@ -21,10 +21,11 @@ class EsopipeUvesRecipes < Formula
 
   depends_on "pkg-config" => :build
   depends_on "cpl@7.3.2"
-  depends_on "curl"
   depends_on "erfa"
   depends_on "esorex"
   depends_on "gsl@2.6"
+
+  uses_from_macos "curl"
 
   def install
     version_norevision = version.to_s[/(\d+(?:[.]\d+)+)/i, 1]
@@ -49,7 +50,7 @@ class EsopipeUvesRecipes < Formula
       ohai "Updating [ROOT|CALIB|RAW]_DATA_DIR in #{workflow}"
       inreplace workflow, "CALIB_DATA_PATH_TO_REPLACE", HOMEBREW_PREFIX/"share/esopipes/datastatic"
       inreplace workflow, "ROOT_DATA_PATH_TO_REPLACE", "#{Dir.home}/reflex_data"
-      inreplace workflow, "$ROOT_DATA_DIR/reflex_input", "#{HOMEBREW_PREFIX}/share/esopipes/datademo"
+      inreplace workflow, "$ROOT_DATA_DIR/reflex_input", HOMEBREW_PREFIX/"share/esopipes/datademo"
       cp workflow, workflow_dir_2
     end
   end
