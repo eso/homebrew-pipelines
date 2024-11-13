@@ -6,6 +6,10 @@ class EsopipeUvesRecipes < Formula
   license "GPL-2.0-or-later"
   revision 2
 
+  def name_version
+    "uves-#{version.major_minor_patch}"
+  end
+
   livecheck do
     url :homepage
     regex(/href=.*?uves-kit-(\d+(?:[.-]\d+)+)\.t/i)
@@ -28,12 +32,8 @@ class EsopipeUvesRecipes < Formula
   uses_from_macos "curl"
 
   def install
-    version_norevision = version.to_s[/(\d+(?:[.]\d+)+)/i, 1]
-    system "tar", "xf", "uves-#{version_norevision}.tar.gz"
-    cd "uves-#{version_norevision}" do
-      # Fix -flat_namespace being used on Big Sur and later.
-      # system "curl", "-O", "https://raw.githubusercontent.com/Homebrew/formula-patches/03cf8088210822aa2c1ab544ed58ea04c897d9c4/libtool/configure-big_sur.diff"
-      # system "patch", "configure", "configure-big_sur.diff"
+    system "tar", "xf", "#{name_version}.tar.gz"
+    cd name_version.to_s do
       system "./configure", "--prefix=#{prefix}",
                             "--with-cpl=#{Formula["cpl@7.3.2"].prefix}",
                             "--with-gsl=#{Formula["gsl@2.6"].prefix}",
@@ -44,8 +44,8 @@ class EsopipeUvesRecipes < Formula
   end
 
   def post_install
-    workflow_dir_1 = prefix/"share/reflex/workflows/uves-#{version.major_minor_patch}"
-    workflow_dir_2 = prefix/"share/esopipes/uves-#{version.major_minor_patch}/reflex"
+    workflow_dir_1 = prefix/"share/reflex/workflows/#{name_version}"
+    workflow_dir_2 = prefix/"share/esopipes/#{name_version}/reflex"
     workflow_dir_1.glob("*.xml").each do |workflow|
       ohai "Updating [ROOT|CALIB|RAW]_DATA_DIR in #{workflow}"
       inreplace workflow, "CALIB_DATA_PATH_TO_REPLACE", HOMEBREW_PREFIX/"share/esopipes/datastatic"
