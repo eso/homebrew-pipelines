@@ -54,8 +54,8 @@ class EsopipeEsotkRecipes < Formula
     workflow_dir_1.glob("*.xml").each do |workflow|
       ohai "Updating [ROOT|CALIB|RAW]_DATA_DIR in #{workflow}"
       inreplace workflow, "CALIB_DATA_PATH_TO_REPLACE", HOMEBREW_PREFIX/"share/esopipes/datastatic"
-      inreplace workflow, "ROOT_DATA_PATH_TO_REPLACE", "#{Dir.home}/reflex_data"
       inreplace workflow, "ROOT_DATA_PATH_TO_REPLACE/reflex_input", HOMEBREW_PREFIX/"share/esopipes/datademo"
+      inreplace workflow, "ROOT_DATA_PATH_TO_REPLACE", "#{Dir.home}/reflex_data"
       cp workflow, workflow_dir_2
     end
   end
