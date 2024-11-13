@@ -16,11 +16,11 @@ class EsopipeGravityRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-gravity-recipes-1.7.0-1_1"
-    sha256 cellar: :any,                 arm64_sequoia: "0dbef9782d0f9b62d4cdc36f5a84245e4285e405048cd504514a9fb0568ba8c7"
-    sha256 cellar: :any,                 arm64_sonoma:  "1d8e3a2f9683fa6886156d30a48bcd3074f5c812d1ab0b8d07769ce03f251e7b"
-    sha256 cellar: :any,                 ventura:       "b6f4046f196c90456f6542abacace0069039946ee8e99b25a50dcfc2db1ef2d8"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "468806cc36e71289d57ea0604a44d67c3976f6059aa505d76b9773322280b5b4"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-gravity-recipes-1.7.0-1_2"
+    sha256 cellar: :any,                 arm64_sequoia: "697cd4eb3179a801979389818c2bd2d3e0fb7aadc3066cd9e53d705963e2a140"
+    sha256 cellar: :any,                 arm64_sonoma:  "e991c27e32a13fd50fd784cbbd80d3a5aba5a64554593ccc2921ca75177fdaa2"
+    sha256 cellar: :any,                 ventura:       "775c4a86e7d1981e0dbf7152d835288b8fd14336005821a378bed1e626f6ecbe"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "80acf2f0abd03bb10adaa92a38b2ab75a5a92b00cff92c726cff1ac7bb9b0083"
   end
 
   depends_on "pkg-config" => :build
