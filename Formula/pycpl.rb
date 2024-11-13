@@ -25,6 +25,7 @@ class Pycpl < Formula
   depends_on "python@3.11"
 
   def install
+    ENV["PYCPL_RECIPE_DIR"] = HOMEBREW_PREFIX/"lib/esopipes-plugins"
     system "python", "-m", "pip", "install", *std_pip_args(build_isolation: true), "."
   end
 
