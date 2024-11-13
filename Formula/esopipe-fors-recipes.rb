@@ -16,11 +16,11 @@ class EsopipeForsRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-fors-recipes-5.6.5-7_2"
-    sha256 arm64_sequoia: "b89b5b037d7f334c3906300f0711929e539c519d2d2ced6c18bf1983bce4d343"
-    sha256 arm64_sonoma:  "8324ca10d225e51fd636649308a380b30d916b8d5cf9a99fe8582af89b3c3323"
-    sha256 ventura:       "6b07e89e49c84915773f0a38db4160cd548e8ae16000c6cd5741d137d07aeac2"
-    sha256 x86_64_linux:  "3d3bc1e9b99f857b3d8e870f81a2dd05b6211d0a3def000f08759992010c1d91"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-fors-recipes-5.6.5-7_3"
+    sha256 arm64_sequoia: "adca530044d63e3c2cbc53911a0ef305fe6ce22969caa960addc111dd651d382"
+    sha256 arm64_sonoma:  "0b8cd0f4b3e6e16ae9f19ef41223c0ff06946c317f2888b1f76306ad50d77b90"
+    sha256 ventura:       "4fa55b946ae6b3aae405bc5f001880f781b040f887b3535330dd6aea12dd826e"
+    sha256 x86_64_linux:  "3899eb2c980ce4b892a96ee2b6d59dc882d125f2b796a5672c9984f8a2ac2ccc"
   end
 
   depends_on "pkg-config" => :build
