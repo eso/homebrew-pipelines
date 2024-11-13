@@ -6,6 +6,10 @@ class EsopipeErisRecipes < Formula
   license "GPL-2.0-or-later"
   revision 2
 
+  def name_version
+    "eris-#{version.major_minor_patch}"
+  end
+
   livecheck do
     url :homepage
     regex(/href=.*?eris-kit-(\d+(?:[.-]\d+)+)\.t/i)
@@ -29,9 +33,8 @@ class EsopipeErisRecipes < Formula
   uses_from_macos "curl"
 
   def install
-    version_norevision = version.to_s[/(\d+(?:[.]\d+)+)/i, 1]
-    system "tar", "xf", "eris-#{version_norevision}.tar.gz"
-    cd "eris-#{version_norevision}" do
+    system "tar", "xf", "#{name_version}.tar.gz"
+    cd name_version.to_s do
       system "./configure", "--prefix=#{prefix}",
              "--with-cfitsio=#{Formula["cfitsio@4.2.0"].prefix}",
              "--with-cpl=#{Formula["cpl@7.3.2"].prefix}",
@@ -42,8 +45,19 @@ class EsopipeErisRecipes < Formula
     end
   end
 
+  def post_install
+    workflow_dir_1 = prefix/"share/reflex/workflows/#{name_version}"
+    workflow_dir_2 = prefix/"share/esopipes/#{name_version}/reflex"
+    workflow_dir_1.glob("*.xml").each do |workflow|
+      ohai "Updating [ROOT|CALIB|RAW]_DATA_DIR in #{workflow}"
+      inreplace workflow, "CALIB_DATA_PATH_TO_REPLACE", HOMEBREW_PREFIX/"share/esopipes/datastatic"
+      inreplace workflow, "ROOT_DATA_PATH_TO_REPLACE", "#{Dir.home}/reflex_data"
+      inreplace workflow, "$ROOT_DATA_DIR/reflex_input", HOMEBREW_PREFIX/"share/esopipes/datademo"
+      cp workflow, workflow_dir_2
+    end
+  end
+
   test do
-    version_norevision = version.to_s[/(\d+(?:[.]\d+)+)/i, 1]
-    assert_match "eris_nix_dark -- version #{version_norevision}", shell_output("#{HOMEBREW_PREFIX}/bin/esorex --man-page eris_nix_dark")
+    assert_match "eris_nix_dark -- version #{version.major_minor_patch}", shell_output("#{HOMEBREW_PREFIX}/bin/esorex --man-page eris_nix_dark")
   end
 end

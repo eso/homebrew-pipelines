@@ -6,6 +6,10 @@ class EsopipeSpherRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  def name_version
+    "spher-#{version.major_minor_patch}"
+  end
+
   livecheck do
     url :homepage
     regex(/href=.*?spher-kit-(\d+(?:[.-]\d+)+)\.t/i)
@@ -33,9 +37,8 @@ class EsopipeSpherRecipes < Formula
     ENV.prepend "LDFLAGS", "-L#{Formula["wcslib@7.12"].opt_lib}"
     ENV.prepend "LDFLAGS", "-L#{Formula["cfitsio@4.2.0"].opt_lib}"
 
-    version_norevision = version.to_s[/(\d+(?:[.]\d+)+)/i, 1]
-    system "tar", "xf", "spher-#{version_norevision}.tar.gz"
-    cd "spher-#{version_norevision}" do
+    system "tar", "xf", "#{name_version}.tar.gz"
+    cd name_version.to_s do
       system "./configure", "--prefix=#{prefix}",
              "--with-cfitsio=#{Formula["cfitsio@4.2.0"].prefix}",
              "--with-cpl=#{Formula["cpl@7.3.2"].prefix}",
@@ -46,8 +49,19 @@ class EsopipeSpherRecipes < Formula
     end
   end
 
+  def post_install
+    workflow_dir_1 = prefix/"share/reflex/workflows/#{name_version}"
+    workflow_dir_2 = prefix/"share/esopipes/#{name_version}/reflex"
+    workflow_dir_1.glob("*.xml").each do |workflow|
+      ohai "Updating [ROOT|CALIB|RAW]_DATA_DIR in #{workflow}"
+      inreplace workflow, "CALIB_DATA_PATH_TO_REPLACE", HOMEBREW_PREFIX/"share/esopipes/datastatic"
+      inreplace workflow, "ROOT_DATA_PATH_TO_REPLACE", "#{Dir.home}/reflex_data"
+      inreplace workflow, "$ROOT_DATA_DIR/reflex_input", HOMEBREW_PREFIX/"share/esopipes/datademo"
+      cp workflow, workflow_dir_2
+    end
+  end
+
   test do
-    # version_norevision = version.to_s[/(\d+(?:[.]\d+)+)/i, 1]
     assert_match "sph_zpl_master_dark -- version",
                  shell_output("#{HOMEBREW_PREFIX}/bin/esorex --man-page sph_zpl_master_dark")
   end

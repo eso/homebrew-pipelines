@@ -6,6 +6,10 @@ class EsopipeIiinstrumentRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  def name_version
+    "iiinstrument-#{version.major_minor_patch}"
+  end
+
   livecheck do
     url "https://ftp.eso.org/pub/dfs/pipelines/instruments/iiinstrument/"
     regex(/href=.*?iiinstrument-kit-(\d+(?:[.-]\d+)+)\.t/i)
@@ -24,12 +28,8 @@ class EsopipeIiinstrumentRecipes < Formula
   depends_on "gsl@2.6"
 
   def install
-    version_norevision = version.to_s[/(\d+(?:[.]\d+)+)/i, 1]
-    system "tar", "xf", "iiinstrument-#{version_norevision}.tar.gz"
-    cd "iiinstrument-#{version_norevision}" do
-      # Fix -flat_namespace being used on Big Sur and later.
-      # system "curl", "-O", "https://raw.githubusercontent.com/Homebrew/formula-patches/03cf8088210822aa2c1ab544ed58ea04c897d9c4/libtool/configure-big_sur.diff"
-      # system "patch", "configure", "configure-big_sur.diff"
+    system "tar", "xf", "#{name_version}.tar.gz"
+    cd name_version.to_s do
       system "./configure", "--disable-debug",
                             "--disable-dependency-tracking",
                             "--disable-silent-rules",
@@ -40,8 +40,19 @@ class EsopipeIiinstrumentRecipes < Formula
     end
   end
 
+  def post_install
+    workflow_dir_1 = prefix/"share/reflex/workflows/#{name_version}"
+    workflow_dir_2 = prefix/"share/esopipes/#{name_version}/reflex"
+    workflow_dir_1.glob("*.xml").each do |workflow|
+      ohai "Updating [ROOT|CALIB|RAW]_DATA_DIR in #{workflow}"
+      inreplace workflow, "CALIB_DATA_PATH_TO_REPLACE", HOMEBREW_PREFIX/"share/esopipes/datastatic"
+      inreplace workflow, "ROOT_DATA_PATH_TO_REPLACE", "#{Dir.home}/reflex_data"
+      inreplace workflow, "$ROOT_DATA_DIR/reflex_input", HOMEBREW_PREFIX/"share/esopipes/datademo"
+      cp workflow, workflow_dir_2
+    end
+  end
+
   test do
-    version_norevision = version.to_s[/(\d+(?:[.]\d+)+)/i, 1]
-    assert_match "rrrecipe -- version #{version_norevision}", shell_output("#{HOMEBREW_PREFIX}/bin/esorex --man-page rrrecipe")
+    assert_match "rrrecipe -- version #{version.major_minor_patch}", shell_output("#{HOMEBREW_PREFIX}/bin/esorex --man-page rrrecipe")
   end
 end

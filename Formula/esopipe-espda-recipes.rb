@@ -6,6 +6,10 @@ class EsopipeEspdaRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  def name_version
+    "espda-#{version.major_minor_patch}"
+  end
+
   livecheck do
     url :homepage
     regex(/href=.*?espda-kit-(\d+(?:[.-]\d+)+)\.t/i)
@@ -25,9 +29,8 @@ class EsopipeEspdaRecipes < Formula
   depends_on "gsl@2.6"
 
   def install
-    version_norevision = version.to_s[/(\d+(?:[.]\d+)+)/i, 1]
-    system "tar", "xf", "espda-#{version_norevision}.tar.gz"
-    cd "espda-#{version_norevision}" do
+    system "tar", "xf", "#{name_version}.tar.gz"
+    cd name_version.to_s do
       system "./configure",
              "--prefix=#{prefix}",
              "--with-cpl=#{Formula["cpl@7.3.2"].prefix}",
@@ -36,8 +39,19 @@ class EsopipeEspdaRecipes < Formula
     end
   end
 
+  def post_install
+    workflow_dir_1 = prefix/"share/reflex/workflows/#{name_version}"
+    workflow_dir_2 = prefix/"share/esopipes/#{name_version}/reflex"
+    workflow_dir_1.glob("*.xml").each do |workflow|
+      ohai "Updating [ROOT|CALIB|RAW]_DATA_DIR in #{workflow}"
+      inreplace workflow, "CALIB_DATA_PATH_TO_REPLACE", HOMEBREW_PREFIX/"share/esopipes/datastatic"
+      inreplace workflow, "ROOT_DATA_PATH_TO_REPLACE", "#{Dir.home}/reflex_data"
+      inreplace workflow, "$ROOT_DATA_DIR/reflex_input", HOMEBREW_PREFIX/"share/esopipes/datademo"
+      cp workflow, workflow_dir_2
+    end
+  end
+
   test do
-    version_norevision = version.to_s[/(\d+(?:[.]\d+)+)/i, 1]
-    assert_match "espda_fit_line -- version #{version_norevision}", shell_output("#{HOMEBREW_PREFIX}/bin/esorex --man-page espda_fit_line")
+    assert_match "espda_fit_line -- version #{version.major_minor_patch}", shell_output("#{HOMEBREW_PREFIX}/bin/esorex --man-page espda_fit_line")
   end
 end
