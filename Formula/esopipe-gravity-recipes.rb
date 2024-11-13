@@ -4,7 +4,7 @@ class EsopipeGravityRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/gravity/gravity-kit-1.7.0-1.tar.gz"
   sha256 "2f3c9025e21f2410166517e613ce8c78f78e3c80ed697661ff2b7fcd688eefc2"
   license "GPL-2.0-or-later"
-  revision 1
+  revision 2
 
   def name_version
     "gravity-#{version.major_minor_patch}"
