@@ -16,11 +16,11 @@ class EsopipeEspdaRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-espda-recipes-1.3.8_1"
-    sha256 cellar: :any,                 arm64_sequoia: "6ceb434459e1926375a08ffdf707f3f50671129b69141e6789d444953d45fede"
-    sha256 cellar: :any,                 arm64_sonoma:  "acb7612d9138a22ac06f348bb7d97ff234d116024a3649320b50520b4b235153"
-    sha256 cellar: :any,                 ventura:       "cd7d3e62296599a205f0298facd5fbd7f24f74341e62a94754b26f25bb1651a5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ee96e4c09debdaccc6b1dbacea0b11e56f2b5c1870d02d7a85274141242f326a"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-espda-recipes-1.3.8_2"
+    sha256 cellar: :any,                 arm64_sequoia: "42753c3b1853a1f6cdb7fd833069f70f4cb66eb88e959a57913ccba31c3ff34d"
+    sha256 cellar: :any,                 arm64_sonoma:  "5223566fcd2da2f449c8f2b22b820fba3bfbc919f5fa9254548e27269aefd600"
+    sha256 cellar: :any,                 ventura:       "49757d3133bafc8fb9ba4314874fd1a32a2b5fc52b77773d11b5dcdd2570dbfe"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "afea8d7f138b13f566e68b2040d7082d4dac1ddcb185bf5728aa848b704b31bb"
   end
 
   depends_on "pkg-config" => :build
