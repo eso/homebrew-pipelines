@@ -16,11 +16,11 @@ class EsopipeEspdrRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-espdr-recipes-3.2.0_2"
-    sha256 arm64_sequoia: "de608231dd5b7553b26b1f8ad3c5d6c87d5be973d352f5b22e940851ab1dbc4d"
-    sha256 arm64_sonoma:  "5a2cf65ebd135ef44fa142e94ea3ece950ce73ff73da59fa5c67106730600be6"
-    sha256 ventura:       "e014e7e32c75043735be660a2f9defdd583a4850b21897f94006a1c6d1c41103"
-    sha256 x86_64_linux:  "0117e71dd48ee8762fd4fcdd52edd7385ea7d691ba1ae6fdbff9e4fe7e04fe95"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-espdr-recipes-3.2.0_3"
+    sha256 arm64_sequoia: "edada6a82ee99041be33d0e0d799ad457d6510ba425a478926c841cd50191658"
+    sha256 arm64_sonoma:  "a6e70c98ed19c930e547dd55cdc3e6b8de4736e4e9acd68f89b252c07ce468f4"
+    sha256 ventura:       "9682bfd43bff8e91b72cbff5e3b8290012cb9d23c129f09185b2262d187f5dbc"
+    sha256 x86_64_linux:  "e1ee4a82648ba86526eb08f64a30d1f5fe1c85702c73d7e11c9843ee240dfccb"
   end
 
   depends_on "pkg-config" => :build
