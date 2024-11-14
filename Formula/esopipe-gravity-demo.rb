@@ -1,4 +1,4 @@
-class EsopipeGravityAll < Formula
+class EsopipeGravityDemo < Formula
   desc "ESO GRAVITY instrument pipeline (demo data)"
   homepage "https://www.eso.org/sci/software/pipelines/"
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/gravity/gravity-demo-reflex-0.8.tar.gz"
@@ -11,13 +11,14 @@ class EsopipeGravityAll < Formula
   end
 
   depends_on "esopipe-gravity"
+  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/gravity").install Dir["*"]
   end
 
   def post_install
-    system "brew", "cleanup", "--prune=all", "esopipe-gravity-all"
+    system "brew", "cleanup", "--prune=all", "esopipe-gravity-demo"
   end
 
   test do

@@ -1,4 +1,4 @@
-class EsopipeHarpsAll < Formula
+class EsopipeHarpsDemo < Formula
   desc "ESO HARPS instrument pipeline (demo data)"
   homepage "https://www.eso.org/sci/software/pipelines/"
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/harps/harps-demo-reflex-0.2.0.tar.gz"
@@ -11,13 +11,14 @@ class EsopipeHarpsAll < Formula
   end
 
   depends_on "esopipe-harps"
+  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/harps").install Dir["*"]
   end
 
   def post_install
-    system "brew", "cleanup", "--prune=all", "esopipe-harps-all"
+    system "brew", "cleanup", "--prune=all", "esopipe-harps-demo"
   end
 
   test do

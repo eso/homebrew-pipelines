@@ -1,4 +1,4 @@
-class EsopipeVisirAll < Formula
+class EsopipeVisirDemo < Formula
   desc "ESO VISIR instrument pipeline (demo data)"
   homepage "https://www.eso.org/sci/software/pipelines/"
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/visir/visir-demo-reflex-0.4.tar.gz"
@@ -11,13 +11,14 @@ class EsopipeVisirAll < Formula
   end
 
   depends_on "esopipe-visir"
+  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/visir").install Dir["*"]
   end
 
   def post_install
-    system "brew", "cleanup", "--prune=all", "esopipe-visir-all"
+    system "brew", "cleanup", "--prune=all", "esopipe-visir-demo"
   end
 
   test do

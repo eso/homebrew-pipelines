@@ -1,4 +1,4 @@
-class EsopipeEsotkAll < Formula
+class EsopipeEsotkDemo < Formula
   desc "ESO ESOTK instrument pipeline (demo data)"
   homepage "https://www.eso.org/sci/software/pipelines/"
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/esotk/esotk-demo-reflex-0.9.tar.gz"
@@ -11,13 +11,14 @@ class EsopipeEsotkAll < Formula
   end
 
   depends_on "esopipe-esotk"
+  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/esotk").install Dir["*"]
   end
 
   def post_install
-    system "brew", "cleanup", "--prune=all", "esopipe-esotk-all"
+    system "brew", "cleanup", "--prune=all", "esopipe-esotk-demo"
   end
 
   test do

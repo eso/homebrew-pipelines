@@ -1,4 +1,4 @@
-class EsopipeUvesAll < Formula
+class EsopipeUvesDemo < Formula
   desc "ESO UVES instrument pipeline (demo data)"
   homepage "https://www.eso.org/sci/software/pipelines/"
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/uves/uves-demo-reflex-4.5.tar.gz"
@@ -11,13 +11,14 @@ class EsopipeUvesAll < Formula
   end
 
   depends_on "esopipe-uves"
+  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/uves").install Dir["*"]
   end
 
   def post_install
-    system "brew", "cleanup", "--prune=all", "esopipe-uves-all"
+    system "brew", "cleanup", "--prune=all", "esopipe-uves-demo"
   end
 
   test do

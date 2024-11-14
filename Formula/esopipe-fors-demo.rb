@@ -1,4 +1,4 @@
-class EsopipeForsAll < Formula
+class EsopipeForsDemo < Formula
   desc "ESO FORS instrument pipeline (demo data)"
   homepage "https://www.eso.org/sci/software/pipelines/"
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/fors/fors-demo-reflex-0.9.tar.gz"
@@ -11,13 +11,14 @@ class EsopipeForsAll < Formula
   end
 
   depends_on "esopipe-fors"
+  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/fors").install Dir["*"]
   end
 
   def post_install
-    system "brew", "cleanup", "--prune=all", "esopipe-fors-all"
+    system "brew", "cleanup", "--prune=all", "esopipe-fors-demo"
   end
 
   test do

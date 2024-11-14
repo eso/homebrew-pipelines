@@ -1,4 +1,4 @@
-class EsopipeGirafAll < Formula
+class EsopipeGirafDemo < Formula
   desc "ESO GIRAFFE instrument pipeline (demo data)"
   homepage "https://www.eso.org/sci/software/pipelines/"
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/giraffe/giraf-demo-reflex-0.3.tar.gz"
@@ -11,13 +11,14 @@ class EsopipeGirafAll < Formula
   end
 
   depends_on "esopipe-giraf"
+  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/giraf").install Dir["*"]
   end
 
   def post_install
-    system "brew", "cleanup", "--prune=all", "esopipe-giraf-all"
+    system "brew", "cleanup", "--prune=all", "esopipe-giraf-demo"
   end
 
   test do

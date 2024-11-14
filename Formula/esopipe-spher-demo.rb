@@ -1,4 +1,4 @@
-class EsopipeSpherAll < Formula
+class EsopipeSpherDemo < Formula
   desc "ESO SPHERE instrument pipeline (demo data)"
   homepage "https://www.eso.org/sci/software/pipelines/"
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/sphere/spher-demo-reflex-1.5.tar.gz"
@@ -11,13 +11,14 @@ class EsopipeSpherAll < Formula
   end
 
   depends_on "esopipe-spher"
+  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/spher").install Dir["*"]
   end
 
   def post_install
-    system "brew", "cleanup", "--prune=all", "esopipe-spher-all"
+    system "brew", "cleanup", "--prune=all", "esopipe-spher-demo"
   end
 
   test do

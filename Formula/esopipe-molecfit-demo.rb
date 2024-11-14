@@ -1,4 +1,4 @@
-class EsopipeMolecfitAll < Formula
+class EsopipeMolecfitDemo < Formula
   desc "ESO MOLECFIT instrument pipeline (demo data)"
   homepage "https://www.eso.org/sci/software/pipelines/"
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/molecfit/molecfit-demo-reflex-1.5.tar.gz"
@@ -11,13 +11,14 @@ class EsopipeMolecfitAll < Formula
   end
 
   depends_on "esopipe-molecfit"
+  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/molecfit").install Dir["*"]
   end
 
   def post_install
-    system "brew", "cleanup", "--prune=all", "esopipe-molecfit-all"
+    system "brew", "cleanup", "--prune=all", "esopipe-molecfit-demo"
   end
 
   test do

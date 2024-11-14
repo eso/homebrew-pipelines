@@ -6,29 +6,29 @@
 
 Or `brew tap eso/pipelines` and then `brew install <formula>`.
 
-### Pipelines (recipe plugins + static data + demodata)
-* esopipe-cr2re-all
-* esopipe-eris-all
-* esopipe-esotk-all
-* esopipe-espda-all
-* esopipe-espdr-all
-* esopipe-fors-all
-* esopipe-giraf-all
-* esopipe-gravity-all
-* esopipe-harps-all
-* esopipe-hawki-all
-* esopipe-iiinstrument-all
-* esopipe-kmos-all
-* esopipe-matisse-all
-* esopipe-molecfit-all
-* esopipe-muse-all
-* esopipe-nirps-all
-* esopipe-spher-all
-* esopipe-uves-all
-* esopipe-visir-all
-* esopipe-xshoo-all
+### Data Reduction Pipelines (recipe plugins + static data + demo data)
+* esopipe-cr2re-demo
+* esopipe-eris-demo
+* esopipe-esotk-demo
+* esopipe-espda-demo
+* esopipe-espdr-demo
+* esopipe-fors-demo
+* esopipe-giraf-demo
+* esopipe-gravity-demo
+* esopipe-harps-demo
+* esopipe-hawki-demo
+* esopipe-iiinstrument-demo
+* esopipe-kmos-demo
+* esopipe-matisse-demo
+* esopipe-molecfit-demo
+* esopipe-muse-demo
+* esopipe-nirps-demo
+* esopipe-spher-demo
+* esopipe-uves-demo
+* esopipe-visir-demo
+* esopipe-xshoo-demo
 
-### Pipelines (recipe plugins + static data)
+### Data Reduction Pipelines (recipe plugins + static data)
 * esopipe-cr2re
 * esopipe-eris
 * esopipe-esotk
@@ -50,7 +50,7 @@ Or `brew tap eso/pipelines` and then `brew install <formula>`.
 * esopipe-visir
 * esopipe-xshoo
 
-### Pipelines (only recipe plugins)
+### Data Reduction Pipelines (only recipe plugins)
 * esopipe-cr2re-recipes
 * esopipe-detmon-recipes
 * esopipe-eris-recipes
@@ -73,9 +73,11 @@ Or `brew tap eso/pipelines` and then `brew install <formula>`.
 * esopipe-visir-recipes
 * esopipe-xshoo-recipes
 
-### Data processing tools
+### Workflow Systems
 * edps
 * esoreflex
+
+### ESO Recipe Execution Tool
 * esorex
 
 ### Libraries

@@ -1,4 +1,4 @@
-class EsopipeMatisseAll < Formula
+class EsopipeMatisseDemo < Formula
   desc "ESO MATISSE instrument pipeline (demo data)"
   homepage "https://www.eso.org/sci/software/pipelines/"
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/matisse/matisse-demo-reflex-0.4.tar.gz"
@@ -11,13 +11,14 @@ class EsopipeMatisseAll < Formula
   end
 
   depends_on "esopipe-matisse"
+  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/matisse").install Dir["*"]
   end
 
   def post_install
-    system "brew", "cleanup", "--prune=all", "esopipe-matisse-all"
+    system "brew", "cleanup", "--prune=all", "esopipe-matisse-demo"
   end
 
   test do

@@ -1,4 +1,4 @@
-class EsopipeNirpsAll < Formula
+class EsopipeNirpsDemo < Formula
   desc "ESO NIRPS instrument pipeline (demo data)"
   homepage "https://www.eso.org/sci/software/pipelines/"
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/nirps/nirps-demo-reflex-0.3.0.tar.gz"
@@ -11,13 +11,14 @@ class EsopipeNirpsAll < Formula
   end
 
   depends_on "esopipe-nirps"
+  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/nirps").install Dir["*"]
   end
 
   def post_install
-    system "brew", "cleanup", "--prune=all", "esopipe-nirps-all"
+    system "brew", "cleanup", "--prune=all", "esopipe-nirps-demo"
   end
 
   test do

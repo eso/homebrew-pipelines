@@ -1,4 +1,4 @@
-class EsopipeErisAll < Formula
+class EsopipeErisDemo < Formula
   desc "ESO ERIS instrument pipeline (demo data)"
   homepage "https://www.eso.org/sci/software/pipelines/"
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/eris/eris-demo-reflex-0.5.tar.gz"
@@ -11,13 +11,14 @@ class EsopipeErisAll < Formula
   end
 
   depends_on "esopipe-eris"
+  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/eris").install Dir["*"]
   end
 
   def post_install
-    system "brew", "cleanup", "--prune=all", "esopipe-eris-all"
+    system "brew", "cleanup", "--prune=all", "esopipe-eris-demo"
   end
 
   test do

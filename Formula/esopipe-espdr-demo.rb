@@ -1,4 +1,4 @@
-class EsopipeEspdrAll < Formula
+class EsopipeEspdrDemo < Formula
   desc "ESO ESPRESSO instrument pipeline (demo data)"
   homepage "https://www.eso.org/sci/software/pipelines/"
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/espresso/espdr-demo-reflex-0.7.0.tar.gz"
@@ -11,13 +11,14 @@ class EsopipeEspdrAll < Formula
   end
 
   depends_on "esopipe-espdr"
+  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/espdr").install Dir["*"]
   end
 
   def post_install
-    system "brew", "cleanup", "--prune=all", "esopipe-espdr-all"
+    system "brew", "cleanup", "--prune=all", "esopipe-espdr-demo"
   end
 
   test do

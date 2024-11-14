@@ -1,4 +1,4 @@
-class EsopipeEspdaAll < Formula
+class EsopipeEspdaDemo < Formula
   desc "ESO ESPRESSO-DAS instrument pipeline (demo data)"
   homepage "https://www.eso.org/sci/software/pipelines/"
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/espresso-das/espda-demo-reflex-0.9.5.tar.gz"
@@ -11,13 +11,14 @@ class EsopipeEspdaAll < Formula
   end
 
   depends_on "esopipe-espda"
+  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/espda").install Dir["*"]
   end
 
   def post_install
-    system "brew", "cleanup", "--prune=all", "esopipe-espda-all"
+    system "brew", "cleanup", "--prune=all", "esopipe-espda-demo"
   end
 
   test do

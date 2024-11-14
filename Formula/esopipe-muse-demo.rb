@@ -1,4 +1,4 @@
-class EsopipeMuseAll < Formula
+class EsopipeMuseDemo < Formula
   desc "ESO MUSE instrument pipeline (demo data)"
   homepage "https://www.eso.org/sci/software/pipelines/"
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/muse/muse-demo-reflex-1.6.tar.gz"
@@ -11,13 +11,14 @@ class EsopipeMuseAll < Formula
   end
 
   depends_on "esopipe-muse"
+  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/muse").install Dir["*"]
   end
 
   def post_install
-    system "brew", "cleanup", "--prune=all", "esopipe-muse-all"
+    system "brew", "cleanup", "--prune=all", "esopipe-muse-demo"
   end
 
   test do

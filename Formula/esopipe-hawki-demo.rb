@@ -1,4 +1,4 @@
-class EsopipeHawkiAll < Formula
+class EsopipeHawkiDemo < Formula
   desc "ESO HAWKI instrument pipeline (demo data)"
   homepage "https://www.eso.org/sci/software/pipelines/"
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/hawki/hawki-demo-reflex-0.5.tar.gz"
@@ -11,13 +11,14 @@ class EsopipeHawkiAll < Formula
   end
 
   depends_on "esopipe-hawki"
+  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/hawki").install Dir["*"]
   end
 
   def post_install
-    system "brew", "cleanup", "--prune=all", "esopipe-hawki-all"
+    system "brew", "cleanup", "--prune=all", "esopipe-hawki-demo"
   end
 
   test do
