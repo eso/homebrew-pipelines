@@ -6,6 +6,28 @@
 
 Or `brew tap eso/pipelines` and then `brew install <formula>`.
 
+### Pipelines (recipe plugins + static data + demodata)
+* esopipe-cr2re-all
+* esopipe-eris-all
+* esopipe-esotk-all
+* esopipe-espda-all
+* esopipe-espdr-all
+* esopipe-fors-all
+* esopipe-giraf-all
+* esopipe-gravity-all
+* esopipe-harps-all
+* esopipe-hawki-all
+* esopipe-iiinstrument-all
+* esopipe-kmos-all
+* esopipe-matisse-all
+* esopipe-molecfit-all
+* esopipe-muse-all
+* esopipe-nirps-all
+* esopipe-spher-all
+* esopipe-uves-all
+* esopipe-visir-all
+* esopipe-xshoo-all
+
 ### Pipelines (recipe plugins + static data)
 * esopipe-cr2re
 * esopipe-eris
