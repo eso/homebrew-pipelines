@@ -1,10 +1,9 @@
 class EsopipeHarpsRecipes < Formula
   desc "ESO HARPS instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipelines/"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/harps/harps-kit-3.2.0.tar.gz"
-  sha256 "137cc5dc4b2cda9f2615e43423a135baf2b174eece183b7b0b7af832b8abef99"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/harps/harps-kit-3.3.0.tar.gz"
+  sha256 "d42971a953651ff4ea1a043b8203957944122feb4cfee2ff42a7b6d3a1251098"
   license "GPL-2.0-or-later"
-  revision 2
 
   def name_version
     "harps-#{version.major_minor_patch}"
