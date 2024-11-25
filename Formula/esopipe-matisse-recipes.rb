@@ -23,7 +23,7 @@ class EsopipeMatisseRecipes < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "d73cb0ded97729b20aa7ac9401dbb986efaf7303d369d1b8066e37d068162eb1"
   end
 
-  depends_on "pkg-config" => :build
+  depends_on "pkgconf" => :build
   depends_on "cpl@7.3.2"
   depends_on "erfa"
   depends_on "esorex"

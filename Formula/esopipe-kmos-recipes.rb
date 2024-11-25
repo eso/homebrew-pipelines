@@ -23,7 +23,7 @@ class EsopipeKmosRecipes < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "15aa20360c528437f2aa0cace74ca2028c92f42862130c63386b5099afc5f332"
   end
 
-  depends_on "pkg-config" => :build
+  depends_on "pkgconf" => :build
   depends_on "cpl@7.3.2"
   depends_on "esorex"
   depends_on "telluriccorr"

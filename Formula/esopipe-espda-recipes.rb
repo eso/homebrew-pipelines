@@ -23,7 +23,7 @@ class EsopipeEspdaRecipes < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "afea8d7f138b13f566e68b2040d7082d4dac1ddcb185bf5728aa848b704b31bb"
   end
 
-  depends_on "pkg-config" => :build
+  depends_on "pkgconf" => :build
   depends_on "cpl@7.3.2"
   depends_on "esorex"
   depends_on "gsl@2.6"

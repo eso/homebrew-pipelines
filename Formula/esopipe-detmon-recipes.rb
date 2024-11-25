@@ -23,7 +23,7 @@ class EsopipeDetmonRecipes < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "4fb206f11db507dae549a66bc221e9cdd1a0352df84f2197eb0b478e020ddaa2"
   end
 
-  depends_on "pkg-config" => :build
+  depends_on "pkgconf" => :build
   depends_on "cpl@7.3.2"
   depends_on "erfa"
   depends_on "esorex"

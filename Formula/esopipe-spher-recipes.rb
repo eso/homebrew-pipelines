@@ -23,7 +23,7 @@ class EsopipeSpherRecipes < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "f95c3f5fd943f212af44d24bed2c01e72a3f50053f1f47140cb2efc1d05de9e2"
   end
 
-  depends_on "pkg-config" => :build
+  depends_on "pkgconf" => :build
   depends_on "cfitsio@4.2.0"
   depends_on "cpl@7.3.2"
   depends_on "erfa"

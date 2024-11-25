@@ -23,7 +23,7 @@ class EsopipeGirafRecipes < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "eb3b691726e00355b0b021ba099d4a4f23ace0923d0e024577432bb4cf5fa73f"
   end
 
-  depends_on "pkg-config" => :build
+  depends_on "pkgconf" => :build
   depends_on "cfitsio@4.2.0"
   depends_on "cpl@7.3.2"
   depends_on "esorex"

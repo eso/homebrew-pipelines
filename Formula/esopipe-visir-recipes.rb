@@ -23,7 +23,7 @@ class EsopipeVisirRecipes < Formula
     sha256 x86_64_linux:  "215be18bb3c1bb9860ad6c1ce95b27310e11a0e7885da43afec49606d0aeff69"
   end
 
-  depends_on "pkg-config" => :build
+  depends_on "pkgconf" => :build
   depends_on "cpl@7.3.2"
   depends_on "erfa"
   depends_on "esorex"

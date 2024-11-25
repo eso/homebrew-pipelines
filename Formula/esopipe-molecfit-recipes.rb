@@ -23,7 +23,7 @@ class EsopipeMolecfitRecipes < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "9200c67023053c53ce6781c257db158150e99d7f6c42fb09cc1c16fab54b7ff1"
   end
 
-  depends_on "pkg-config" => :build
+  depends_on "pkgconf" => :build
   depends_on "cpl@7.3.2"
   depends_on "esorex"
   depends_on "telluriccorr"

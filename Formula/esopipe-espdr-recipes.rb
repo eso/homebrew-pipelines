@@ -23,7 +23,7 @@ class EsopipeEspdrRecipes < Formula
     sha256 x86_64_linux:  "e1ee4a82648ba86526eb08f64a30d1f5fe1c85702c73d7e11c9843ee240dfccb"
   end
 
-  depends_on "pkg-config" => :build
+  depends_on "pkgconf" => :build
   depends_on "cpl@7.3.2"
   depends_on "erfa"
   depends_on "esorex"
