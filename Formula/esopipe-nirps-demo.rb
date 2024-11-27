@@ -1,7 +1,7 @@
 class EsopipeNirpsDemo < Formula
   desc "ESO NIRPS instrument pipeline (demo data)"
   homepage "https://www.eso.org/sci/software/pipelines/"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/nirps/nirps-demo-reflex-0.3.0.tar.gz"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/nirps/nirps-demo-reflex-0.4.0.tar.gz"
   sha256 "9c594d3f1db6c44d6f80aa6085557adf14f32d3f962c04e481a2f920255cf782"
   license "GPL-2.0-or-later"
 
