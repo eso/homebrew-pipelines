@@ -21,7 +21,8 @@ class Edps < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "cfc8fef03de5b5cecbde53819f4328d2bbf8ac7ef54800429b1d30493a32916c"
   end
 
-  depends_on "cmake"
+  depends_on "cmake" => :build
+  depends_on "ninja" => :build
   depends_on "lapack"
   depends_on "libyaml"
   depends_on "openblas"
