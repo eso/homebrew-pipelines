@@ -21,6 +21,7 @@ class Adari < Formula
   end
 
   depends_on "cmake" => :build
+  depends_on "ninja" => :build
   depends_on "rust" => :build
   depends_on "freetype"
   depends_on "lapack"
