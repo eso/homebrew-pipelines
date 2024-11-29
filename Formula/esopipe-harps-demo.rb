@@ -1,6 +1,6 @@
 class EsopipeHarpsDemo < Formula
   desc "ESO HARPS instrument pipeline (demo data)"
-  homepage "https://www.eso.org/sci/software/pipelines/"
+  homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/harps/harps-demo-reflex-0.2.0.tar.gz"
   sha256 "983f8d3989e724854e8df5dc34d4fd198e31ef79f409becaae2c4453de4977fa"
   license "GPL-2.0-or-later"

@@ -1,6 +1,6 @@
 class EsopipeVisirDemo < Formula
   desc "ESO VISIR instrument pipeline (demo data)"
-  homepage "https://www.eso.org/sci/software/pipelines/"
+  homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/visir/visir-demo-reflex-0.4.tar.gz"
   sha256 "727d586819ce3c221fffc97da6e16d570e6b0ee94a33c319fb9aabaab8f547eb"
   license "GPL-2.0-or-later"

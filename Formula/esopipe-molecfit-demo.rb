@@ -1,6 +1,6 @@
 class EsopipeMolecfitDemo < Formula
   desc "ESO MOLECFIT instrument pipeline (demo data)"
-  homepage "https://www.eso.org/sci/software/pipelines/"
+  homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/molecfit/molecfit-demo-reflex-1.5.tar.gz"
   sha256 "eec222de7d2de2ac554b03d4cfd21991e16ee60cdf4eed658c05b10ef46d4073"
   license "GPL-2.0-or-later"
