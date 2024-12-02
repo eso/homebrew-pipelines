@@ -40,11 +40,11 @@ class EsopipeSpherRecipes < Formula
     system "tar", "xf", "#{name_version}.tar.gz"
     cd name_version.to_s do
       system "./configure", "--prefix=#{prefix}",
-             "--with-cfitsio=#{Formula["cfitsio@4.2.0"].prefix}",
-             "--with-cpl=#{Formula["cpl@7.3.2"].prefix}",
-             "--with-erfa=#{Formula["erfa"].prefix}",
-             "--with-curl=#{Formula["curl"].prefix}",
-             "--with-gsl=#{Formula["gsl@2.6"].prefix}"
+                            "--with-cfitsio=#{Formula["cfitsio@4.2.0"].prefix}",
+                            "--with-cpl=#{Formula["cpl@7.3.2"].prefix}",
+                            "--with-erfa=#{Formula["erfa"].prefix}",
+                            "--with-curl=#{Formula["curl"].prefix}",
+                            "--with-gsl=#{Formula["gsl@2.6"].prefix}"
       system "make", "install"
     end
   end

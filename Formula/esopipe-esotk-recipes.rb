@@ -38,12 +38,11 @@ class EsopipeEsotkRecipes < Formula
 
     system "tar", "xf", "#{name_version}.tar.gz"
     cd name_version.to_s do
-      system "./configure",
-             "--prefix=#{prefix}",
-             "--with-cpl=#{Formula["cpl@7.3.2"].prefix}",
-             "--with-gsl=#{Formula["gsl@2.6"].prefix}",
-             "--with-erfa=#{Formula["erfa"].prefix}",
-             "--with-curl=#{Formula["curl"].prefix}"
+      system "./configure", "--prefix=#{prefix}",
+                            "--with-cpl=#{Formula["cpl@7.3.2"].prefix}",
+                            "--with-gsl=#{Formula["gsl@2.6"].prefix}",
+                            "--with-erfa=#{Formula["erfa"].prefix}",
+                            "--with-curl=#{Formula["curl"].prefix}"
       system "make", "install"
     end
   end

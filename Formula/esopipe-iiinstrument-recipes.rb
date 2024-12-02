@@ -30,10 +30,10 @@ class EsopipeIiinstrumentRecipes < Formula
   def install
     system "tar", "xf", "#{name_version}.tar.gz"
     cd name_version.to_s do
-      system "./configure", "--disable-debug",
+      system "./configure", "--prefix=#{prefix}",
+                            "--disable-debug",
                             "--disable-dependency-tracking",
                             "--disable-silent-rules",
-                            "--prefix=#{prefix}",
                             "--with-cpl=#{Formula["cpl@7.3.2"].prefix}",
                             "--with-gsl=#{Formula["gsl@2.6"].prefix}"
       system "make", "install"

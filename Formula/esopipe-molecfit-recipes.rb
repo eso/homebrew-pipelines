@@ -32,8 +32,8 @@ class EsopipeMolecfitRecipes < Formula
     system "tar", "xf", "#{name_version}.tar.gz"
     cd name_version.to_s do
       system "./configure", "--prefix=#{prefix}",
-             "--with-cpl=#{Formula["cpl@7.3.2"].prefix}",
-             "--with-telluriccorr=#{Formula["telluriccorr"].prefix}"
+                            "--with-cpl=#{Formula["cpl@7.3.2"].prefix}",
+                            "--with-telluriccorr=#{Formula["telluriccorr"].prefix}"
       system "make", "install"
     end
   end
