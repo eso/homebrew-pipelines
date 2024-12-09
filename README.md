@@ -30,6 +30,7 @@ Or `brew tap eso/pipelines` and then `brew install <formula>`.
 
 ### Data Reduction Pipelines (recipe plugins + static data)
 * esopipe-cr2re
+* esopipe-crires
 * esopipe-eris
 * esopipe-esotk
 * esopipe-espda
