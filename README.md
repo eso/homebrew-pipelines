@@ -29,6 +29,7 @@ Or `brew tap eso/pipelines` and then `brew install <formula>`.
 * esopipe-xshoo-demo
 
 ### Data Reduction Pipelines (recipe plugins + static data)
+* esopipe-amber
 * esopipe-cr2re
 * esopipe-eris
 * esopipe-esotk
@@ -51,6 +52,7 @@ Or `brew tap eso/pipelines` and then `brew install <formula>`.
 * esopipe-xshoo
 
 ### Data Reduction Pipelines (only recipe plugins)
+* esopipe-amber-recipes
 * esopipe-cr2re-recipes
 * esopipe-detmon-recipes
 * esopipe-eris-recipes
