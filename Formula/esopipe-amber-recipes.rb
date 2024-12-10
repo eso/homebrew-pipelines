@@ -17,9 +17,9 @@ class EsopipeAmberRecipes < Formula
   depends_on "pkgconf" => :build
   depends_on "cfitsio@4.2.0"
   depends_on "cpl@7.3.2"
-  depends_on "fftw@3.3.9"
   depends_on "erfa"
   depends_on "esorex"
+  depends_on "fftw@3.3.9"
   depends_on "gsl@2.6"
 
   uses_from_macos "curl"
