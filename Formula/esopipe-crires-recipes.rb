@@ -5,6 +5,11 @@ class EsopipeCriresRecipes < Formula
   sha256 "bb61983ba2c57b45f2d1ebd78f321e12badff824351ace4d4227fa97ead2bbe6"
   license "GPL-2.0-or-later"
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?crire-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-crires-recipes-2.3.19"
     sha256 cellar: :any,                 arm64_sequoia: "3eea74d28692be7d81acc5df6052b0d7a7298175d8bfadd7f1defd6bab4e550f"
@@ -15,11 +20,6 @@ class EsopipeCriresRecipes < Formula
 
   def name_version
     "crire-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?crire-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build
