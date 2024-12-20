@@ -3,13 +3,13 @@ class Edps < Formula
 
   desc "ESO Data Processing System"
   homepage "https://www.eso.org/sci/software/edps.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/libraries/edps/edps-1.4.4.tar.gz"
+  url "https://ftp.eso.org/pub/dfs/pipelines/repositories/stable/src/edps/edps-1.4.4.tar.gz"
   sha256 "38870db3049af96b39fdea9541ab8efc1b1d666d2d9d622b1436e515811d4adc"
   license "BSD-3-Clause"
   revision 2
 
   livecheck do
-    url "https://ftp.eso.org/pub/dfs/pipelines/libraries/edps/"
+    url "https://ftp.eso.org/pub/dfs/pipelines/repositories/stable/src/edps/"
     regex(/href=.*?edps[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
