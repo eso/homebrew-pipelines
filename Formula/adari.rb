@@ -3,8 +3,8 @@ class Adari < Formula
 
   desc "Astronomical DAta Reporting Infrastructure"
   homepage "https://www.eso.org/sci/software/pipelines/index.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/repositories/stable/src/adari_core/adari_core-0.7.2.tar.gz"
-  sha256 "dad24be6af2dd2ff72064669cef15dd280e5bd0874663455a3c5fcab9fe97f3c"
+  url "https://ftp.eso.org/pub/dfs/pipelines/repositories/stable/src/adari_core/adari_core-0.8.2.tar.gz"
+  sha256 "7883703b45b4b040b10a4f272d282d82fdab2bde7fa89aa59b7cdc05f2449c83"
   license "BSD-3-Clause"
 
   livecheck do
