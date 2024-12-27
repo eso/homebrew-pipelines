@@ -9,6 +9,7 @@ class MolecfitThirdParty < Formula
     url "https://ftp.eso.org/pub/dfs/pipelines/libraries/molecfit_third_party/"
     regex(/href=.*?molecfit_third_party[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
+
   depends_on "gcc"
 
   def install
@@ -19,7 +20,6 @@ class MolecfitThirdParty < Formula
   end
 
   test do
-    # Include a basic test to validate installation
     assert_match "2460672", shell_output("echo \"2024 12 27\" | Gregorian2JD")
   end
 end
