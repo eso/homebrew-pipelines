@@ -8,6 +8,7 @@ Or `brew tap eso/pipelines` and then `brew install <formula>`.
 
 ### Data Reduction Pipelines (recipe plugins + static data + demo data)
 * esopipe-cr2re-demo
+* esopipe-efosc-demo
 * esopipe-eris-demo
 * esopipe-esotk-demo
 * esopipe-espda-demo
@@ -23,14 +24,18 @@ Or `brew tap eso/pipelines` and then `brew install <formula>`.
 * esopipe-molecfit-demo
 * esopipe-muse-demo
 * esopipe-nirps-demo
+* esopipe-sinfo-demo
 * esopipe-spher-demo
 * esopipe-uves-demo
+* esopipe-vcam-demo
+* esopipe-vimos-demo
 * esopipe-visir-demo
 * esopipe-xshoo-demo
 
 ### Data Reduction Pipelines (recipe plugins + static data)
 * esopipe-amber
 * esopipe-cr2re
+* esopipe-efosc
 * esopipe-eris
 * esopipe-esotk
 * esopipe-espda
@@ -41,13 +46,20 @@ Or `brew tap eso/pipelines` and then `brew install <formula>`.
 * esopipe-harps
 * esopipe-hawki
 * esopipe-iiinstrument
+* esopipe-isaac
 * esopipe-kmos
 * esopipe-matisse
+* esopipe-midi
 * esopipe-molecfit
 * esopipe-muse
+* esopipe-naco
 * esopipe-nirps
+* esopipe-sinfo
+* esopipe-sofi
 * esopipe-spher
 * esopipe-uves
+* esopipe-vcam
+* esopipe-vimos
 * esopipe-visir
 * esopipe-xshoo
 
@@ -55,6 +67,7 @@ Or `brew tap eso/pipelines` and then `brew install <formula>`.
 * esopipe-amber-recipes
 * esopipe-cr2re-recipes
 * esopipe-detmon-recipes
+* esopipe-efosc-recipes
 * esopipe-eris-recipes
 * esopipe-esotk-recipes
 * esopipe-espda-recipes
@@ -65,13 +78,20 @@ Or `brew tap eso/pipelines` and then `brew install <formula>`.
 * esopipe-harps-recipes
 * esopipe-hawki-recipes
 * esopipe-iiinstrument-recipes
+* esopipe-isaac-recipes
 * esopipe-kmos-recipes
 * esopipe-matisse-recipes
+* esopipe-midi-recipes
 * esopipe-molecfit-recipes
 * esopipe-muse-recipes
+* esopipe-naco-recipes
 * esopipe-nirps-recipes
+* esopipe-sinfo-recipes
+* esopipe-sofi-recipes
 * esopipe-spher-recipes
 * esopipe-uves-recipes
+* esopipe-vcam-recipes
+* esopipe-vimos-recipes
 * esopipe-visir-recipes
 * esopipe-xshoo-recipes
 
@@ -88,6 +108,7 @@ Or `brew tap eso/pipelines` and then `brew install <formula>`.
 * erfa
 * fftw@3.3.9
 * gsl@2.6
+* molecfit-third-party
 * telluriccorr
 * wcslib@7.12
 
