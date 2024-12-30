@@ -20,6 +20,7 @@ class Telluriccorr < Formula
   end
 
   depends_on "cpl@7.3.2"
+  depends_on "molecfit-third-party"
 
   # Fix -flat_namespace being used on Big Sur and later.
   patch do
