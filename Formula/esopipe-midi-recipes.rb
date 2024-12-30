@@ -5,6 +5,11 @@ class EsopipeMidiRecipes < Formula
   sha256 "f57b483a118fda01335723f51e2eca4c795fa64d3b16dcdcd236b297ea2159d7"
   license "GPL-2.0-or-later"
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?midi-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-midi-recipes-2.9.6-1"
     sha256 arm64_sequoia: "3c2c946cb228001ef6d9b9aae8dfc8b2bda7c4ea2196ab3349a8102f7d874bfd"
@@ -15,11 +20,6 @@ class EsopipeMidiRecipes < Formula
 
   def name_version
     "midi-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?midi-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build
