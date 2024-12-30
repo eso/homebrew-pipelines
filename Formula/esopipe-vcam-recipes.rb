@@ -5,6 +5,14 @@ class EsopipeVcamRecipes < Formula
   sha256 "d99dc912322f757997b9adf731feeb25b515220500f3efd46deed88ead34f176"
   license "GPL-2.0-or-later"
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-vcam-recipes-2.3.14"
+    sha256 cellar: :any,                 arm64_sequoia: "59de74c99e6a899d2a9ec32a0d34d2acd2fab5c2562679dab59c13e4caebc5cc"
+    sha256 cellar: :any,                 arm64_sonoma:  "b21123b195526bad872ab63f3d071da2c714387b3e81cec255b953ef7ea581e0"
+    sha256 cellar: :any,                 ventura:       "c040569acdaba38a4d079bb11bfa16ba719db3e4ae0b7686a7f810c67886f4a9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e129a4327dd7bdfcb9187a8d112e7ce368347f21e2466d1f1f7278b1ba2bc3eb"
+  end
+
   def name_version
     "vcam-#{version.major_minor_patch}"
   end
