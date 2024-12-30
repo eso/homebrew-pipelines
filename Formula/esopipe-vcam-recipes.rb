@@ -5,6 +5,11 @@ class EsopipeVcamRecipes < Formula
   sha256 "d99dc912322f757997b9adf731feeb25b515220500f3efd46deed88ead34f176"
   license "GPL-2.0-or-later"
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?vcam-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-vcam-recipes-2.3.14"
     sha256 cellar: :any,                 arm64_sequoia: "59de74c99e6a899d2a9ec32a0d34d2acd2fab5c2562679dab59c13e4caebc5cc"
@@ -15,11 +20,6 @@ class EsopipeVcamRecipes < Formula
 
   def name_version
     "vcam-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?vcam-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build
