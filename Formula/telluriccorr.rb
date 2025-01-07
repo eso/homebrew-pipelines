@@ -32,6 +32,7 @@ class Telluriccorr < Formula
     system "./configure", "--prefix=#{prefix}",
                           "--with-cpl=#{Formula["cpl@7.3.2"].prefix}"
     system "make", "install"
+    ln_s "#{Formula["molecfit-third-party"].share}/molecfit/data/hitran", "#{share}/molecfit/data/"
   end
 
   test do
