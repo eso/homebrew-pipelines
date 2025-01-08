@@ -37,6 +37,9 @@ class Telluriccorr < Formula
   def post_install
     ln_s "#{Formula["molecfit-third-party"].share}/molecfit/data/hitran", "#{share}/molecfit/data/"
     ln_s Formula["molecfit-third-party"].bin.to_s, bin.to_s
+    url = "https://ftp.eso.org/pub/dfs/pipelines/skytools/molecfit/gdas/gdas_profiles_C-70.4-24.6.tar.gz"
+    filename = "#{share}/molecfit/data/profiles/gdas/gdas_profiles_C-70.4-24.6.tar.gz"
+    system "curl", "-L", "-o", filename, url
   end
 
   test do
