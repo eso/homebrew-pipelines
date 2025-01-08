@@ -36,6 +36,7 @@ class Telluriccorr < Formula
 
   def post_install
     ln_s "#{Formula["molecfit-third-party"].share}/molecfit/data/hitran", "#{share}/molecfit/data/"
+    ln_s Formula["molecfit-third-party"].bin.to_s, bin.to_s
   end
 
   test do
