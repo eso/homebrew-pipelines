@@ -22,10 +22,11 @@ class Pycpl < Formula
   end
 
   depends_on "cmake" => :build
-  depends_on "gcc" => :build
   depends_on "ninja" => :build
   depends_on "cpl@7.3.2"
+  depends_on "lapack"
   depends_on "libyaml"
+  depends_on "openblas"
   depends_on "python@3.11"
 
   resource "astropy" do
