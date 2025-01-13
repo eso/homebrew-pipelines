@@ -3,10 +3,9 @@ class Pyesorex < Formula
 
   desc "ESO Recipe Executor Tool for CPL/PyCPL recipes"
   homepage "https://www.eso.org/sci/software/pycpl/"
-  url "https://ftp.eso.org/pub/dfs/pipelines/libraries/pyesorex/pyesorex-1.0.0.tar.gz"
-  sha256 "248634872bf094bf20063ca1662e0c62b9a4cfd0119a6447de176ea7fa63a930"
+  url "https://ftp.eso.org/pub/dfs/pipelines/libraries/pyesorex/pyesorex-1.0.1.tar.gz"
+  sha256 "13b84af0e696fd11c624b84cba5adf87409a74a593716fc7a3a57be0ce3f1562"
   license "GPL-2.0-or-later"
-  revision 1
 
   livecheck do
     url "https://ftp.eso.org/pub/dfs/pipelines/libraries/pyesorex/"
