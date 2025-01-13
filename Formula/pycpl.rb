@@ -34,8 +34,8 @@ class Pycpl < Formula
   end
 
   resource "astropy-iers-data" do
-    url "https://files.pythonhosted.org/packages/7d/8a/de7f87e461ba32901e0b212c8331d1476e7744f17828bf12ecaf9fdb396d/astropy_iers_data-0.2025.1.6.0.33.42.tar.gz"
-    sha256 "0c7e61bcadbafa7db073074eb5f90754449fab65e59abbbc9a65004b5eb4e763"
+    url "https://files.pythonhosted.org/packages/e0/3c/1e22649b559f0d18001f9a5e8b095fbe7330c3aac560a9c46bc1b2012841/astropy_iers_data-0.2025.1.13.0.34.51.tar.gz"
+    sha256 "de6fafd52088f589e2ef5bf797242965f3dfd77b667ea066f941fc98ddeda604"
   end
 
   resource "numpy" do
