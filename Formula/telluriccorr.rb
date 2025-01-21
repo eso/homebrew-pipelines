@@ -1,10 +1,9 @@
 class Telluriccorr < Formula
   desc "Telluric Correction"
   homepage "https://www.eso.org/sci/software/cpl/"
-  url "https://ftp.eso.org/pub/dfs/pipelines/libraries/telluriccorr/telluriccorr-4.3.1.tar.gz"
-  sha256 "a02dc7389588033efd22f71f0712f1b97d00cd732f701dee1b1e093dc062a64b"
+  url "https://ftp.eso.org/pub/dfs/pipelines/libraries/telluriccorr/telluriccorr-4.3.2.tar.gz"
+  sha256 "5a4c04b90b921802bd04e988c0c7549227652b81217996c745e76ae1f8d1ab2f"
   license "GPL-2.0-or-later"
-  revision 2
 
   livecheck do
     url "https://ftp.eso.org/pub/dfs/pipelines/libraries/telluriccorr/"
