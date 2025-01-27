@@ -10,6 +10,14 @@ class WcslibAT83 < Formula
     regex(/href=.*?wcslib[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/wcslib@8.3-8.3"
+    sha256 cellar: :any,                 arm64_sequoia: "334ec58d019d981953d2d2c530c7e4129253d5ac189343fdfeeb5550263a5a7c"
+    sha256 cellar: :any,                 arm64_sonoma:  "5d3dd9e3af3239289c8c353f133c8c8caca98e8f480afc17425bb2c8412faccb"
+    sha256 cellar: :any,                 ventura:       "ecf0ebfddff602b48472176953471d427a4a220ad6345f29bdaaa701f065b799"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1f32a6363788d694a7515426fbd42b7e41ac288406239777e964f04143a6f13a"
+  end
+
   depends_on "cfitsio@4.5.0"
 
   def install
