@@ -11,6 +11,14 @@ class CfitsioAT450 < Formula
     regex(/href=.*?cfitsio[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/cfitsio@4.5.0-4.5.0_1"
+    sha256 cellar: :any,                 arm64_sequoia: "e1348961e4bc648ef4be3501f30ae4932d7797a3e219afedbc06214f8cac432e"
+    sha256 cellar: :any,                 arm64_sonoma:  "fad921fd7e5d7a1584a1121691bbdfdb3d239c4143689650ff946c54e78bac36"
+    sha256 cellar: :any,                 ventura:       "4c4262e443ffc4955a4c5d139f986524727225cb3b39cde8390b500e58dfe8e6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e6fdc3702df0ec371e77dfd1a6ec85a4894ae042acf72ca2e9b7f64ccdb8cbdf"
+  end
+
   depends_on "cmake" => :build
   uses_from_macos "zlib"
 
