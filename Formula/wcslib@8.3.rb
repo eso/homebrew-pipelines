@@ -10,14 +10,14 @@ class WcslibAT83 < Formula
     regex(/href=.*?wcslib[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
-  depends_on "cfitsio"
+  depends_on "cfitsio@4.5.0"
 
   def install
     system "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
-                          "--with-cfitsiolib=#{Formula["cfitsio"].opt_lib}",
-                          "--with-cfitsioinc=#{Formula["cfitsio"].opt_include}",
+                          "--with-cfitsiolib=#{Formula["cfitsio@4.5.0"].opt_lib}",
+                          "--with-cfitsioinc=#{Formula["cfitsio@4.5.0"].opt_include}",
                           "--without-pgplot",
                           "--disable-fortran"
     system "make", "install"
