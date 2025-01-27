@@ -11,6 +11,14 @@ class FftwAT3310 < Formula
     regex(%r{latest official release.*? <b>v?(\d+(?:\.\d+)+)</b>}i)
   end
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/fftw@3.3.10-3.3.10_1"
+    sha256 cellar: :any,                 arm64_sequoia: "e1ee4b3bf2e1721338ad69356439917f34261b12fda7ae1c7f669d843ae65991"
+    sha256 cellar: :any,                 arm64_sonoma:  "a02a7b792a4cb832b4830bf1177f21e754d12446894ddf64478a1f2d8e1137f6"
+    sha256 cellar: :any,                 ventura:       "c859a924ea5247e7bcc657da6f928afc2f6c39ebebc4d5e63e46ab053fabcf3f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c136833194c7dc8e02121d763f520a0fe806ffbd11518c17af524c0bdd3fa7d3"
+  end
+
   depends_on "open-mpi"
 
   on_macos do
