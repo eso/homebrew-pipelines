@@ -10,6 +10,7 @@ class EsopipeUves < Formula
     regex(/href=.*?uves-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
+  depends_on "esopipe-detmon-recipes"
   depends_on "esopipe-uves-recipes"
 
   def install

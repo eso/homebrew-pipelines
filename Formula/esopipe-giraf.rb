@@ -10,6 +10,7 @@ class EsopipeGiraf < Formula
     regex(/href=.*?giraf-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
+  depends_on "esopipe-detmon-recipes"
   depends_on "esopipe-giraf-recipes"
 
   def install

@@ -10,6 +10,7 @@ class EsopipeXshoo < Formula
     regex(/href=.*?xshoo-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
+  depends_on "esopipe-detmon-recipes"
   depends_on "esopipe-xshoo-recipes"
 
   def install

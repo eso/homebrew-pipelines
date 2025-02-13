@@ -10,6 +10,7 @@ class EsopipeHawki < Formula
     regex(/href=.*?hawki-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
+  depends_on "esopipe-detmon-recipes"
   depends_on "esopipe-hawki-recipes"
 
   def install
