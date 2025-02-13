@@ -11,6 +11,7 @@ class EsopipeFors < Formula
   end
 
   depends_on "esopipe-detmon-recipes"
+  depends_on "esopipe-esotk"
   depends_on "esopipe-fors-recipes"
 
   def install

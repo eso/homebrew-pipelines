@@ -11,6 +11,7 @@ class EsopipeCr2re < Formula
   end
 
   depends_on "esopipe-cr2re-recipes"
+  depends_on "esopipe-esotk"
 
   def install
     version_norevision = version.to_s[/(\d+(?:[.]\d+)+)/i, 1]

@@ -11,6 +11,7 @@ class EsopipeGiraf < Formula
   end
 
   depends_on "esopipe-detmon-recipes"
+  depends_on "esopipe-esotk"
   depends_on "esopipe-giraf-recipes"
 
   def install
