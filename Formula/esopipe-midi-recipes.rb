@@ -5,13 +5,13 @@ class EsopipeMidiRecipes < Formula
   sha256 "f57b483a118fda01335723f51e2eca4c795fa64d3b16dcdcd236b297ea2159d7"
   license "GPL-2.0-or-later"
 
+  def name_version
+    "midi-#{version.major_minor_patch}"
+  end
+
   livecheck do
     url :homepage
     regex(/href=.*?midi-kit-(\d+(?:[.-]\d+)+)\.t/i)
-  end
-
-  def name_version
-    "midi-#{version.major_minor_patch}"
   end
 
   depends_on "pkgconf" => :build

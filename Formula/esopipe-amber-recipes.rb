@@ -5,13 +5,13 @@ class EsopipeAmberRecipes < Formula
   sha256 "ab1321479850c42c2eb0f24966dbe91b994cb48e1ccc99f8722206edcc5cca3b"
   license "GPL-2.0-or-later"
 
+  def name_version
+    "amber-#{version.major_minor_patch}"
+  end
+
   livecheck do
     url :homepage
     regex(/href=.*?amber-kit-(\d+(?:[.-]\d+)+)\.t/i)
-  end
-
-  def name_version
-    "amber-#{version.major_minor_patch}"
   end
 
   depends_on "pkgconf" => :build

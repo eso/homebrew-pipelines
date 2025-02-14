@@ -5,13 +5,13 @@ class EsopipeNacoRecipes < Formula
   sha256 "999ed3bbd574f0821e0c00d8d51e41aff14c9ebf4cea586c642b8da5e048e383"
   license "GPL-2.0-or-later"
 
+  def name_version
+    "naco-#{version.major_minor_patch}"
+  end
+
   livecheck do
     url :homepage
     regex(/href=.*?naco-kit-(\d+(?:[.-]\d+)+)\.t/i)
-  end
-
-  def name_version
-    "naco-#{version.major_minor_patch}"
   end
 
   depends_on "pkgconf" => :build

@@ -5,13 +5,13 @@ class EsopipeSofiRecipes < Formula
   sha256 "ce0fc266650c962291f0ce07fc32b687703fed6c6440a68114022d47c96b165e"
   license "GPL-2.0-or-later"
 
+  def name_version
+    "sofi-#{version.major_minor_patch}"
+  end
+
   livecheck do
     url :homepage
     regex(/href=.*?sofi-kit-(\d+(?:[.-]\d+)+)\.t/i)
-  end
-
-  def name_version
-    "sofi-#{version.major_minor_patch}"
   end
 
   depends_on "pkgconf" => :build

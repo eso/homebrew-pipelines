@@ -5,13 +5,13 @@ class EsopipeEfoscRecipes < Formula
   sha256 "515a11ddaa6f71d2ebcfff91433b782089f93af5fb7ce3daf973ccfb456f9bba"
   license "GPL-2.0-or-later"
 
+  def name_version
+    "efosc-#{version.major_minor_patch}"
+  end
+
   livecheck do
     url :homepage
     regex(/href=.*?efosc-kit-(\d+(?:[.-]\d+)+)\.t/i)
-  end
-
-  def name_version
-    "efosc-#{version.major_minor_patch}"
   end
 
   depends_on "pkgconf" => :build

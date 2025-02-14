@@ -5,13 +5,13 @@ class EsopipeIsaacRecipes < Formula
   sha256 "bed2508b8a06cf943b93ca6f2078a55c8e8acec33c92dfc5aa297d5e8f1483a5"
   license "GPL-2.0-or-later"
 
+  def name_version
+    "isaac-#{version.major_minor_patch}"
+  end
+
   livecheck do
     url :homepage
     regex(/href=.*?isaac-kit-(\d+(?:[.-]\d+)+)\.t/i)
-  end
-
-  def name_version
-    "isaac-#{version.major_minor_patch}"
   end
 
   depends_on "pkgconf" => :build

@@ -5,13 +5,13 @@ class EsopipeVimosRecipes < Formula
   sha256 "e4394926ada4e5f59be3de67d56630bf113943d2398298a8f2b7abf1e908de4e"
   license "GPL-2.0-or-later"
 
+  def name_version
+    "vimos-#{version.major_minor_patch}"
+  end
+
   livecheck do
     url :homepage
     regex(/href=.*?vimos-kit-(\d+(?:[.-]\d+)+)\.t/i)
-  end
-
-  def name_version
-    "vimos-#{version.major_minor_patch}"
   end
 
   depends_on "pkgconf" => :build

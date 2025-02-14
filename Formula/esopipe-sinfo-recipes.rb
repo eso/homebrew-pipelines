@@ -5,13 +5,13 @@ class EsopipeSinfoRecipes < Formula
   sha256 "15e124020ff7592b6201e13cc40563055050e123857f7cb4fb982e2423db187e"
   license "GPL-2.0-or-later"
 
+  def name_version
+    "sinfo-#{version.major_minor_patch}"
+  end
+
   livecheck do
     url :homepage
     regex(/href=.*?sinfo-kit-(\d+(?:[.-]\d+)+)\.t/i)
-  end
-
-  def name_version
-    "sinfo-#{version.major_minor_patch}"
   end
 
   depends_on "pkgconf" => :build

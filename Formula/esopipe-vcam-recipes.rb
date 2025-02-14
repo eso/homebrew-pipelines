@@ -5,13 +5,13 @@ class EsopipeVcamRecipes < Formula
   sha256 "d99dc912322f757997b9adf731feeb25b515220500f3efd46deed88ead34f176"
   license "GPL-2.0-or-later"
 
+  def name_version
+    "vcam-#{version.major_minor_patch}"
+  end
+
   livecheck do
     url :homepage
     regex(/href=.*?vcam-kit-(\d+(?:[.-]\d+)+)\.t/i)
-  end
-
-  def name_version
-    "vcam-#{version.major_minor_patch}"
   end
 
   depends_on "pkgconf" => :build
