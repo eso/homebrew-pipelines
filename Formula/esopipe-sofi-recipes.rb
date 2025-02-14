@@ -4,6 +4,7 @@ class EsopipeSofiRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/sofi/sofi-kit-1.5.16.tar.gz"
   sha256 "ce0fc266650c962291f0ce07fc32b687703fed6c6440a68114022d47c96b165e"
   license "GPL-2.0-or-later"
+  revision 1
 
   def name_version
     "sofi-#{version.major_minor_patch}"
