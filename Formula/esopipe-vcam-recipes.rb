@@ -4,6 +4,7 @@ class EsopipeVcamRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/vircam/vcam-kit-2.3.14.tar.gz"
   sha256 "d99dc912322f757997b9adf731feeb25b515220500f3efd46deed88ead34f176"
   license "GPL-2.0-or-later"
+  revision 1
 
   def name_version
     "vcam-#{version.major_minor_patch}"
