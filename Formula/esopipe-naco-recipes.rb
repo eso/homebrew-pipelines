@@ -10,14 +10,6 @@ class EsopipeNacoRecipes < Formula
     regex(/href=.*?naco-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
-  bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-naco-recipes-4.4.13-1"
-    sha256 cellar: :any,                 arm64_sequoia: "245c02e0a5eedf63f4dd13e07e54cae68bf0c6a73433cde3754675b0ad56201a"
-    sha256 cellar: :any,                 arm64_sonoma:  "a0e6f5a8e8768c4aeccb071aa01b8d34de6334f339d4fc2a84a38a9db28514f1"
-    sha256 cellar: :any,                 ventura:       "2897fe8a5aaf618b38d31f586a85357a6bcf2bd8ee50c86aa0984cd83438e63c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cd7974de73d145a769962990ee47beaeaf182ec6519008b1c42f1627d86151a8"
-  end
-
   def name_version
     "naco-#{version.major_minor_patch}"
   end

@@ -15,14 +15,6 @@ class EsopipeEsotkRecipes < Formula
     regex(/href=.*?esotk-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
-  bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-esotk-recipes-0.9.7-1_3"
-    sha256 cellar: :any,                 arm64_sequoia: "7ddcb96ad9109bfcd1c40ff093b950c88e340e00fe5cde28009cf7be1a16325a"
-    sha256 cellar: :any,                 arm64_sonoma:  "ddbf9adf6f90a519808e5137de6087bc08ef5a66a15a198c56ab23dbc9d05bf1"
-    sha256 cellar: :any,                 ventura:       "1839c82af42cc1f1fbfea535837473a12bba8061f23807897e48203e61fb204a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "81076713d12751e7331eaf7b4120b8ba1e80d19b16993f58e55ba516b8951f2f"
-  end
-
   depends_on "pkgconf" => :build
   depends_on "cpl@7.3.2"
   depends_on "erfa"

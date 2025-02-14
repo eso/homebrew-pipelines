@@ -14,14 +14,6 @@ class EsopipeEspdrRecipes < Formula
     regex(/href=.*?espdr-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
-  bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-espdr-recipes-3.3.0"
-    sha256 arm64_sequoia: "1169f7c9da79789b1c889524862921b0deebd5462feff4af68eb46c66a27f3cb"
-    sha256 arm64_sonoma:  "796dafcaa82593d2eac87018126bcb5882ef06a1bdc818e44b413f054fc561a9"
-    sha256 ventura:       "16775971ce95559ec6364c1bd58f6d76cc0f34631109de56d8053b153d83dbd8"
-    sha256 x86_64_linux:  "13537d814f6928a80492c6e8a0680eac7851c9188ae2c83c92a68540b7984021"
-  end
-
   depends_on "pkgconf" => :build
   depends_on "cpl@7.3.2"
   depends_on "erfa"

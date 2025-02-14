@@ -15,14 +15,6 @@ class EsopipeMatisseRecipes < Formula
     regex(/href=.*?matisse-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
-  bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-matisse-recipes-2.0.2-1_2"
-    sha256 cellar: :any,                 arm64_sequoia: "89261874eda5f9d6437aa7152fab37f54c359051c7d13a48b2ba3a22487d5eb5"
-    sha256 cellar: :any,                 arm64_sonoma:  "0316fbcdbad0adb9f83a1a19d79b2f346448f488b9f49e6654a789bcc5fc183e"
-    sha256 cellar: :any,                 ventura:       "602f6de614770cd831531a22e44f1f6101e774f7d91c3347c1c27e8643991edb"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d73cb0ded97729b20aa7ac9401dbb986efaf7303d369d1b8066e37d068162eb1"
-  end
-
   depends_on "pkgconf" => :build
   depends_on "cpl@7.3.2"
   depends_on "erfa"

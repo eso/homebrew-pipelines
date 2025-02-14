@@ -15,14 +15,6 @@ class EsopipeForsRecipes < Formula
     regex(/href=.*?fors-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
-  bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-fors-recipes-5.6.5-7_3"
-    sha256 arm64_sequoia: "adca530044d63e3c2cbc53911a0ef305fe6ce22969caa960addc111dd651d382"
-    sha256 arm64_sonoma:  "0b8cd0f4b3e6e16ae9f19ef41223c0ff06946c317f2888b1f76306ad50d77b90"
-    sha256 ventura:       "4fa55b946ae6b3aae405bc5f001880f781b040f887b3535330dd6aea12dd826e"
-    sha256 x86_64_linux:  "3899eb2c980ce4b892a96ee2b6d59dc882d125f2b796a5672c9984f8a2ac2ccc"
-  end
-
   depends_on "pkgconf" => :build
   depends_on "cfitsio"
   depends_on "cpl@7.3.2"

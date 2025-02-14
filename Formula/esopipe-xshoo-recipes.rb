@@ -15,14 +15,6 @@ class EsopipeXshooRecipes < Formula
     regex(/href=.*?xshoo-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
-  bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-xshoo-recipes-3.6.8_3"
-    sha256 cellar: :any,                 arm64_sequoia: "e36f1aa18044ffdc2593e3a50799d9a7631422c0d3f0dc6036e9454e3cc1fd25"
-    sha256 cellar: :any,                 arm64_sonoma:  "2e8aafbc7ecb885d927b9674c43304ea6003842630d3621089742268f46885ad"
-    sha256 cellar: :any,                 ventura:       "e4aa6e569da22dfcbc0a68f8f7e3776df979d61d817dfdc5b9de67de423c3946"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f28a809b49fe235fcb3fc956bd86e5ab547cb40a0c660928d6bd68047641d771"
-  end
-
   depends_on "pkgconf" => :build
   depends_on "cfitsio"
   depends_on "cpl@7.3.2"

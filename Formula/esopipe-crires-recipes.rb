@@ -10,14 +10,6 @@ class EsopipeCriresRecipes < Formula
     regex(/href=.*?crire-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
-  bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-crires-recipes-2.3.19"
-    sha256 cellar: :any,                 arm64_sequoia: "3eea74d28692be7d81acc5df6052b0d7a7298175d8bfadd7f1defd6bab4e550f"
-    sha256 cellar: :any,                 arm64_sonoma:  "3bc81c3eb15379596827f264d4226517501654fbedcc6fff3e05686c1b2df5e3"
-    sha256 cellar: :any,                 ventura:       "0382e94ecc9037b711d1ae29ce433883c8a4fe793fa70fd2e51784f97b9ce4bf"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5b05ec77a581b666a89ab50913a0041ac374befab9a7b489bccf28d4ef66128c"
-  end
-
   def name_version
     "crire-#{version.major_minor_patch}"
   end
