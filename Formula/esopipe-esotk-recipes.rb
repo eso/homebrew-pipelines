@@ -4,7 +4,7 @@ class EsopipeEsotkRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/esotk/esotk-kit-0.9.7-1.tar.gz"
   sha256 "2d2db2d352b146b1f7c683cd1ee107bb5275e597ef412474ac4d39163fb6ce36"
   license "GPL-2.0-or-later"
-  revision 3
+  revision 4
 
   def name_version
     "esotk-#{version.major_minor_patch}"
