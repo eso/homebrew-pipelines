@@ -4,7 +4,7 @@ class Esorex < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/libraries/esorex/esorex-3.13.9.tar.gz"
   sha256 "609c484c7ac2c3b30cf6dbead25430b05c850f80aa140be3c85ffd104305ebc0"
   license "GPL-2.0-or-later"
-  revision 2
+  revision 3
 
   livecheck do
     url "https://ftp.eso.org/pub/dfs/pipelines/libraries/esorex/"
@@ -19,7 +19,7 @@ class Esorex < Formula
     sha256 x86_64_linux:  "60fdf7868fcac1e4f3fb84019bb06119a13945121e4e17c83e1fe9d7c922987e"
   end
 
-  depends_on "cpl@7.3.2"
+  depends_on "cpl"
   depends_on "gsl"
   depends_on "libffi"
 
@@ -28,7 +28,7 @@ class Esorex < Formula
                           "--disable-dependency-tracking",
                           "--disable-silent-rules",
                           "--prefix=#{prefix}",
-                          "--with-cpl=#{Formula["cpl@7.3.2"].prefix}",
+                          "--with-cpl=#{Formula["cpl"].prefix}",
                           "--with-gsl=#{Formula["gsl"].prefix}",
                           "--with-libffi=#{Formula["libffi"].prefix}",
                           "--with-included-ltdl"
