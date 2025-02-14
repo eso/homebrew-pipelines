@@ -26,7 +26,7 @@ class EsopipeSinfoRecipes < Formula
   depends_on "cpl@7.3.2"
   depends_on "erfa"
   depends_on "esorex"
-  depends_on "gsl@2.6"
+  depends_on "gsl"
 
   uses_from_macos "curl"
 
@@ -37,7 +37,7 @@ class EsopipeSinfoRecipes < Formula
                             "--with-cpl=#{Formula["cpl@7.3.2"].prefix}",
                             "--with-curl=#{Formula["curl"].prefix}",
                             "--with-erfa=#{Formula["erfa"].prefix}",
-                            "--with-gsl=#{Formula["gsl@2.6"].prefix}"
+                            "--with-gsl=#{Formula["gsl"].prefix}"
       system "make", "install"
     end
   end

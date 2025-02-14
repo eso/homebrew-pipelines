@@ -20,7 +20,7 @@ class Esorex < Formula
   end
 
   depends_on "cpl@7.3.2"
-  depends_on "gsl@2.6"
+  depends_on "gsl"
   depends_on "libffi"
 
   def install
@@ -29,7 +29,7 @@ class Esorex < Formula
                           "--disable-silent-rules",
                           "--prefix=#{prefix}",
                           "--with-cpl=#{Formula["cpl@7.3.2"].prefix}",
-                          "--with-gsl=#{Formula["gsl@2.6"].prefix}",
+                          "--with-gsl=#{Formula["gsl"].prefix}",
                           "--with-libffi=#{Formula["libffi"].prefix}",
                           "--with-included-ltdl"
     system "make", "install"

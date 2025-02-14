@@ -23,7 +23,7 @@ class EsopipeMidiRecipes < Formula
   end
 
   depends_on "pkgconf" => :build
-  depends_on "cfitsio@4.2.0"
+  depends_on "cfitsio"
   depends_on "cpl@7.3.2"
   depends_on "esorex"
 
@@ -33,7 +33,7 @@ class EsopipeMidiRecipes < Formula
     system "tar", "xf", "#{name_version}.tar.gz"
     cd name_version.to_s do
       system "./configure", "--prefix=#{prefix}",
-                            "--with-cfitsio=#{Formula["cfitsio@4.2.0"].prefix}",
+                            "--with-cfitsio=#{Formula["cfitsio"].prefix}",
                             "--with-cpl=#{Formula["cpl@7.3.2"].prefix}"
       system "make", "install"
     end

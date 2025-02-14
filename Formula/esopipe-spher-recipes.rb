@@ -24,27 +24,27 @@ class EsopipeSpherRecipes < Formula
   end
 
   depends_on "pkgconf" => :build
-  depends_on "cfitsio@4.2.0"
+  depends_on "cfitsio"
   depends_on "cpl@7.3.2"
   depends_on "erfa"
   depends_on "esorex"
-  depends_on "gsl@2.6"
+  depends_on "gsl"
 
   uses_from_macos "curl"
 
   def install
-    ENV.prepend "LDFLAGS", "-L#{Formula["fftw@3.3.9"].opt_lib}"
-    ENV.prepend "LDFLAGS", "-L#{Formula["wcslib@7.12"].opt_lib}"
-    ENV.prepend "LDFLAGS", "-L#{Formula["cfitsio@4.2.0"].opt_lib}"
+    ENV.prepend "LDFLAGS", "-L#{Formula["fftw"].opt_lib}"
+    ENV.prepend "LDFLAGS", "-L#{Formula["wcslib"].opt_lib}"
+    ENV.prepend "LDFLAGS", "-L#{Formula["cfitsio"].opt_lib}"
 
     system "tar", "xf", "#{name_version}.tar.gz"
     cd name_version.to_s do
       system "./configure", "--prefix=#{prefix}",
-                            "--with-cfitsio=#{Formula["cfitsio@4.2.0"].prefix}",
+                            "--with-cfitsio=#{Formula["cfitsio"].prefix}",
                             "--with-cpl=#{Formula["cpl@7.3.2"].prefix}",
                             "--with-erfa=#{Formula["erfa"].prefix}",
                             "--with-curl=#{Formula["curl"].prefix}",
-                            "--with-gsl=#{Formula["gsl@2.6"].prefix}"
+                            "--with-gsl=#{Formula["gsl"].prefix}"
       system "make", "install"
     end
   end

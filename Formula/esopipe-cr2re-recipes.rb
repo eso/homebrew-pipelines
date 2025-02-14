@@ -24,11 +24,11 @@ class EsopipeCr2reRecipes < Formula
   end
 
   depends_on "pkgconf" => :build
-  depends_on "cfitsio@4.2.0"
+  depends_on "cfitsio"
   depends_on "cpl@7.3.2"
   depends_on "erfa"
   depends_on "esorex"
-  depends_on "gsl@2.6"
+  depends_on "gsl"
 
   uses_from_macos "curl"
 
@@ -36,11 +36,11 @@ class EsopipeCr2reRecipes < Formula
     system "tar", "xf", "#{name_version}.tar.gz"
     cd name_version.to_s do
       system "./configure", "--prefix=#{prefix}",
-                            "--with-cfitsio=#{Formula["cfitsio@4.2.0"].prefix}",
+                            "--with-cfitsio=#{Formula["cfitsio"].prefix}",
                             "--with-cpl=#{Formula["cpl@7.3.2"].prefix}",
                             "--with-erfa=#{Formula["erfa"].prefix}",
                             "--with-curl=#{Formula["curl"].prefix}",
-                            "--with-gsl=#{Formula["gsl@2.6"].prefix}"
+                            "--with-gsl=#{Formula["gsl"].prefix}"
       system "make", "install"
     end
     rm_r bin

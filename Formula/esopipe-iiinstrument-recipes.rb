@@ -25,7 +25,7 @@ class EsopipeIiinstrumentRecipes < Formula
 
   depends_on "cpl@7.3.2"
   depends_on "esorex"
-  depends_on "gsl@2.6"
+  depends_on "gsl"
 
   def install
     system "tar", "xf", "#{name_version}.tar.gz"
@@ -35,7 +35,7 @@ class EsopipeIiinstrumentRecipes < Formula
                             "--disable-dependency-tracking",
                             "--disable-silent-rules",
                             "--with-cpl=#{Formula["cpl@7.3.2"].prefix}",
-                            "--with-gsl=#{Formula["gsl@2.6"].prefix}"
+                            "--with-gsl=#{Formula["gsl"].prefix}"
       system "make", "install"
     end
   end
