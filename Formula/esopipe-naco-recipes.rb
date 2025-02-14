@@ -4,6 +4,7 @@ class EsopipeNacoRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/naco/naco-kit-4.4.13-1.tar.gz"
   sha256 "999ed3bbd574f0821e0c00d8d51e41aff14c9ebf4cea586c642b8da5e048e383"
   license "GPL-2.0-or-later"
+  revision 1
 
   def name_version
     "naco-#{version.major_minor_patch}"
