@@ -4,6 +4,7 @@ class EsopipeCriresRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/crires/crire-kit-2.3.19.tar.gz"
   sha256 "bb61983ba2c57b45f2d1ebd78f321e12badff824351ace4d4227fa97ead2bbe6"
   license "GPL-2.0-or-later"
+  revision 1
 
   def name_version
     "crire-#{version.major_minor_patch}"
