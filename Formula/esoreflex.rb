@@ -10,7 +10,7 @@ class Esoreflex < Formula
     regex(/href=.*?esoreflex-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
-  depends_on "cpl@7.3.2"
+  depends_on "cpl"
   depends_on "esorex"
   depends_on "openjdk@11"
   depends_on "xterm"

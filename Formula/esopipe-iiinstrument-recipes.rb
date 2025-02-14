@@ -15,7 +15,7 @@ class EsopipeIiinstrumentRecipes < Formula
     regex(/href=.*?iiinstrument-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
-  depends_on "cpl@7.3.2"
+  depends_on "cpl"
   depends_on "esorex"
   depends_on "gsl"
 
@@ -26,7 +26,7 @@ class EsopipeIiinstrumentRecipes < Formula
                             "--disable-debug",
                             "--disable-dependency-tracking",
                             "--disable-silent-rules",
-                            "--with-cpl=#{Formula["cpl@7.3.2"].prefix}",
+                            "--with-cpl=#{Formula["cpl"].prefix}",
                             "--with-gsl=#{Formula["gsl"].prefix}"
       system "make", "install"
     end

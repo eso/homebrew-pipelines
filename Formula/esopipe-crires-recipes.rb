@@ -15,14 +15,14 @@ class EsopipeCriresRecipes < Formula
   end
 
   depends_on "pkgconf" => :build
-  depends_on "cpl@7.3.2"
+  depends_on "cpl"
   depends_on "esorex"
 
   def install
     system "tar", "xf", "#{name_version}.tar.gz"
     cd name_version.to_s do
       system "./configure", "--prefix=#{prefix}",
-                            "--with-cpl=#{Formula["cpl@7.3.2"].prefix}"
+                            "--with-cpl=#{Formula["cpl"].prefix}"
       system "make", "install"
     end
   end
