@@ -4,6 +4,7 @@ class EsopipeEspdrRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/espresso/espdr-kit-3.3.0.tar.gz"
   sha256 "4ec59051a56b895c6d2be921eff30c7532ed7d05ab9fb217cd88abf9941387c4"
   license "GPL-2.0-or-later"
+  revision 1
 
   def name_version
     "espdr-#{version.major_minor_patch}"
