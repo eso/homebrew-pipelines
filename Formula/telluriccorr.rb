@@ -4,6 +4,7 @@ class Telluriccorr < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/libraries/telluriccorr/telluriccorr-4.3.2.tar.gz"
   sha256 "5a4c04b90b921802bd04e988c0c7549227652b81217996c745e76ae1f8d1ab2f"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url "https://ftp.eso.org/pub/dfs/pipelines/libraries/telluriccorr/"
