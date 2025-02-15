@@ -6,6 +6,14 @@ class EsopipeVisirRecipes < Formula
   license "GPL-2.0-or-later"
   revision 3
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-visir-recipes-4.4.5_3"
+    sha256 arm64_sequoia: "55b3185e58258d174acdc403006cc0b01c5242e06a8379caa740a0c1e5ccc913"
+    sha256 arm64_sonoma:  "8764ffcb740bf606f3b0300fac9e95218c63ca86b95c4df209eefb2b2f823f2e"
+    sha256 ventura:       "5dbabfecae269c0c682618bd30c6bfb2311fe6ef580c01e71038c37d6dca38f1"
+    sha256 x86_64_linux:  "e133e2f93656e388630212effe8ec995cacf8ddd13833443b065e6071c40f79a"
+  end
+
   def name_version
     "visir-#{version.major_minor_patch}"
   end
