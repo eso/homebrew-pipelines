@@ -6,6 +6,14 @@ class EsopipeSofiRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-sofi-recipes-1.5.16_1"
+    sha256 cellar: :any,                 arm64_sequoia: "21ce079eaee4f5df5e752d7c4f106a7914ab6f0bdefc8ddfebee3f9d066cd54c"
+    sha256 cellar: :any,                 arm64_sonoma:  "1a138c0465fc7b5d3ebbbf64a0a24a8ffdca9ea8d9f050cd4775e0fcdb7c396d"
+    sha256 cellar: :any,                 ventura:       "d7aaee7cbb6f4ef8f0dd20945f2a7e8786176c70ad9d20228e16f30aadd9c898"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a99a55476b438280276f189b102885d605636501471f09411b4f7fd8ebf9ddd3"
+  end
+
   def name_version
     "sofi-#{version.major_minor_patch}"
   end
