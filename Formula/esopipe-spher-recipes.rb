@@ -6,6 +6,14 @@ class EsopipeSpherRecipes < Formula
   license "GPL-2.0-or-later"
   revision 3
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-spher-recipes-0.56.0_3"
+    sha256 cellar: :any,                 arm64_sequoia: "65c16b86179d5c78328afd0ef37c937681dda81884b90209d8dc9534061566d6"
+    sha256 cellar: :any,                 arm64_sonoma:  "442e07fd414b5552771ccabcee7065365d68b1ebf832c9d501f45443a2bba9f3"
+    sha256 cellar: :any,                 ventura:       "a6586818d50e2a790c5cb05b0c1404df033e25712098564d4fdf6a741847ea8b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a057989289aed2e37166747ff37ee58552a598386a93640aad749af1122c6a06"
+  end
+
   def name_version
     "spher-#{version.major_minor_patch}"
   end
