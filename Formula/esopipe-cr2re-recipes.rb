@@ -6,6 +6,14 @@ class EsopipeCr2reRecipes < Formula
   license "GPL-2.0-or-later"
   revision 3
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-cr2re-recipes-1.4.4_3"
+    sha256 cellar: :any,                 arm64_sequoia: "23c29b3613203fc5c712576f8028df4dadffddf9a981730de0ad19d638f6ac56"
+    sha256 cellar: :any,                 arm64_sonoma:  "35c588e4e76cd88bf4de4228c588815b45a2ac0b21f98ffbbefc7b908bf7bfbe"
+    sha256 cellar: :any,                 ventura:       "29599e712936376978557b053aa7cb5a788158f34577dc9906db67200bb8a0a4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8e09509a49f5b9af15eae775feb404528e43801b8fb861c014e4a9690c73b8fc"
+  end
+
   def name_version
     "cr2re-#{version.major_minor_patch}"
   end
