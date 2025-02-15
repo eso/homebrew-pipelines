@@ -6,6 +6,14 @@ class EsopipeSinfoRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-sinfo-recipes-3.3.5-1_1"
+    sha256 cellar: :any,                 arm64_sequoia: "b43a44321516fedf40a401c9f8dc22bbb6ee31d9af4408a6213dc1427066fe3d"
+    sha256 cellar: :any,                 arm64_sonoma:  "7bc841b7a1e61033897d4ea7d26881cd5c878f13020492fd1fb24fe0eee71754"
+    sha256 cellar: :any,                 ventura:       "13a206f755b29d746b6cf5ef0ff8e48ad5339e3ba86281232582b60a8e447bac"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "52986f526c039d60410876cb8f96a033b02acb85a64587818175f1366495208e"
+  end
+
   def name_version
     "sinfo-#{version.major_minor_patch}"
   end
