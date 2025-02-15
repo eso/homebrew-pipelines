@@ -6,6 +6,14 @@ class EsopipeCriresRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-crires-recipes-2.3.19_1"
+    sha256 cellar: :any,                 arm64_sequoia: "0fe0c4c18383a1e4103074e8274334e13fcd1700b7184dcb350ae97ac4b8038b"
+    sha256 cellar: :any,                 arm64_sonoma:  "66413811af58b815f7f0caca8d0157dbedd0fe7900b46b65d52b43e775d6ac64"
+    sha256 cellar: :any,                 ventura:       "1068db4aad6f4e8a0315f00d6b59b72e6f1a3a5de339c79183ede99eedb12cfc"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4682e546e9ef3a856c7f780a076c7b04f35a62b086fa5381ad0bfb6073412d41"
+  end
+
   def name_version
     "crire-#{version.major_minor_patch}"
   end
