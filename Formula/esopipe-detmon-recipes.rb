@@ -6,6 +6,14 @@ class EsopipeDetmonRecipes < Formula
   license "GPL-2.0-or-later"
   revision 4
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-detmon-recipes-1.3.14_4"
+    sha256 cellar: :any,                 arm64_sequoia: "03ee0cddb20800d23b22a982e81905cb02f04c2b554dc23d0bddde3cb5f563b3"
+    sha256 cellar: :any,                 arm64_sonoma:  "5e3e9eddddf02e7fb7c0a6c7554ae6eeffeee5eaf0105701d834391c7b088416"
+    sha256 cellar: :any,                 ventura:       "5a2e604012f9a7043b6fc070c83270aea1803ccd362339fe7fc3aae2caeecbc3"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9a9c59536ebbe14c9a22e3d701fa8e3d0d44e94c681ed3019abdbe834940705f"
+  end
+
   def name_version
     "detmon-#{version.major_minor_patch}"
   end
