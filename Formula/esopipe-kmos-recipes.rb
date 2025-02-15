@@ -6,6 +6,14 @@ class EsopipeKmosRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-kmos-recipes-4.4.8_1"
+    sha256 cellar: :any,                 arm64_sequoia: "9526747eba7432e4a8c3f13d5126fe2cd3295a2436fb83282d66a2e17af526b7"
+    sha256 cellar: :any,                 arm64_sonoma:  "f737fb4d481578f8e56cf97ce6dc57ef8f9d4ea06c3405d2d892a87c9456daf8"
+    sha256 cellar: :any,                 ventura:       "ba6a08e6cbe294459b44dd68d3fbb721c96765a4f18b54dbcdbe3b033f6c11f1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e94b02dca16952d262ead1cd61c6a640e81b487ad816e30f043759e9979fca68"
+  end
+
   def name_version
     "kmos-#{version.major_minor_patch}"
   end
