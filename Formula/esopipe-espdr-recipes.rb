@@ -6,6 +6,14 @@ class EsopipeEspdrRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-espdr-recipes-3.3.0_1"
+    sha256 arm64_sequoia: "2542a59815c7f886ec647322a96898141246c5e8365996f531dfa84f1fe780e8"
+    sha256 arm64_sonoma:  "df4474952e938a270a65586e39ddd224c81160cde8146203c43e8e15a63c068f"
+    sha256 ventura:       "e2db004e92836e9661d18879c1f47db13526f9da094502e13ce24dc94bf630e3"
+    sha256 x86_64_linux:  "9ae329008ad324d51269f6016146102baa2fc10f782d9a7f873f416956bf7516"
+  end
+
   def name_version
     "espdr-#{version.major_minor_patch}"
   end
