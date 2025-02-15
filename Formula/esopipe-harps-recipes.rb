@@ -6,6 +6,14 @@ class EsopipeHarpsRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-harps-recipes-3.3.0_1"
+    sha256 arm64_sequoia: "b35b9ade27bc8680395bdad007130c6dc579f50ea4528170b7527ed0e0ff5635"
+    sha256 arm64_sonoma:  "a5d990b91bd5ebfdad469691b6828326f742c8ae1e3beadd9417b6107cd3e3f5"
+    sha256 ventura:       "898fb649f518d8842ff3a3a368a192608bca4c685a72b9a194f19bd6ec0dab0c"
+    sha256 x86_64_linux:  "b20d57376644c006d1b032f7b4c6a8b44c4a446c6b41c7d1cd64731d30ca8ee2"
+  end
+
   def name_version
     "harps-#{version.major_minor_patch}"
   end
