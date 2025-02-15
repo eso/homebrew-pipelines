@@ -6,6 +6,14 @@ class EsopipeErisRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-eris-recipes-1.7.0_1"
+    sha256 cellar: :any,                 arm64_sequoia: "e6b2d8221f303197de851f36ef359acd5a622cf9f0dc130066a0c3bed80bd2fd"
+    sha256 cellar: :any,                 arm64_sonoma:  "6a56fd6496edbd6f7d6359468cddb82389f5e2712679dfacc3efc5648f1884e4"
+    sha256 cellar: :any,                 ventura:       "4acff7cb481f7cc64e7072f52d9d15d5ee325238825d9efa933ec988b6485500"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7567aa775f4abbb2bf4012059101d912495390440ca742ffb681423fdb3459cf"
+  end
+
   def name_version
     "eris-#{version.major_minor_patch}"
   end
