@@ -6,6 +6,14 @@ class EsopipeGirafRecipes < Formula
   license "GPL-2.0-or-later"
   revision 4
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-giraf-recipes-2.16.12_4"
+    sha256 cellar: :any,                 arm64_sequoia: "9e8c40b0fb3d8007ea8807379973dbb38d54a29d75cf1624bdabdea0620a3df8"
+    sha256 cellar: :any,                 arm64_sonoma:  "547300200275dfee8c831b97c540ccc6eac537a66c74e4d91cd50ea24b3afcc4"
+    sha256 cellar: :any,                 ventura:       "3961908c71f8a3d5ed3a4b4d2c116306bb70966147a153d4a2453799317fc0bb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5274111284fb5e70c2114d9d716765979a4a445d93c99b1c703e53005d98ce47"
+  end
+
   def name_version
     "giraf-#{version.major_minor_patch}"
   end
