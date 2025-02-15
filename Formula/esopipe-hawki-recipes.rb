@@ -6,6 +6,14 @@ class EsopipeHawkiRecipes < Formula
   license "GPL-2.0-or-later"
   revision 4
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-hawki-recipes-2.5.8_4"
+    sha256 cellar: :any,                 arm64_sequoia: "4b790f096f2c842b40304e3a440bc7f0194c5dede996e765ec27d8e02c169ade"
+    sha256 cellar: :any,                 arm64_sonoma:  "ffbd95e96b56ea5d5c2a84c6c703354c87918696ada1422d58fbe8ad519b0b0b"
+    sha256 cellar: :any,                 ventura:       "2ce8f62d6c3720bdd30a86b74288c87fcff87c745619331666a52e5296d3fbb1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "926f18e6e01f7ad3eed0ad4cbc4c272a0f79e9009364840b60628a2438b29c4e"
+  end
+
   def name_version
     "hawki-#{version.major_minor_patch}"
   end
