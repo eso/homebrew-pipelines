@@ -6,6 +6,14 @@ class EsopipeForsRecipes < Formula
   license "GPL-2.0-or-later"
   revision 4
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-fors-recipes-5.6.5-7_4"
+    sha256 arm64_sequoia: "2d0cae62b5a03a0980500f238f3496a409c108a29d60be8f3c13ca1ee90ab50d"
+    sha256 arm64_sonoma:  "28d17c085c80559a3220f2c486c7b8ebb4ae543224d761023130cc93ec60fa40"
+    sha256 ventura:       "9e60119236b280a21b93c05089fa5a7ec78ecc17cb7383228ec7de8dc7b021ab"
+    sha256 x86_64_linux:  "fa48a0af0fd622be26949ede08be26be2b4f365c690ee3d4002d687e2edf92c1"
+  end
+
   def name_version
     "fors-#{version.major_minor_patch}"
   end
