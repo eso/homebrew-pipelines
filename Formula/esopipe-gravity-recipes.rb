@@ -6,6 +6,14 @@ class EsopipeGravityRecipes < Formula
   license "GPL-2.0-or-later"
   revision 3
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-gravity-recipes-1.7.0-1_3"
+    sha256 cellar: :any,                 arm64_sequoia: "5030025cd6e1c591cbbd45462bce63bdf179f611519fb4492dada938fc86d5ab"
+    sha256 cellar: :any,                 arm64_sonoma:  "d0ec18346e0c3d67b659d02461b0122bcf47b222c0bb2bc01de184f9c5477af7"
+    sha256 cellar: :any,                 ventura:       "6e182d66ed5a5a0711504223d12be9f191b61f4b7fbc6a7827a6a9d46dd6c15f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8aa16e8f39636596df56c6e46562e3c9bcb888adf580d01020ccaf88124bf97d"
+  end
+
   def name_version
     "gravity-#{version.major_minor_patch}"
   end
