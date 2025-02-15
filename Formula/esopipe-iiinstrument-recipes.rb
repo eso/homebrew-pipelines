@@ -6,6 +6,14 @@ class EsopipeIiinstrumentRecipes < Formula
   license "GPL-2.0-or-later"
   revision 3
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-iiinstrument-recipes-0.1.14-50_3"
+    sha256 cellar: :any,                 arm64_sequoia: "fe3ec390b9f120d84f303d1e566b34e9ea51590d9970cf503e1c7868d9040473"
+    sha256 cellar: :any,                 arm64_sonoma:  "445395f153cf0e96ebf7ceede91142fcbf7d082d62f5d19db8389050d4b3668a"
+    sha256 cellar: :any,                 ventura:       "392d006292e0c61b12db547f48da6adcd102a8a843b7d5a37c368fe950440e69"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "90e2e0fb0bca47a93a4892892bf7977a44794f1347eb3eb439e162c98caefd33"
+  end
+
   def name_version
     "iiinstrument-#{version.major_minor_patch}"
   end
