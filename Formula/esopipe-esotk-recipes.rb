@@ -6,6 +6,14 @@ class EsopipeEsotkRecipes < Formula
   license "GPL-2.0-or-later"
   revision 4
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-esotk-recipes-0.9.7-1_4"
+    sha256 cellar: :any,                 arm64_sequoia: "caf29f6824c2d3cfd494d591b387842023cedf8edfd6b67df0f15728f0ec7b9c"
+    sha256 cellar: :any,                 arm64_sonoma:  "0d5364a2c5206873f874b4da0600290495512a476c887198ac7c52193b90ed41"
+    sha256 cellar: :any,                 ventura:       "d589cc5c449e28822893a6e56ced85916af00ed270ecdd0709f199cd90787424"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "158804480349b515dc660249c0c93697fd841b6bb07a569417353e483d6c9098"
+  end
+
   def name_version
     "esotk-#{version.major_minor_patch}"
   end
