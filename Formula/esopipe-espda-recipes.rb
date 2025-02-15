@@ -6,6 +6,14 @@ class EsopipeEspdaRecipes < Formula
   license "GPL-2.0-or-later"
   revision 3
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-espda-recipes-1.3.8_3"
+    sha256 cellar: :any,                 arm64_sequoia: "61e8dfb783cbef9beabc68af89750c7cf55827a891e947cb8f83d47643a45464"
+    sha256 cellar: :any,                 arm64_sonoma:  "81beadfc73925df3d682f773a97787eea3492a388d1974337e5a5be6e222c98b"
+    sha256 cellar: :any,                 ventura:       "4bb1a0806f93c99d90a1ff204ce643be93af49c9c8168a0baf1e1e069c36652f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "77ac8b647c7a4439050dcf77f839c7e3c8b809c1b16ec0681e5c43395f224362"
+  end
+
   def name_version
     "espda-#{version.major_minor_patch}"
   end
