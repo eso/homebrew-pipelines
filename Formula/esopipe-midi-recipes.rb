@@ -6,6 +6,14 @@ class EsopipeMidiRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-midi-recipes-2.9.6-1_1"
+    sha256 arm64_sequoia: "1ef7b5ae4a988ead088074484cdbacbeae04ae5cd08a95ae8d8bfe20d5d5fdf8"
+    sha256 arm64_sonoma:  "c0d21860b4234815170d302e6487916d337a34dd6f9d968943174733286dfec3"
+    sha256 ventura:       "698ecd11423e43bd87b5ae207026a2fbbbf08146537178aa034c4fc366230033"
+    sha256 x86_64_linux:  "f8f26e89ed944cf4f9d6299df835e13c0fdbb04587b7e70101dd9bb4e19d3a4a"
+  end
+
   def name_version
     "midi-#{version.major_minor_patch}"
   end
