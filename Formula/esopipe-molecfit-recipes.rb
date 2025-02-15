@@ -6,6 +6,14 @@ class EsopipeMolecfitRecipes < Formula
   license "GPL-2.0-or-later"
   revision 3
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-molecfit-recipes-4.3.3_3"
+    sha256 cellar: :any,                 arm64_sequoia: "7d3fbcec7a029298aa8de9d33be00311dabd99d764169109b5a35461a4b49198"
+    sha256 cellar: :any,                 arm64_sonoma:  "cc311a3dffc2bc4cf47fe49e10ae8a0e9de4c376cdf1d12f588333bff4627237"
+    sha256 cellar: :any,                 ventura:       "0606d9b774c3b50505faf540b4d76307281e92fc3b102fa4e71c5ee54c381f09"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "29234aa64b3dc88845671acd193e526ef306a6f031187cc936a26ea46b915449"
+  end
+
   def name_version
     "molecfit-#{version.major_minor_patch}"
   end
