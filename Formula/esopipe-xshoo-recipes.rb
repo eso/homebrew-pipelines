@@ -6,6 +6,14 @@ class EsopipeXshooRecipes < Formula
   license "GPL-2.0-or-later"
   revision 4
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-xshoo-recipes-3.6.8_4"
+    sha256 cellar: :any,                 arm64_sequoia: "b6a5d2d4658c31c5e1d88037088e11094053db90f86403ea2d9b097f3b614ef5"
+    sha256 cellar: :any,                 arm64_sonoma:  "23659db89ac4a5722cda372217a173a1cb9e2f4c5bc69929ccda9f3c56e29d7b"
+    sha256 cellar: :any,                 ventura:       "e402b7a8150dd3dfc8c4707be81c35fd2f071646bc0166e55221491fbdc04e7c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "98d1984cc8df2a5f95d8143d802023cafb488c380b7ac3f5a5ef2e394737f9aa"
+  end
+
   def name_version
     "xshoo-#{version.major_minor_patch}"
   end
