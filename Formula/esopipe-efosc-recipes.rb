@@ -6,6 +6,14 @@ class EsopipeEfoscRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-efosc-recipes-2.3.9-2_1"
+    sha256 arm64_sequoia: "f26fc2df6f60d8cca0736b9ce3329db8c324182513f0ef3ec26fbdade249ba50"
+    sha256 arm64_sonoma:  "09daf9ba18b1c51c77aac8467b499804bf7704ff073a9cc2801b3efddbbe5a80"
+    sha256 ventura:       "a463a77af0070785921ac00ef019932394971f2950a70ba0407c4cb42a5fbf90"
+    sha256 x86_64_linux:  "a309afa9a4f8ab067a61fedec2e3eecd4c1648aa03f8a441f8c3ab1718b8dfe4"
+  end
+
   def name_version
     "efosc-#{version.major_minor_patch}"
   end
