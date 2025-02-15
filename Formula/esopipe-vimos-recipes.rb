@@ -6,6 +6,14 @@ class EsopipeVimosRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-vimos-recipes-4.1.10_1"
+    sha256 cellar: :any,                 arm64_sequoia: "b778973f2931b598891b08a0abb532e4c74fd1a028407c02c293261134aef9c1"
+    sha256 cellar: :any,                 arm64_sonoma:  "df43e88a0acb3f8c264667e63ef27b32dc2005338c12155b8d30ac62d732f18b"
+    sha256 cellar: :any,                 ventura:       "5ba571bf18bf4dc0d88052452386a75529ea49bf841523327685fa670b1828c2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8122ad71ebe51b8979f712e4fd7c8029accbbf88878c0f4dba995188d359ec33"
+  end
+
   def name_version
     "vimos-#{version.major_minor_patch}"
   end
