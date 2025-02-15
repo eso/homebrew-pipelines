@@ -6,6 +6,14 @@ class EsopipeAmberRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-amber-recipes-4.4.5-1_1"
+    sha256 cellar: :any,                 arm64_sequoia: "6bacd2aedb5e00f27be7fbddcaa16394888e2bb283212048103d405f001c5252"
+    sha256 cellar: :any,                 arm64_sonoma:  "18369b469f2ef0fba441a664ca24ee0794d3562abc17a343dd3bfa20fef044ac"
+    sha256 cellar: :any,                 ventura:       "55284beffbdf01a03eb9c635e9e597c803975069943b0ab45571d10f5db3e21c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b0decb85fd873233e89e66227048517f635c9e8389bb172556fe766ec7601651"
+  end
+
   def name_version
     "amber-#{version.major_minor_patch}"
   end
