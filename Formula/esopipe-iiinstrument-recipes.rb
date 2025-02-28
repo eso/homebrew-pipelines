@@ -22,6 +22,7 @@ class EsopipeIiinstrumentRecipes < Formula
     "iiinstrument-#{version.major_minor_patch}"
   end
 
+  depends_on "pkgconf" => :build
   depends_on "cpl"
   depends_on "erfa"
   depends_on "esorex"
