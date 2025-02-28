@@ -1,10 +1,9 @@
 class EsopipeUvesRecipes < Formula
   desc "ESO UVES instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/uves/uves-kit-6.4.10.tar.gz"
-  sha256 "57fc759cec5d42a146ace61c6b8b423144ed0d5968b10dafaa45b5612fe78960"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/uves/uves-kit-6.4.10-4.tar.gz"
+  sha256 "0350faaf8d957b71e5f5b951987124c91541dcf41f680210e4d8be547ff49faf"
   license "GPL-2.0-or-later"
-  revision 1
 
   livecheck do
     url :homepage
