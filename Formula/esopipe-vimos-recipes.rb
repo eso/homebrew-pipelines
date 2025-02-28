@@ -1,10 +1,9 @@
 class EsopipeVimosRecipes < Formula
   desc "ESO VIMOS instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/vimos/vimos-kit-4.1.10.tar.gz"
-  sha256 "e4394926ada4e5f59be3de67d56630bf113943d2398298a8f2b7abf1e908de4e"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/vimos/vimos-kit-4.1.12-5.tar.gz"
+  sha256 "65d41c067a177674aa7c10794139b2b23e5b47bfe7278bcbfda67a8ef711b658"
   license "GPL-2.0-or-later"
-  revision 1
 
   livecheck do
     url :homepage
