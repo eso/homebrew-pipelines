@@ -1,10 +1,9 @@
 class EsopipeEspdaRecipes < Formula
   desc "ESO ESPRESSO-DAS instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/espresso-das/espda-kit-1.3.8.tar.gz"
-  sha256 "d100d9c4318fcfd853f445413ee5a73ad8ca5f41f359ea016afae3758e7e33d6"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/espresso-das/espda-kit-1.3.8-4.tar.gz"
+  sha256 "74a5c1cc07a6b5ad8aa832760e632483cabefc5483db470e34dc308f25c4a67e"
   license "GPL-2.0-or-later"
-  revision 3
 
   livecheck do
     url :homepage
