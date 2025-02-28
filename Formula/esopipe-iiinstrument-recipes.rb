@@ -27,6 +27,8 @@ class EsopipeIiinstrumentRecipes < Formula
   depends_on "esorex"
   depends_on "gsl"
 
+  uses_from_macos "curl"
+
   def install
     system "tar", "xf", "#{name_version}.tar.gz"
     cd name_version.to_s do
@@ -36,6 +38,7 @@ class EsopipeIiinstrumentRecipes < Formula
                             "--disable-silent-rules",
                             "--with-cpl=#{Formula["cpl"].prefix}",
                             "--with-erfa=#{Formula["erfa"].prefix}",
+                            "--with-curl=#{Formula["curl"].prefix}",
                             "--with-gsl=#{Formula["gsl"].prefix}"
       system "make", "install"
     end
