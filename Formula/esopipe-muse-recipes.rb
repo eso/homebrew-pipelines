@@ -11,11 +11,11 @@ class EsopipeMuseRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-muse-recipes-2.10.10_4"
-    sha256 cellar: :any,                 arm64_sequoia: "fb20e5b9676bd5ed35bd77a2e82b5996956d991dadb7ad868ff87a9396c77f3e"
-    sha256 cellar: :any,                 arm64_sonoma:  "cd505b31f746025dfa313b145d049a3b3193ecc623a679db545d1132cba59acd"
-    sha256 cellar: :any,                 ventura:       "2384e9bc51dd3a0786828d6e169d3fdda46a2d8dabb8fa47e15535640087037e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0976aa229d8bf9e045a9bdb68b2bee640321e1fa8a5a77ca05b883972906d45c"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-muse-recipes-2.10.10-4"
+    sha256 cellar: :any,                 arm64_sequoia: "140519707fce99108346a30f630cbe8d10d675f3d7b4de25147b67db657c8bd6"
+    sha256 cellar: :any,                 arm64_sonoma:  "4b9210ef141fe1fc8f64141971e35036d674801cc16231d70d1ff3bfa8f99869"
+    sha256 cellar: :any,                 ventura:       "951aa4393f9434d0ab05ee9de5de1d3659e960d23ec2dd36c0d8bc7623d331b9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7376dec53a705ba4c704905efec822394a2ca83b5a380dbc9b55e51f309f3495"
   end
 
   def name_version
