@@ -6,6 +6,11 @@ class EsopipeForsRecipes < Formula
   license "GPL-2.0-or-later"
   revision 4
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?fors-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-fors-recipes-5.6.5-7_4"
     sha256 arm64_sequoia: "2d0cae62b5a03a0980500f238f3496a409c108a29d60be8f3c13ca1ee90ab50d"
@@ -16,11 +21,6 @@ class EsopipeForsRecipes < Formula
 
   def name_version
     "fors-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?fors-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

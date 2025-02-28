@@ -6,6 +6,11 @@ class EsopipeEsotkRecipes < Formula
   license "GPL-2.0-or-later"
   revision 4
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?esotk-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-esotk-recipes-0.9.7-1_4"
     sha256 cellar: :any,                 arm64_sequoia: "caf29f6824c2d3cfd494d591b387842023cedf8edfd6b67df0f15728f0ec7b9c"
@@ -16,11 +21,6 @@ class EsopipeEsotkRecipes < Formula
 
   def name_version
     "esotk-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?esotk-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

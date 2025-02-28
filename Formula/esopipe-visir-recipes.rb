@@ -6,6 +6,11 @@ class EsopipeVisirRecipes < Formula
   license "GPL-2.0-or-later"
   revision 3
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?visir-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-visir-recipes-4.4.5_3"
     sha256 arm64_sequoia: "55b3185e58258d174acdc403006cc0b01c5242e06a8379caa740a0c1e5ccc913"
@@ -16,11 +21,6 @@ class EsopipeVisirRecipes < Formula
 
   def name_version
     "visir-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?visir-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

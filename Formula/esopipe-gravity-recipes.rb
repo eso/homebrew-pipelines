@@ -6,6 +6,11 @@ class EsopipeGravityRecipes < Formula
   license "GPL-2.0-or-later"
   revision 3
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?gravity-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-gravity-recipes-1.7.0-1_3"
     sha256 cellar: :any,                 arm64_sequoia: "5030025cd6e1c591cbbd45462bce63bdf179f611519fb4492dada938fc86d5ab"
@@ -16,11 +21,6 @@ class EsopipeGravityRecipes < Formula
 
   def name_version
     "gravity-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?gravity-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

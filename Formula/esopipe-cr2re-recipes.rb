@@ -6,6 +6,11 @@ class EsopipeCr2reRecipes < Formula
   license "GPL-2.0-or-later"
   revision 3
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?cr2re-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-cr2re-recipes-1.4.4_3"
     sha256 cellar: :any,                 arm64_sequoia: "23c29b3613203fc5c712576f8028df4dadffddf9a981730de0ad19d638f6ac56"
@@ -16,11 +21,6 @@ class EsopipeCr2reRecipes < Formula
 
   def name_version
     "cr2re-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?cr2re-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

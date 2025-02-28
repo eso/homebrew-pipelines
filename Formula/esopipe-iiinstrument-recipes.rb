@@ -6,6 +6,11 @@ class EsopipeIiinstrumentRecipes < Formula
   license "GPL-2.0-or-later"
   revision 3
 
+  livecheck do
+    url "https://ftp.eso.org/pub/dfs/pipelines/instruments/iiinstrument/"
+    regex(/href=.*?iiinstrument-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-iiinstrument-recipes-0.1.14-50_3"
     sha256 cellar: :any,                 arm64_sequoia: "fe3ec390b9f120d84f303d1e566b34e9ea51590d9970cf503e1c7868d9040473"
@@ -16,11 +21,6 @@ class EsopipeIiinstrumentRecipes < Formula
 
   def name_version
     "iiinstrument-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url "https://ftp.eso.org/pub/dfs/pipelines/instruments/iiinstrument/"
-    regex(/href=.*?iiinstrument-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "cpl"

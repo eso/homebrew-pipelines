@@ -6,6 +6,11 @@ class EsopipeErisRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?eris-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-eris-recipes-1.7.0_1"
     sha256 cellar: :any,                 arm64_sequoia: "e6b2d8221f303197de851f36ef359acd5a622cf9f0dc130066a0c3bed80bd2fd"
@@ -16,11 +21,6 @@ class EsopipeErisRecipes < Formula
 
   def name_version
     "eris-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?eris-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

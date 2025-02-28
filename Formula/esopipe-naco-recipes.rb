@@ -6,6 +6,11 @@ class EsopipeNacoRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?naco-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-naco-recipes-4.4.13-1_1"
     sha256 cellar: :any,                 arm64_sequoia: "62dd0240dc2e144c7b6896e3f3bf6f1f9b1b2a751c04c0655eba7b76735551e8"
@@ -16,11 +21,6 @@ class EsopipeNacoRecipes < Formula
 
   def name_version
     "naco-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?naco-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

@@ -6,6 +6,11 @@ class EsopipeXshooRecipes < Formula
   license "GPL-2.0-or-later"
   revision 4
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?xshoo-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-xshoo-recipes-3.6.8_4"
     sha256 cellar: :any,                 arm64_sequoia: "b6a5d2d4658c31c5e1d88037088e11094053db90f86403ea2d9b097f3b614ef5"
@@ -16,11 +21,6 @@ class EsopipeXshooRecipes < Formula
 
   def name_version
     "xshoo-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?xshoo-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

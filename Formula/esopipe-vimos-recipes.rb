@@ -6,6 +6,11 @@ class EsopipeVimosRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?vimos-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-vimos-recipes-4.1.10_1"
     sha256 cellar: :any,                 arm64_sequoia: "b778973f2931b598891b08a0abb532e4c74fd1a028407c02c293261134aef9c1"
@@ -16,11 +21,6 @@ class EsopipeVimosRecipes < Formula
 
   def name_version
     "vimos-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?vimos-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

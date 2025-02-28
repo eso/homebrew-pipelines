@@ -6,6 +6,11 @@ class EsopipeDetmonRecipes < Formula
   license "GPL-2.0-or-later"
   revision 4
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?detmon-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-detmon-recipes-1.3.14_4"
     sha256 cellar: :any,                 arm64_sequoia: "03ee0cddb20800d23b22a982e81905cb02f04c2b554dc23d0bddde3cb5f563b3"
@@ -16,11 +21,6 @@ class EsopipeDetmonRecipes < Formula
 
   def name_version
     "detmon-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?detmon-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

@@ -6,6 +6,11 @@ class EsopipeNirpsRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?nirps-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-nirps-recipes-3.3.0_1"
     sha256 arm64_sequoia: "001703c821b8aaa2a59b11a07dcfdc072440a41a5551d1bac9a8a64b836118dd"
@@ -16,11 +21,6 @@ class EsopipeNirpsRecipes < Formula
 
   def name_version
     "nirps-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?nirps-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

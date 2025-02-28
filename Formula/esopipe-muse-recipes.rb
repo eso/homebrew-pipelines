@@ -6,6 +6,11 @@ class EsopipeMuseRecipes < Formula
   license "GPL-2.0-or-later"
   revision 4
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?muse-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-muse-recipes-2.10.10_4"
     sha256 cellar: :any,                 arm64_sequoia: "fb20e5b9676bd5ed35bd77a2e82b5996956d991dadb7ad868ff87a9396c77f3e"
@@ -16,11 +21,6 @@ class EsopipeMuseRecipes < Formula
 
   def name_version
     "muse-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?muse-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

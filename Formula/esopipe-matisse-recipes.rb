@@ -6,6 +6,11 @@ class EsopipeMatisseRecipes < Formula
   license "GPL-2.0-or-later"
   revision 3
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?matisse-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-matisse-recipes-2.0.2-1_3"
     sha256 cellar: :any,                 arm64_sequoia: "0083873acd391a4703ca35c6462069a39f5776024da61aca422ec6938f63b604"
@@ -16,11 +21,6 @@ class EsopipeMatisseRecipes < Formula
 
   def name_version
     "matisse-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?matisse-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

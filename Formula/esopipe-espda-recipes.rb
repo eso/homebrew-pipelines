@@ -6,6 +6,11 @@ class EsopipeEspdaRecipes < Formula
   license "GPL-2.0-or-later"
   revision 3
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?espda-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-espda-recipes-1.3.8_3"
     sha256 cellar: :any,                 arm64_sequoia: "61e8dfb783cbef9beabc68af89750c7cf55827a891e947cb8f83d47643a45464"
@@ -16,11 +21,6 @@ class EsopipeEspdaRecipes < Formula
 
   def name_version
     "espda-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?espda-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

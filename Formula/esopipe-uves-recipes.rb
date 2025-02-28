@@ -6,6 +6,11 @@ class EsopipeUvesRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?uves-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-uves-recipes-6.4.10_1"
     sha256 cellar: :any,                 arm64_sequoia: "0a79b58d62b6eec5185560802d6887ee81789c55a3f09f38232e71ba060c7778"
@@ -16,11 +21,6 @@ class EsopipeUvesRecipes < Formula
 
   def name_version
     "uves-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?uves-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

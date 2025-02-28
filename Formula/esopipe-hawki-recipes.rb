@@ -6,6 +6,11 @@ class EsopipeHawkiRecipes < Formula
   license "GPL-2.0-or-later"
   revision 4
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?hawki-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-hawki-recipes-2.5.8_4"
     sha256 cellar: :any,                 arm64_sequoia: "4b790f096f2c842b40304e3a440bc7f0194c5dede996e765ec27d8e02c169ade"
@@ -16,11 +21,6 @@ class EsopipeHawkiRecipes < Formula
 
   def name_version
     "hawki-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?hawki-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

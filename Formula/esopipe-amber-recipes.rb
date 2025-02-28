@@ -6,6 +6,11 @@ class EsopipeAmberRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?amber-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-amber-recipes-4.4.5-1_1"
     sha256 cellar: :any,                 arm64_sequoia: "6bacd2aedb5e00f27be7fbddcaa16394888e2bb283212048103d405f001c5252"
@@ -16,11 +21,6 @@ class EsopipeAmberRecipes < Formula
 
   def name_version
     "amber-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?amber-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

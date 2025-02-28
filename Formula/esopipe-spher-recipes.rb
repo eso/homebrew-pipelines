@@ -6,6 +6,11 @@ class EsopipeSpherRecipes < Formula
   license "GPL-2.0-or-later"
   revision 3
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?spher-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-spher-recipes-0.56.0_3"
     sha256 cellar: :any,                 arm64_sequoia: "65c16b86179d5c78328afd0ef37c937681dda81884b90209d8dc9534061566d6"
@@ -16,11 +21,6 @@ class EsopipeSpherRecipes < Formula
 
   def name_version
     "spher-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?spher-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

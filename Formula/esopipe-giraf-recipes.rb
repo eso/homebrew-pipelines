@@ -6,6 +6,11 @@ class EsopipeGirafRecipes < Formula
   license "GPL-2.0-or-later"
   revision 4
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?giraf-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-giraf-recipes-2.16.12_4"
     sha256 cellar: :any,                 arm64_sequoia: "9e8c40b0fb3d8007ea8807379973dbb38d54a29d75cf1624bdabdea0620a3df8"
@@ -16,11 +21,6 @@ class EsopipeGirafRecipes < Formula
 
   def name_version
     "giraf-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?giraf-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

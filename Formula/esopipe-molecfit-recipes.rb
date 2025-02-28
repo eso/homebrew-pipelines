@@ -6,6 +6,11 @@ class EsopipeMolecfitRecipes < Formula
   license "GPL-2.0-or-later"
   revision 3
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?molecfit-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-molecfit-recipes-4.3.3_3"
     sha256 cellar: :any,                 arm64_sequoia: "7d3fbcec7a029298aa8de9d33be00311dabd99d764169109b5a35461a4b49198"
@@ -16,11 +21,6 @@ class EsopipeMolecfitRecipes < Formula
 
   def name_version
     "molecfit-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?molecfit-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

@@ -6,6 +6,11 @@ class EsopipeHarpsRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?harps-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-harps-recipes-3.3.0_1"
     sha256 arm64_sequoia: "b35b9ade27bc8680395bdad007130c6dc579f50ea4528170b7527ed0e0ff5635"
@@ -16,11 +21,6 @@ class EsopipeHarpsRecipes < Formula
 
   def name_version
     "harps-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?harps-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

@@ -6,6 +6,11 @@ class EsopipeKmosRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?kmos-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-kmos-recipes-4.4.8_1"
     sha256 cellar: :any,                 arm64_sequoia: "9526747eba7432e4a8c3f13d5126fe2cd3295a2436fb83282d66a2e17af526b7"
@@ -16,11 +21,6 @@ class EsopipeKmosRecipes < Formula
 
   def name_version
     "kmos-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?kmos-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

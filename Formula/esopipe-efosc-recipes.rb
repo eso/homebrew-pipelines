@@ -6,6 +6,11 @@ class EsopipeEfoscRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?efosc-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-efosc-recipes-2.3.9-2_1"
     sha256 arm64_sequoia: "f26fc2df6f60d8cca0736b9ce3329db8c324182513f0ef3ec26fbdade249ba50"
@@ -16,11 +21,6 @@ class EsopipeEfoscRecipes < Formula
 
   def name_version
     "efosc-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?efosc-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

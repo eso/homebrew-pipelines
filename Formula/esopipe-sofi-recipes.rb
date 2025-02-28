@@ -6,6 +6,11 @@ class EsopipeSofiRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?sofi-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-sofi-recipes-1.5.16_1"
     sha256 cellar: :any,                 arm64_sequoia: "21ce079eaee4f5df5e752d7c4f106a7914ab6f0bdefc8ddfebee3f9d066cd54c"
@@ -16,11 +21,6 @@ class EsopipeSofiRecipes < Formula
 
   def name_version
     "sofi-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?sofi-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build

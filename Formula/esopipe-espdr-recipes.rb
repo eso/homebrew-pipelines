@@ -6,6 +6,11 @@ class EsopipeEspdrRecipes < Formula
   license "GPL-2.0-or-later"
   revision 1
 
+  livecheck do
+    url :homepage
+    regex(/href=.*?espdr-kit-(\d+(?:[.-]\d+)+)\.t/i)
+  end
+
   bottle do
     root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-espdr-recipes-3.3.0_1"
     sha256 arm64_sequoia: "2542a59815c7f886ec647322a96898141246c5e8365996f531dfa84f1fe780e8"
@@ -16,11 +21,6 @@ class EsopipeEspdrRecipes < Formula
 
   def name_version
     "espdr-#{version.major_minor_patch}"
-  end
-
-  livecheck do
-    url :homepage
-    regex(/href=.*?espdr-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
   depends_on "pkgconf" => :build
