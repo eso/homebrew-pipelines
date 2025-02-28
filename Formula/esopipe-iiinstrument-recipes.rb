@@ -23,6 +23,7 @@ class EsopipeIiinstrumentRecipes < Formula
   end
 
   depends_on "cpl"
+  depends_on "erfa"
   depends_on "esorex"
   depends_on "gsl"
 
@@ -34,6 +35,7 @@ class EsopipeIiinstrumentRecipes < Formula
                             "--disable-dependency-tracking",
                             "--disable-silent-rules",
                             "--with-cpl=#{Formula["cpl"].prefix}",
+                            "--with-erfa=#{Formula["erfa"].prefix}",
                             "--with-gsl=#{Formula["gsl"].prefix}"
       system "make", "install"
     end
