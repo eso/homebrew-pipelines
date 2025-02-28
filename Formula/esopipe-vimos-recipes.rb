@@ -11,11 +11,11 @@ class EsopipeVimosRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-vimos-recipes-4.1.10_1"
-    sha256 cellar: :any,                 arm64_sequoia: "b778973f2931b598891b08a0abb532e4c74fd1a028407c02c293261134aef9c1"
-    sha256 cellar: :any,                 arm64_sonoma:  "df43e88a0acb3f8c264667e63ef27b32dc2005338c12155b8d30ac62d732f18b"
-    sha256 cellar: :any,                 ventura:       "5ba571bf18bf4dc0d88052452386a75529ea49bf841523327685fa670b1828c2"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8122ad71ebe51b8979f712e4fd7c8029accbbf88878c0f4dba995188d359ec33"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-vimos-recipes-4.1.12-5"
+    sha256 cellar: :any,                 arm64_sequoia: "fb628ca1f6d672c7a5953210e524ea40f0776d3273e114bcb31551b29d1c6164"
+    sha256 cellar: :any,                 arm64_sonoma:  "df575a1c348306b268f0afcea206591f1f5f3b522ee0dbe620f24278d283d749"
+    sha256 cellar: :any,                 ventura:       "2e03d070e5f9bed171e8a2be27272efc0cb5bd7018c6993a357de37280b22212"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "940a4f2c9cc2681ea6a4ef13b535476550a42ffc33de11621dc2296d85070f85"
   end
 
   def name_version
