@@ -11,11 +11,11 @@ class EsopipeKmosRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-kmos-recipes-4.4.8-6"
-    sha256 cellar: :any,                 arm64_sequoia: "f8bfa44357abafde3043cfaca94fa9bbcdb655e3573fbd931e85ac0b8f2e2300"
-    sha256 cellar: :any,                 arm64_sonoma:  "2a350a19845091711ee2b4e5fe368987da922e888c89a0c3a159ed32a9e219ff"
-    sha256 cellar: :any,                 ventura:       "423cb8bef164c35d16ff1086a7264a70a23d5ed82622e729baaf2f9bbe381c5a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d6904d478192679eda9686c2370c59f9a6a0095e72917be158dc9c338d1f388f"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-kmos-recipes-4.4.8-7"
+    sha256 cellar: :any,                 arm64_sequoia: "79f2721441f3e09e476caca19be7b3618c9d13ba4c7cd9baf08c321e14944865"
+    sha256 cellar: :any,                 arm64_sonoma:  "099cb204e98bbc7ff80e440e35ed9a36f0bab050fe602efc1291988dc01f3b08"
+    sha256 cellar: :any,                 ventura:       "8f06780b7e7f4ef71d4a0a97ed10c024ca1a0151dec516c0647a6b9797780ea1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6c775bfb2a47bc068fe936b86584d3a9963cf09486ef0d189436a368e83ccb64"
   end
 
   def name_version
