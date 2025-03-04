@@ -11,11 +11,11 @@ class EsopipeXshooRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-xshoo-recipes-3.6.8-6"
-    sha256 cellar: :any,                 arm64_sequoia: "7b040dd856280dc249cee1e53028ce91de7db36da3c70b2684453b6e825a7b2e"
-    sha256 cellar: :any,                 arm64_sonoma:  "3d7c73f46e6bf1ae7dc01bf7cc7c32139661b1929c4bcd9a297b93537a3f9d94"
-    sha256 cellar: :any,                 ventura:       "bb77d8e9a7978ab4de2942c05c1ef7e33ce0349712021a37d4ba61bbf32863dd"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "09beda85a76ec7fbb66f0a30510345be4d074eb9fd3ee7f0720d773e67329662"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-xshoo-recipes-3.6.8-7"
+    sha256 cellar: :any,                 arm64_sequoia: "d4c7a5315b14ddf1c258c428f78cce45d0b2118c98a29adddfdbbcf1402f42ee"
+    sha256 cellar: :any,                 arm64_sonoma:  "eefb44616423f0a4314e7828a2cfe4e1294916eb8adde2ee78a97712c164ed17"
+    sha256 cellar: :any,                 ventura:       "83f5689ac442d4460d9309259e3e21e0685cd608b06064a16a5f95f2f1306199"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1239e951911a3667a190c7e6dcd1a09d084dbd6a120354ac06c0aeed4aada146"
   end
 
   def name_version
