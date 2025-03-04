@@ -1,10 +1,9 @@
 class EsopipeVcamRecipes < Formula
   desc "ESO VIRCAM instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/vircam/vcam-kit-2.3.14.tar.gz"
-  sha256 "d99dc912322f757997b9adf731feeb25b515220500f3efd46deed88ead34f176"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/vircam/vcam-kit-2.3.15-5.tar.gz"
+  sha256 "769a33a5680ecf8b203f94d039baf975a9d6518bd14162d1b16c13701758d693"
   license "GPL-2.0-or-later"
-  revision 1
 
   livecheck do
     url :homepage
