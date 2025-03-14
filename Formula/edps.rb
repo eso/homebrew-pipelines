@@ -22,6 +22,7 @@ class Edps < Formula
 
   depends_on "cmake" => :build
   depends_on "ninja" => :build
+  depends_on "rust" => :build
   depends_on "lapack"
   depends_on "libyaml"
   depends_on "openblas"
