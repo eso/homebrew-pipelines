@@ -13,11 +13,11 @@ class Adari < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/adari-0.8.2"
-    sha256 cellar: :any,                 arm64_sequoia: "d95aabd481d15385752a50e4b507d762fd638d5f8fce6a394f20a210223edc81"
-    sha256 cellar: :any,                 arm64_sonoma:  "649dd28e83af1dfff403f756614c20b19e171e929f46c67f41d671ff814fc052"
-    sha256 cellar: :any,                 ventura:       "495e8d4883d8988947dbbfc740c5d23e0532c2ee8e217cd2a9b37ccfe9ed896e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e2248b939dbb44c0591d614190ac593ce604c2f9f5b5dca67c943528e17d8e58"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/adari-1.0.0"
+    sha256 cellar: :any,                 arm64_sequoia: "d900dff3312aa0fc16cd703901e959e3a5dc9cb34133ee9870696c5080c48c8c"
+    sha256 cellar: :any,                 arm64_sonoma:  "c740a4014ae23edc47cf2a895077e7c8dcf9aa3e4d27b9f8327e43abd064c713"
+    sha256 cellar: :any,                 ventura:       "3416ca2b26df777e1346ce486c12666d32f243fe3189c8b268ac50a04584f13d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "fcd5729a6ed75fb6c15f53aa071940c76f997e868010325216df2258612616e8"
   end
 
   depends_on "cmake" => :build
