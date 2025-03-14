@@ -11,11 +11,11 @@ class EsopipeEfoscRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-efosc-recipes-2.3.9-13"
-    sha256 arm64_sequoia: "9041f0b57ec284bd02bcfc15fa20062a034036f03580b572f91d46d10bafee93"
-    sha256 arm64_sonoma:  "5ef6af333a4afdda5a0095ce84c8fe9a7f4c637ba85b8e9f26806f2ff0336651"
-    sha256 ventura:       "94ab7afb56cc322a2ca88beeebeb6489b55fc4aae504a726a76e9baa569ef72c"
-    sha256 x86_64_linux:  "ed0e46e713a94407081e1682e2e7bfc87c89bb22c0efe76198a74014323e84b9"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-efosc-recipes-2.3.10"
+    sha256 arm64_sequoia: "b6af4de4c96709fe728de7ac099741b43dd5304098a42bae81467289b330ae16"
+    sha256 arm64_sonoma:  "e3174d82709ab16fc54200567d82a62e5c31a09cb3d753ff936b218d0a41bdaa"
+    sha256 ventura:       "ccfe442dacff73ba4852207746f280bd34c4e517c127df69bfbcb489973a973d"
+    sha256 x86_64_linux:  "a7716174c239b2615668b9d37b4c172b008016fcd1b6fbf4f91d9f6cddf925fe"
   end
 
   def name_version
