@@ -1,8 +1,8 @@
 class EsopipeVimos < Formula
   desc "ESO VIMOS instrument pipeline (data static)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/vimos/vimos-kit-4.1.12-5.tar.gz"
-  sha256 "65d41c067a177674aa7c10794139b2b23e5b47bfe7278bcbfda67a8ef711b658"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/vimos/vimos-kit-4.1.12-6.tar.gz"
+  sha256 "0f78a74443d7f6b956f050cad78301e8e8db7a11ab7dfc8610668d4de65e5e3e"
   license "GPL-2.0-or-later"
 
   livecheck do

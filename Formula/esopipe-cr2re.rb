@@ -1,8 +1,8 @@
 class EsopipeCr2re < Formula
   desc "ESO CR2RES instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/cr2res/cr2re-kit-1.4.4.tar.gz"
-  sha256 "bd4a4d1025ea98ed5372680f877c3b20521109600436c5621e876e994f6f6152"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/cr2res/cr2re-kit-1.6.7.tar.gz"
+  sha256 "f2ff405637b050c50f4d9ab1423f044be3d5b2a2b307069d46dde68ee4df13e4"
   license "GPL-2.0-or-later"
 
   livecheck do

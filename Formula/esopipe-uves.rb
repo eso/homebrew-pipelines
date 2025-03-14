@@ -1,8 +1,8 @@
 class EsopipeUves < Formula
   desc "ESO UVES instrument pipeline (static data)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/uves/uves-kit-6.4.10-4.tar.gz"
-  sha256 "0350faaf8d957b71e5f5b951987124c91541dcf41f680210e4d8be547ff49faf"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/uves/uves-kit-6.5.2.tar.gz"
+  sha256 "54c4dc61f257d0049ffb016b64c50900795315ff8082d78f1915e377a352c8ad"
   license "GPL-2.0-or-later"
 
   livecheck do
