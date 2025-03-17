@@ -61,6 +61,9 @@ class EsopipeForsRecipes < Formula
       if workflow.read.include?("$ROOT_DATA_DIR/reflex_input")
         inreplace workflow, "$ROOT_DATA_DIR/reflex_input", HOMEBREW_PREFIX/"share/esopipes/datademo"
       end
+      if workflow.read.include?("RAW_DATA_PATH_TO_REPLACE/")
+        inreplace workflow, "RAW_DATA_PATH_TO_REPLACE/", HOMEBREW_PREFIX/"share/esopipes/datademo"
+      end
       cp workflow, workflow_dir_2
     end
   end
