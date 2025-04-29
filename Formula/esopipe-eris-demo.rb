@@ -1,8 +1,8 @@
 class EsopipeErisDemo < Formula
   desc "ESO ERIS instrument pipeline (demo data)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/eris/eris-demo-reflex-0.5.tar.gz"
-  sha256 "e71c383dd6e148e10c72e445e93623a51e34d7451aad0a5c1c41c78b1c403cd9"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/eris/eris-demo-reflex-0.6.tar.gz"
+  sha256 "ef91ab22abf05198f1c17cabf0bdfb7b5328602534ccff603faa3e866f460a4e"
   license "GPL-2.0-or-later"
 
   livecheck do
