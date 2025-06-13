@@ -12,11 +12,11 @@ class EsopipeHawkiRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-hawki-recipes-2.5.11"
-    sha256 cellar: :any,                 arm64_sequoia: "92d6fa23787ff6c4036433ada9461655d93fcbd364423e50977bf749f6e55926"
-    sha256 cellar: :any,                 arm64_sonoma:  "3c01c7950e9bee5a2a6482b00620e9eab6ea9328aa8bf7d810d5cc5e1857fe21"
-    sha256 cellar: :any,                 ventura:       "2c0dd3ce73c75fcd1c0b21ce16f3c1b81e16dce54ca1a1d648f7632d0cbc6984"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b7f04d77ca93138e1537a0301e836cb1566e52b26cc220ceb53a624486f69d10"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-hawki-recipes-2.5.11_1"
+    sha256 cellar: :any,                 arm64_sequoia: "7c6a24f9ecea16ba1af4097182ad1272d1bea05d34fe401be395f53e063d16ab"
+    sha256 cellar: :any,                 arm64_sonoma:  "312a2084a96e1fb46e58a7ce4440abcb6306fd50915bfbef3ae67b13c0f4fa25"
+    sha256 cellar: :any,                 ventura:       "f75bfdfffdce19e3c3d28c79bf4a8cbd713f6ce989b682f355ca15df14fde6fd"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7af53a7bb3579b9d37a538154f3bf6f62dc76ffbfd808bcc838e396eadc5b193"
   end
 
   def name_version
