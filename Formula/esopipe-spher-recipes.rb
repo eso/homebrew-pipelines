@@ -4,6 +4,7 @@ class EsopipeSpherRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/sphere/spher-kit-0.57.6.tar.gz"
   sha256 "09ec60b312e6771f6977f00e73b13788e71aea0ef5723400c2f475f2a1cbe3d9"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url :homepage
