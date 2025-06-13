@@ -11,14 +11,6 @@ class EsopipeKmosRecipes < Formula
     regex(/href=.*?kmos-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
-  bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-kmos-recipes-4.5.1_1"
-    sha256 cellar: :any,                 arm64_sequoia: "0106516c13c51343b0bd55c0fadb1affda0589ed0a4fdade56d430aa44568264"
-    sha256 cellar: :any,                 arm64_sonoma:  "e4b28b9b364eaa5bebdaf7852f1e05cb4dd678263ba05f4e9108d36cdd2a720b"
-    sha256 cellar: :any,                 ventura:       "e7e2dedcbc2e92a888237a235bbe9b8fd48c01666121f3a241f9eb9a92a6885b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4f1433e53229ce54e63f68e0ddc3eaf779b496b5ee4f028f37c82d1ae19a67e3"
-  end
-
   def name_version
     "kmos-#{version.major_minor_patch}"
   end

@@ -11,14 +11,6 @@ class EsopipeVimosRecipes < Formula
     regex(/href=.*?vimos-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
-  bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-vimos-recipes-4.1.13-1_1"
-    sha256 cellar: :any,                 arm64_sequoia: "0849b21785ed989cbac82bc20d4a4ad9373147c827f515999f7fbb1a0bf002c6"
-    sha256 cellar: :any,                 arm64_sonoma:  "90bce813c4e2691cb56e021244b2ca3b716d2f7cae75dbd35cd8f2000917b53d"
-    sha256 cellar: :any,                 ventura:       "1a628056d7aa6f4c379f40617afd2e120c557a0642e9457c00d43f757c062f71"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f2c30497421b58cce15a5b08c70e6e3f5e33442d43f567fcb63e93ed79477101"
-  end
-
   def name_version
     "vimos-#{version.major_minor_patch}"
   end
