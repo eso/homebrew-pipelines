@@ -4,6 +4,7 @@ class EsopipeEsotkRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/esotk/esotk-kit-0.9.8-10.tar.gz"
   sha256 "cc2c578a96f88ff7e287a13d6a8d1e4ecb05c545c80c973fb95889135cfea942"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url :homepage
