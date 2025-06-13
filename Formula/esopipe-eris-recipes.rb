@@ -11,14 +11,6 @@ class EsopipeErisRecipes < Formula
     regex(/href=.*?eris-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
-  bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-eris-recipes-1.8.1_1"
-    sha256 cellar: :any,                 arm64_sequoia: "99f28c4132433170d9d73a6bbdad2f7e9547075a0e21fefa9e553689d2a55116"
-    sha256 cellar: :any,                 arm64_sonoma:  "578d01f87099a1031627b3ff49498f00ad3dad2aa2871276dd02d91d29a5ecdd"
-    sha256 cellar: :any,                 ventura:       "e56f008f8c8ed7c1620648b0ffa1c6414ae7e3fcefdcb3b667e80021337337fe"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "85105ec9a00483f7afccc7c7f16fffd57f23e3c6652e37d47368c311a05546cb"
-  end
-
   def name_version
     "eris-#{version.major_minor_patch}"
   end

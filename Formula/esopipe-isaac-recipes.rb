@@ -11,14 +11,6 @@ class EsopipeIsaacRecipes < Formula
     regex(/href=.*?isaac-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
-  bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-isaac-recipes-6.2.5-7_1"
-    sha256 cellar: :any,                 arm64_sequoia: "c584b45a5a03ef5ba22e0c212b70bc279c2d4082be41b23316a556f7499e3635"
-    sha256 cellar: :any,                 arm64_sonoma:  "b2726715e5f8bf32be51b038132ff482c652f4b9b498d73225097647264a89ea"
-    sha256 cellar: :any,                 ventura:       "340bacb7717277d49e2539763d1b9ba57ee97dc2c9eb14ddd9dd32888a407d67"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d2c2dcd386e112390675afeb616388b913414f99eb3b9bbf60ad0a05f896602a"
-  end
-
   def name_version
     "isaac-#{version.major_minor_patch}"
   end

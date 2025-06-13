@@ -11,14 +11,6 @@ class EsopipeAmberRecipes < Formula
     regex(/href=.*?amber-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
-  bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-amber-recipes-4.4.5-8_1"
-    sha256 cellar: :any,                 arm64_sequoia: "517de79240c7fe952900fca20ed99e7e8bfe2c0627fa7a28e3fb8bb899b438af"
-    sha256 cellar: :any,                 arm64_sonoma:  "13443d17e80aa20023e34b921d33549dee39e47603ff1a4c44519968cb65d811"
-    sha256 cellar: :any,                 ventura:       "f835a087d0ba815be81a59eb4984b9714bbe964268f9facdc4c065c79f85b2ee"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b23e61a98beadf8fe352eee6d0245684bb051865d69b71e26e328e927faa8f93"
-  end
-
   def name_version
     "amber-#{version.major_minor_patch}"
   end
