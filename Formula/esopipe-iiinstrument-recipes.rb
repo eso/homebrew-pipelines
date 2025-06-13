@@ -4,6 +4,7 @@ class EsopipeIiinstrumentRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/iiinstrument/iiinstrument-kit-0.1.15-3.tar.gz"
   sha256 "ba245b8d0563cd19bafdcf0cee6889359b81dfa68e9834d934c451be97a10b98"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url "https://ftp.eso.org/pub/dfs/pipelines/instruments/iiinstrument/"
