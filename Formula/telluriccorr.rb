@@ -12,11 +12,11 @@ class Telluriccorr < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/telluriccorr-4.3.3_1"
-    sha256 arm64_sequoia: "b8ee35e67d548756763938599ec7777544d13325f136197ad4990e4fb47c1604"
-    sha256 arm64_sonoma:  "f920f2d2cc518f40c77eec462389b137e32f48811668978014f282d7685739a6"
-    sha256 ventura:       "dba77e6b65e387537ec0ac4895b21cd7ddd9f257bffbd3c577554a4c2701eeea"
-    sha256 x86_64_linux:  "5a1db23d49cab9b83e8ee8b989105ec95608f318b25cf7c7a8757242879f34bd"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/telluriccorr-4.3.3_2"
+    sha256 arm64_sequoia: "ff5c68a1600225a1800b7efc17b94c0ccb13f277b0a7793d4d7c94cd27380cd2"
+    sha256 arm64_sonoma:  "4847280cfcfdedfc97845b6dce0ba538f6a8f0fbdc82d0636711db1fbde252a0"
+    sha256 ventura:       "b031bc082cc47f7bdd4589ed1f86af6704569ca89487cb2e19be16327078f62d"
+    sha256 x86_64_linux:  "524142b5d3d8698fc9ab48c78d9e55a1bc6385608d3a029dcb7d3a9e8b9457e8"
   end
 
   depends_on "cpl@7.3.2"
