@@ -4,7 +4,7 @@ class EsopipeVisirRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/visir/visir-kit-4.5.1.tar.gz"
   sha256 "3bbba703f01c0bb9752e1738e7727abf65e341ad2f1c9e42974e0e7f0182139c"
   license "GPL-2.0-or-later"
-  revision 1
+  revision 2
 
   livecheck do
     url :homepage
