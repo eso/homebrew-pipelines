@@ -17,7 +17,7 @@ class EsopipeMidiRecipes < Formula
 
   depends_on "pkgconf" => :build
   depends_on "cfitsio"
-  depends_on "cpl"
+  depends_on "cpl@7.3.2"
   depends_on "esorex"
 
   uses_from_macos "curl"
@@ -27,7 +27,7 @@ class EsopipeMidiRecipes < Formula
     cd name_version.to_s do
       system "./configure", "--prefix=#{prefix}",
                             "--with-cfitsio=#{Formula["cfitsio"].prefix}",
-                            "--with-cpl=#{Formula["cpl"].prefix}"
+                            "--with-cpl=#{Formula["cpl@7.3.2"].prefix}"
       system "make", "install"
     end
   end

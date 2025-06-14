@@ -17,7 +17,7 @@ class EsopipeSpherRecipes < Formula
 
   depends_on "pkgconf" => :build
   depends_on "cfitsio"
-  depends_on "cpl"
+  depends_on "cpl@7.3.2"
   depends_on "erfa"
   depends_on "esorex"
   depends_on "gsl"
@@ -33,7 +33,7 @@ class EsopipeSpherRecipes < Formula
     cd name_version.to_s do
       system "./configure", "--prefix=#{prefix}",
                             "--with-cfitsio=#{Formula["cfitsio"].prefix}",
-                            "--with-cpl=#{Formula["cpl"].prefix}",
+                            "--with-cpl=#{Formula["cpl@7.3.2"].prefix}",
                             "--with-erfa=#{Formula["erfa"].prefix}",
                             "--with-curl=#{Formula["curl"].prefix}",
                             "--with-gsl=#{Formula["gsl"].prefix}"
