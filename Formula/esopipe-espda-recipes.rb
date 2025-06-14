@@ -11,6 +11,14 @@ class EsopipeEspdaRecipes < Formula
     regex(/href=.*?espda-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-espda-recipes-1.4.0-3_2"
+    sha256 cellar: :any,                 arm64_sequoia: "cfe4f544879d19e8e4754c6154145e9379938a6f1545f2d27018c5fd870b207a"
+    sha256 cellar: :any,                 arm64_sonoma:  "58e544c54122659430d612f42df007c4b3b97aabbab1aa690884eef0487bd236"
+    sha256 cellar: :any,                 ventura:       "30128cc36a849f415ad245b4cb7ceef50e493c04f7aec1d4f4b3b1209d83a208"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "67294a892e6cf66c66557d2ed781771d668ae0540ae4bac1f03fae70531f913f"
+  end
+
   def name_version
     "espda-#{version.major_minor_patch}"
   end
