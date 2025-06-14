@@ -12,11 +12,11 @@ class Esorex < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esorex-3.13.10_2"
-    sha256 arm64_sequoia: "3fdb4fb32fbabdd3e72a3c17abc5363fd5523c83955a9ffb23197d5d350e5f83"
-    sha256 arm64_sonoma:  "85f4324ad33b4c1ec823199f44028d78298cf757fb007af4a572339f2b213498"
-    sha256 ventura:       "d41a553f4358ebfc0d6f02692a6e23bea8b9abcb87b31b0d21108a13c8ea0009"
-    sha256 x86_64_linux:  "ac0f5df55ae6db4cfa391cbb320cc0a5abf236f116b5d70267262e8b6dc4b82a"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esorex-3.13.10_3"
+    sha256 arm64_sequoia: "4e3e5ca7b90441b4739658603c28850f0ca5cedad7ea779499e0ea128880690b"
+    sha256 arm64_sonoma:  "48195e368aba664236d19a4a02ddd62cfcf83575dacebe5b42cf91873095145a"
+    sha256 ventura:       "668360b7b3b28d06fad1b1407268614c481682f9830c3282ce05b56ea60b4559"
+    sha256 x86_64_linux:  "4e2d17ab7f8cfc2479680e5d9e534d5ef0d85fe8682948edbd164e5cfcf36de7"
   end
 
   depends_on "cpl@7.3.2"
