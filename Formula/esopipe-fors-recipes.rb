@@ -4,7 +4,7 @@ class EsopipeForsRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/fors/fors-kit-5.8.2.tar.gz"
   sha256 "dfba4f6a8e1376629ac5a76ece092711433c1905455afe47cecde759eb8149eb"
   license "GPL-2.0-or-later"
-  revision 1
+  revision 2
 
   livecheck do
     url :homepage
