@@ -11,6 +11,14 @@ class EsopipeMolecfitRecipes < Formula
     regex(/href=.*?molecfit-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-molecfit-recipes-4.4.2-2_2"
+    sha256 cellar: :any,                 arm64_sequoia: "2d8f6723115ae27f1606178be7fe46e7e5a53c0fa8f07c5aefb2719d963fb90f"
+    sha256 cellar: :any,                 arm64_sonoma:  "42122b139b904f2567b68b98959f4b5cde2c3d842d25d18591ca7110d3844525"
+    sha256 cellar: :any,                 ventura:       "1f18cf7ba0df086c544fba4413e0e66342b5ed051a6909cd9ca7d0ebacb93744"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f6bb7bde79a3dd527f8a67405e98d960472e4460e65009d64dd2a0d8c50f8b62"
+  end
+
   def name_version
     "molecfit-#{version.major_minor_patch}"
   end
