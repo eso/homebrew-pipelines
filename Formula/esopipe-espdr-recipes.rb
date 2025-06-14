@@ -4,7 +4,7 @@ class EsopipeEspdrRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/espresso/espdr-kit-3.3.10.tar.gz"
   sha256 "ef8ffefd5ee2724f02b39495845d587f933d5d3f1c1365ffb59c457da56b8e5c"
   license "GPL-2.0-or-later"
-  revision 1
+  revision 2
 
   livecheck do
     url :homepage
