@@ -11,6 +11,14 @@ class EsopipeForsRecipes < Formula
     regex(/href=.*?fors-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-fors-recipes-5.8.2_2"
+    sha256 arm64_sequoia: "b2d06642549592f1c8d33cd4ef1a92fe24a22347b34d1418897052047b573a96"
+    sha256 arm64_sonoma:  "37a1da3fadf185ed8fb6265c4ae9ae4b587e823baed899b7f7dc60a092c55602"
+    sha256 ventura:       "2714b48da337c80f4f1ecf0d59c6e6819a19f71a7a4e6f1807ec35b3ca8c55e7"
+    sha256 x86_64_linux:  "c4dceba0988b782fdfacb9d077e742de0b08fde32c794fcb945b82f90b440d91"
+  end
+
   def name_version
     "fors-#{version.major_minor_patch}"
   end
