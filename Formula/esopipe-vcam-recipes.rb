@@ -11,6 +11,14 @@ class EsopipeVcamRecipes < Formula
     regex(/href=.*?vcam-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-vcam-recipes-2.3.15-6_2"
+    sha256 cellar: :any,                 arm64_sequoia: "125bb2b66abd9d0519165236f8209bb4158edf212295a4a99f4a2754b18e9aa5"
+    sha256 cellar: :any,                 arm64_sonoma:  "ed06475302b865471f6ec037dee79d0bf4f3ac4d5f1c3880e592d89b3d85ee47"
+    sha256 cellar: :any,                 ventura:       "49cb5dd2f397a2a1eba2bd72ace4acf28241f6d1f1d5cf6aaf6edc662fdf5436"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cf31c2b682b64b4ded0ee8aa02fa676dd6d41335a29598faaab5a48b29f29121"
+  end
+
   def name_version
     "vcam-#{version.major_minor_patch}"
   end
