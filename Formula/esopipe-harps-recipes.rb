@@ -4,7 +4,7 @@ class EsopipeHarpsRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/harps/harps-kit-3.3.6.tar.gz"
   sha256 "ecc0dfced96586394016c87e0444e1f35374922b6daccad2be8ff0030335d18a"
   license "GPL-2.0-or-later"
-  revision 1
+  revision 2
 
   livecheck do
     url :homepage
