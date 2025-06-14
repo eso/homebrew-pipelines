@@ -4,7 +4,7 @@ class EsopipeGravityRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/gravity/gravity-kit-1.9.0.tar.gz"
   sha256 "09426dce36ef57d8a92ead67a0f4bf8cf281cb75aa687381808166a717d39134"
   license "GPL-2.0-or-later"
-  revision 1
+  revision 2
 
   livecheck do
     url :homepage
