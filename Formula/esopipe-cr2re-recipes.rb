@@ -11,6 +11,14 @@ class EsopipeCr2reRecipes < Formula
     regex(/href=.*?cr2re-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-cr2re-recipes-1.6.7_2"
+    sha256 cellar: :any,                 arm64_sequoia: "74c2d656e1a9a49c29b42e37d617ca9cb8e0af68f84a89018ea5e68416ad98f1"
+    sha256 cellar: :any,                 arm64_sonoma:  "d0b6c61ceeee7e74509a00eda50696eb1fc18d6758be07d23c6e569f88da094d"
+    sha256 cellar: :any,                 ventura:       "37b81ff854257bc87c78937b6ff8566fe85209ca99e1a38143640e2eea62d69b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5c1f7f222795b802a61b4a39f33008fed47663c44e807e26ee86ea6d0141eda9"
+  end
+
   def name_version
     "cr2re-#{version.major_minor_patch}"
   end
