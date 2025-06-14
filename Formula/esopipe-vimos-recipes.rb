@@ -4,7 +4,7 @@ class EsopipeVimosRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/vimos/vimos-kit-4.1.13-1.tar.gz"
   sha256 "bdf66caf2f61eb710d5d8466f50df8caae24f5e1c71bf9e19e22d9bc9e5cadea"
   license "GPL-2.0-or-later"
-  revision 1
+  revision 2
 
   livecheck do
     url :homepage
