@@ -11,6 +11,14 @@ class EsopipeEfoscRecipes < Formula
     regex(/href=.*?efosc-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-efosc-recipes-2.3.11_2"
+    sha256 arm64_sequoia: "ae00b520e07a8bdce3ddea3a74713db359e54007368e1faa188e695651372870"
+    sha256 arm64_sonoma:  "14028145b1ca59ecf5e69b82e3fc6b00c622620d880cabe823e674af8d2575dc"
+    sha256 ventura:       "8c919f4c7006dea108b7df653f82b6d6a71ec386bfd70ae6dbcac22d2e125903"
+    sha256 x86_64_linux:  "bc3ae1ac9444063a6bdec91fdc67c02ede3704790655afbca0b8d70a16149b78"
+  end
+
   def name_version
     "efosc-#{version.major_minor_patch}"
   end
