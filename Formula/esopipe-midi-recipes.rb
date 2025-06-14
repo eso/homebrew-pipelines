@@ -11,6 +11,14 @@ class EsopipeMidiRecipes < Formula
     regex(/href=.*?midi-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-midi-recipes-2.9.6-7_2"
+    sha256 arm64_sequoia: "add21d59561a29f6880cebcf8dde4beb3bf643a60696aa7ec05d0f9a52e78b33"
+    sha256 arm64_sonoma:  "69e2c0075faebaa18586dd9db45c51396a380b44821f05046bfb8ea88dd5e669"
+    sha256 ventura:       "0e3b7c99a3b93437c044a5c9408b1e175842f7172de0e552aecfdf5be84523a7"
+    sha256 x86_64_linux:  "5a7069deed19e0416477a36ece02e2b76e0dbc3cd65e28a2ba80e17d5d28a425"
+  end
+
   def name_version
     "midi-#{version.major_minor_patch}"
   end
