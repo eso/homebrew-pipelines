@@ -4,7 +4,7 @@ class EsopipeMuseRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/muse/muse-kit-2.10.14-1.tar.gz"
   sha256 "0b1d1a964ad9efe0d14bf1ed7ae874c88d12a12e289587a591a4dc2f9f36ac7b"
   license "GPL-2.0-or-later"
-  revision 1
+  revision 2
 
   livecheck do
     url :homepage
