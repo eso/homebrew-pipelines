@@ -10,7 +10,7 @@ class Esoreflex < Formula
     regex(/href=.*?esoreflex-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
-  depends_on "cpl"
+  depends_on "cpl@7.3.2"
   depends_on "esorex"
   depends_on "openjdk@11"
   depends_on "xterm"
@@ -51,7 +51,7 @@ class Esoreflex < Formula
 
     (prefix/"etc").mkpath
 
-    cp "#{Formula["cpl"].etc}/esorex.rc", "#{prefix}/etc/esoreflex-esorex.rc"
+    cp "#{Formula["cpl@7.3.2"].etc}/esorex.rc", "#{prefix}/etc/esoreflex-esorex.rc"
 
     (prefix/"etc/esoreflex_default_recipe_config.rc").write <<~EOS
       # No default parameters should be specified for recipes under Reflex.
