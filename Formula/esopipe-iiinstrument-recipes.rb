@@ -11,6 +11,14 @@ class EsopipeIiinstrumentRecipes < Formula
     regex(/href=.*?iiinstrument-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-iiinstrument-recipes-0.1.15-3_2"
+    sha256 cellar: :any,                 arm64_sequoia: "ac98d35bbb00bbefec77de2d1c4b8687ad2b7384f947eb9d9feaffb002f9e19d"
+    sha256 cellar: :any,                 arm64_sonoma:  "283201cb4d50f9b81a3660110ae61746942bb1be50321f4973ed54eac2e4444e"
+    sha256 cellar: :any,                 ventura:       "95443c53cb6160f6b8090e3171d883bfa0c18aedcb5a374b7adcf544a23f0374"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8f2f4ca92a8ed63b410d2b45c7ec8aea13a7ba12c2463a785cfd3ada1448b70d"
+  end
+
   def name_version
     "iiinstrument-#{version.major_minor_patch}"
   end
