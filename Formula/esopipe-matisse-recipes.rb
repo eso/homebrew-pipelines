@@ -1,10 +1,9 @@
 class EsopipeMatisseRecipes < Formula
   desc "ESO MATISSE instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/matisse/matisse-kit-2.2.0-5.tar.gz"
-  sha256 "ca482f85356e193add2368eceb0ed6ad2410860dc015c163cce276e0044f132c"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/matisse/matisse-kit-2.2.0-6.tar.gz"
+  sha256 "b7ade32a83426f35d2a0a247a90c5da0e343f37456b473733df423c6218bfec3"
   license "GPL-2.0-or-later"
-  revision 2
 
   livecheck do
     url :homepage
