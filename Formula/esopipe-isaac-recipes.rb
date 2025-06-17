@@ -11,11 +11,11 @@ class EsopipeIsaacRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-isaac-recipes-6.2.5-7_2"
-    sha256 cellar: :any,                 arm64_sequoia: "06aaf6875f0f147fafcf913374f27c4d6bebfc482dc2b275b44b1ddac0ace747"
-    sha256 cellar: :any,                 arm64_sonoma:  "f7bf75ae775f08e5856b07f688bc040059fd6ea7fbc9371eb60164080dea1ea7"
-    sha256 cellar: :any,                 ventura:       "77d08442af69e1ea1ecd299efda663d0878ce777a2d64cc2732b2e5f81a7cb07"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6f9ccfc68766364d0c9d4bb804f6a32c20ded978f7a0866845bdd856c6a4ac2f"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-isaac-recipes-6.2.5-8"
+    sha256 cellar: :any,                 arm64_sequoia: "b9e753d30107a8073f4dbaa82d1e836b78e2f68a1918fb31e79b71cadd7ebb5c"
+    sha256 cellar: :any,                 arm64_sonoma:  "5f6206d0fe8752284f47650c27591b1e42ca2bb7ca2d93496e217af3b0527fe2"
+    sha256 cellar: :any,                 ventura:       "dcd260e2ff64973f796ebf2a6c4946b60eb4f3379b497c31cefcbfc2f92e33b9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "83ec4404211efef02e5063be0a1bbb2b8aa20cdca6da76112283f3b1bf4a8bf7"
   end
 
   def name_version
