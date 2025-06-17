@@ -1,10 +1,9 @@
 class EsopipeIsaacRecipes < Formula
   desc "ESO ISAAC instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/isaac/isaac-kit-6.2.5-7.tar.gz"
-  sha256 "955ed0d28433404569e0f5c5f3dffbf05af7bd42147b6bac2b2a1c64c9efeec0"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/isaac/isaac-kit-6.2.5-8.tar.gz"
+  sha256 "57ce575da9284554cbe0ce44baabca6d8c1066f776b0e1275d6dd4d44bc6c4e9"
   license "GPL-2.0-or-later"
-  revision 2
 
   livecheck do
     url :homepage
