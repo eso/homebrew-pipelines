@@ -1,8 +1,8 @@
 class EsopipeNirps < Formula
   desc "ESO NIRPS instrument pipeline (static data)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/nirps/nirps-kit-3.3.6.tar.gz"
-  sha256 "2ffb561af64cfe868878524863675782c45be1970f89484964da132a58c81c4f"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/nirps/nirps-kit-3.3.6-1.tar.gz"
+  sha256 "148a14dfbb9f16afcd811f98f5b51f89729440f1ec114184e2dbab871d965127"
   license "GPL-2.0-or-later"
 
   livecheck do

@@ -1,8 +1,8 @@
 class EsopipeAmber < Formula
   desc "ESO AMBER instrument pipeline (static data)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/amber/amber-kit-4.4.5-8.tar.gz"
-  sha256 "b2a8576ba2fc8ca620b39db7f4ca652375276a10a984183668e5d8479e0778c5"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/amber/amber-kit-4.4.5-9.tar.gz"
+  sha256 "7b4339232d97267b23aa09e7718599edfeec273cb7f1a3f7821888a217946a4f"
   license "GPL-2.0-or-later"
 
   livecheck do

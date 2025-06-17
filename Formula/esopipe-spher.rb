@@ -1,8 +1,8 @@
 class EsopipeSpher < Formula
   desc "ESO SPHERE instrument pipeline (static data)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/sphere/spher-kit-0.57.6.tar.gz"
-  sha256 "09ec60b312e6771f6977f00e73b13788e71aea0ef5723400c2f475f2a1cbe3d9"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/sphere/spher-kit-0.57.6-1.tar.gz"
+  sha256 "332bf6c93c32da4629b4d74117daf9df02630bdd7b54cded79c4f25a56a0b054"
   license "GPL-2.0-or-later"
 
   livecheck do

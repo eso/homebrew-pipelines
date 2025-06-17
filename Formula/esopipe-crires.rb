@@ -1,8 +1,8 @@
 class EsopipeCrires < Formula
   desc "ESO CRIRES instrument pipeline (static data)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/crires/crire-kit-2.3.19-6.tar.gz"
-  sha256 "48b996d430a528ab6515d5022e26c2a98b5235d4f0a1b1f84f04d47f19918fa3"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/crires/crire-kit-2.3.19-7.tar.gz"
+  sha256 "af479a8a52eddd10b5e343d87003ac9f2ebaca0aa705b880e02f8aeea281bd4d"
   license "GPL-2.0-or-later"
 
   def pipeline
