@@ -11,11 +11,11 @@ class EsopipeCr2reRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-cr2re-recipes-1.6.7_2"
-    sha256 cellar: :any,                 arm64_sequoia: "74c2d656e1a9a49c29b42e37d617ca9cb8e0af68f84a89018ea5e68416ad98f1"
-    sha256 cellar: :any,                 arm64_sonoma:  "d0b6c61ceeee7e74509a00eda50696eb1fc18d6758be07d23c6e569f88da094d"
-    sha256 cellar: :any,                 ventura:       "37b81ff854257bc87c78937b6ff8566fe85209ca99e1a38143640e2eea62d69b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5c1f7f222795b802a61b4a39f33008fed47663c44e807e26ee86ea6d0141eda9"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-cr2re-recipes-1.6.7-1"
+    sha256 cellar: :any,                 arm64_sequoia: "17b0f75dfcb8ee3475a9e85d65cf2269dfbae8bf77041b5e420fb6683f22363b"
+    sha256 cellar: :any,                 arm64_sonoma:  "6fed18668fca120e1e6e96d317c9e1f24b8dd9baff92b5d1cc17f9c2f4011014"
+    sha256 cellar: :any,                 ventura:       "e0f4a786b0bbea7d641b4e297797c751c617aaa8f1fb34b84ceed2f6a3e834cf"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "347f99f0d332c468e054247a01c4cda6e8435c4b78b19882f1daf2e01cf5e81c"
   end
 
   def name_version
