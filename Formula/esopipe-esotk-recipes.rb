@@ -1,8 +1,8 @@
 class EsopipeEsotkRecipes < Formula
   desc "ESO ESOTK instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/esotk/esotk-kit-0.9.8-11.tar.gz"
-  sha256 "ea3192477775cc9ac85ccf007dfa0472ec76cab44f00478478d51ea4f6f5fcd9"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/esotk/esotk-kit-0.9.9.tar.gz"
+  sha256 "020dcedaa71b1bc5016da257a20749c05d0f319d507c6e20abb5fe3a0e86b737"
   license "GPL-2.0-or-later"
 
   livecheck do
