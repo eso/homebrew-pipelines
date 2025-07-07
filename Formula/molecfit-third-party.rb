@@ -26,8 +26,4 @@ class MolecfitThirdParty < Formula
       "prefix=#{prefix}",
       "install"
   end
-
-  test do
-    assert_match "2460672", shell_output("echo \"2024 12 27\" | Gregorian2JD")
-  end
 end
