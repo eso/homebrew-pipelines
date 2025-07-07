@@ -1,8 +1,8 @@
 class MolecfitThirdParty < Formula
   desc "3rd party tools for the Molecfit library"
   homepage "https://www.eso.org/sci/software/pipelines/skytools/molecfit"
-  url "https://ftp.eso.org/pub/dfs/pipelines/libraries/molecfit_third_party/molecfit_third_party-1.9.3.tar"
-  sha256 "2786e34accf63385932bad66c39deab8c8faf4c9095a23173146a9820f4f0183"
+  url "https://ftp.eso.org/pub/dfs/pipelines/libraries/molecfit_third_party/molecfit_third_party-1.9.5.tar"
+  sha256 "d71ff1cbf1eaec211af64b6b0fa4d8400282274b0a63ddf992ba0ab494d59161"
   license "GPL-2.0-or-later"
 
   livecheck do
