@@ -3,8 +3,8 @@ class Edps < Formula
 
   desc "ESO Data Processing System"
   homepage "https://www.eso.org/sci/software/edps.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/repositories/stable/src/edps/edps-1.5.3.tar.gz"
-  sha256 "359c0b613078a994200f50978c92b690c386094508b8c5f168f4b5b4fb009eef"
+  url "https://ftp.eso.org/pub/dfs/pipelines/repositories/stable/src/edps/edps-1.5.7.tar.gz"
+  sha256 "4065853e7f3c37d378cb69be532c47ef616ac0023c103b817745b15cea509f24"
   license "BSD-3-Clause"
 
   livecheck do
