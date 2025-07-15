@@ -11,11 +11,11 @@ class EsopipeErisRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-eris-recipes-1.8.1-1"
-    sha256 cellar: :any,                 arm64_sequoia: "01e457bbb90663865384cfa39557b6d9efe80eb05779c91b30e2fb281fa25f59"
-    sha256 cellar: :any,                 arm64_sonoma:  "a81dea2b594e45160213cb212576247ef401d8b7f919723900211f79d235a3c8"
-    sha256 cellar: :any,                 ventura:       "cd538a14de3445b6d092239d5929585059d5da7af38dc8f2242b20d37f25e331"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "885b63a328fa23dcdd5ed0c030db37de2ced055d078b6cbc221b387b2d6dd5cb"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-eris-recipes-1.8.8"
+    sha256 cellar: :any,                 arm64_sequoia: "95b3ef22eb6f71d79e56216b9c1812fcce67518e0af176309f851e6223434403"
+    sha256 cellar: :any,                 arm64_sonoma:  "f1a3e33b95e6fe7c189dfddb7672cf81b4c647414123b556dd0b5f64ad6f7a5e"
+    sha256 cellar: :any,                 ventura:       "880a708a27b1c4656ceff956dba0aa502b6da943437f811c58396e0000b39c9b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "aa4bb2d53c4eb40be5c0cea22ea021d94c8575f421e7ff2cdeea236eaf89dbc2"
   end
 
   def name_version
