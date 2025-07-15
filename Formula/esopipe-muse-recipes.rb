@@ -1,8 +1,8 @@
 class EsopipeMuseRecipes < Formula
   desc "ESO MUSE instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/muse/muse-kit-2.10.14-2.tar.gz"
-  sha256 "28a6c39c6837fb7b31f22f90414260983ed1c7a4ffa402953788aad63dc33a65"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/muse/muse-kit-2.10.16.tar.gz"
+  sha256 "d980c97fbcbef0efc8c051b3187d43d49e6d28b64f2f4475dce95b1c031417a1"
   license "GPL-2.0-or-later"
 
   livecheck do
