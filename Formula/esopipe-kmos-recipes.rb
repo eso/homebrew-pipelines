@@ -1,8 +1,8 @@
 class EsopipeKmosRecipes < Formula
   desc "ESO KMOS instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/kmos/kmos-kit-4.5.1-2.tar.gz"
-  sha256 "f7e7d05611a39d4193e486abb88db8856f1705d075af2048b557757f6572879f"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/kmos/kmos-kit-4.5.2-3.tar.gz"
+  sha256 "b0caadd136e6353f0140e9b5b18ddd84e15e932c99702e3dec151e1cd88c7c5e"
   license "GPL-2.0-or-later"
 
   livecheck do
