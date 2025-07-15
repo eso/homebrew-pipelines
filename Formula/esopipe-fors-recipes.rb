@@ -1,8 +1,8 @@
 class EsopipeForsRecipes < Formula
   desc "ESO FORS instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/fors/fors-kit-5.8.2-2.tar.gz"
-  sha256 "2ac6e7ee0c04ce0f6b82457036306bd3f4f3ee6dbe591d157688c59686a927b0"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/fors/fors-kit-5.8.4.tar.gz"
+  sha256 "2980192ae85b3ce51c7866b97c55319f87902ec8d658c1ad4330ef4c58f2f09e"
   license "GPL-2.0-or-later"
 
   livecheck do
