@@ -1,8 +1,8 @@
 class EsopipeAmberRecipes < Formula
   desc "ESO AMBER instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/amber/amber-kit-4.4.5-9.tar.gz"
-  sha256 "7b4339232d97267b23aa09e7718599edfeec273cb7f1a3f7821888a217946a4f"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/amber/amber-kit-4.4.5-10.tar.gz"
+  sha256 "62231d6512f6f509cbd134c5d349a8959b29acc53ca22998db7c00ce21cd1bf6"
   license "GPL-2.0-or-later"
 
   livecheck do
