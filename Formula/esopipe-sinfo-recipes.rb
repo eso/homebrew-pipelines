@@ -1,8 +1,8 @@
 class EsopipeSinfoRecipes < Formula
   desc "ESO SINFONI instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/sinfoni/sinfo-kit-3.3.6-7.tar.gz"
-  sha256 "c85e316e142e2f5602c6abb0172ab5e6b10b8051cf0e826fae0cda49eb7b541f"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/sinfoni/sinfo-kit-3.3.6-8.tar.gz"
+  sha256 "f199776291765ca4f04077b43f6b86bd22812fea2ffcb6a9dbf43ed6f3733ed1"
   license "GPL-2.0-or-later"
 
   livecheck do
