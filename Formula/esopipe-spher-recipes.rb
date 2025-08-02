@@ -11,11 +11,11 @@ class EsopipeSpherRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-spher-recipes-0.58.1"
-    sha256 cellar: :any,                 arm64_sequoia: "491978abe4b2943d3104aca7b335a614512bb90196ace28c10e90e96b86cf3fd"
-    sha256 cellar: :any,                 arm64_sonoma:  "852b2dd4e515bfb2fe29bbae69c370e72ae19656e4e7cb2c6103af7d6ca3d22a"
-    sha256 cellar: :any,                 ventura:       "b57478bb5ea57720da3c16d25221439268089bdfdc9b6f221874525e151dfdc8"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "906e73091bb27aa4ee56676830b9c5755a91fd84d9b36fdaf1602412c334a7f6"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-spher-recipes-0.58.1-1"
+    sha256 cellar: :any,                 arm64_sequoia: "a31166a698cae4cd6607da7e87c0f86618652c4e8dc3b8d21fe659d72d2522a1"
+    sha256 cellar: :any,                 arm64_sonoma:  "82fa11b0dc44af7fb46da7e94c329c45b121074910755a48894933e0d83f5012"
+    sha256 cellar: :any,                 ventura:       "9fdfb262ff8b993a9050a8278e95ff4af7ad4dca2ff35dc83cff0ed4ceb12dad"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "55522b914aada027789816f129b3f1532805a06f89e700362f862c9f4fed0cea"
   end
 
   def name_version
