@@ -11,11 +11,11 @@ class EsopipeGirafRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-giraf-recipes-2.18.4"
-    sha256 cellar: :any,                 arm64_sequoia: "d62b3f851fde7d4ec1a405f89a3f6b35c7cee70724d7e94801a3eea04720f0a6"
-    sha256 cellar: :any,                 arm64_sonoma:  "05c1b5910a0aed49ebdd80fc9099d3ec54a92a946a810afe6a0dceeac3e68c04"
-    sha256 cellar: :any,                 ventura:       "198b8fd58dcc529f66be104703f9afc5d732e6e87354678dbeefee7c48abfaf9"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6ba8ca28f41d9c9c0c8e5842bdbc3f20dcff50a773032f2e7da746851fb433d5"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-giraf-recipes-2.18.4-1"
+    sha256 cellar: :any,                 arm64_sequoia: "d00b13bc24e40b60738ad0e087606c56efd7bdb8ecef0816081c99b9dd90f858"
+    sha256 cellar: :any,                 arm64_sonoma:  "d0d2ff6c7e246c2789e7dd056912e1c7a33c9affae468efc1c5d4936613d2154"
+    sha256 cellar: :any,                 ventura:       "8a3934b9baf0e22f6522a7fffda7dfc8751b3144bc16bc40a6758ca5d5e1c781"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "81a861302d863d77336bd0aa5421b4d12c037928faeea7df53f2bbd1f3cbe388"
   end
 
   def name_version
