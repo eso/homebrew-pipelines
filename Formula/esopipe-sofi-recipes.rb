@@ -11,11 +11,11 @@ class EsopipeSofiRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-sofi-recipes-1.5.16-7"
-    sha256 cellar: :any,                 arm64_sequoia: "b15da74c1ba8627f4f44d4e073551f817a914cbdd292de95c75a94a4ec42ce50"
-    sha256 cellar: :any,                 arm64_sonoma:  "bd309e0e4ab425a0813fe05b015f4442ee3966712f6758ccf189e9642de1d06c"
-    sha256 cellar: :any,                 ventura:       "6b5f460cedbbfa7fe9506f247bc0869842db6ff7f8e3117b549764b5ff3d3e96"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9c202f016b4c32c079098f88c2c80253b307f7f8d2461e8e58ec65f3119a1fea"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-sofi-recipes-1.5.16-8"
+    sha256 cellar: :any,                 arm64_sequoia: "3a4076fb97f8bd2d54f96de01d1cfab9d31fcfbfe5296eb1031f7d09a413363c"
+    sha256 cellar: :any,                 arm64_sonoma:  "d305bc6b6f77e61a89cccb715fe4fae5b27f7bed1465ad0c023fb2136d546458"
+    sha256 cellar: :any,                 ventura:       "8ef5d57e1971586ddeed8009e98c25d0b8efc4bbd1994e8b633f0b90f9f8b99f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "046f56e7cfabc868cd588064ac9d8f940854717651510d798b1d53ed3043431a"
   end
 
   def name_version
