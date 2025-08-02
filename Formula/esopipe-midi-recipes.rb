@@ -11,11 +11,11 @@ class EsopipeMidiRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-midi-recipes-2.9.6-8"
-    sha256 arm64_sequoia: "f8d5af51da211bf58071ae08ec1342a0ad5763f6c2abdf0cb2ed878b0c5e0589"
-    sha256 arm64_sonoma:  "de73847dee12272e4d9dadafb72c9d479f70c83eca8536a7db89fb5b77239339"
-    sha256 ventura:       "6479bb749f36f0b8d94f518d4095144b4faeeff8c2099856fb59c1bfe5d8a96e"
-    sha256 x86_64_linux:  "519910be7fa5deec6e571cabcab22a025b4fbf63db19656d6ccca5452916dd2a"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-midi-recipes-2.9.6-9"
+    sha256 arm64_sequoia: "a47e053a1b5fc6e7211be19c6cfb813a48ddd270fa5b28db04ae8eb580238f8d"
+    sha256 arm64_sonoma:  "b281085c17fa76492bc555db5fa6b2e69c6ee5694a234cad5abe10cfcb250aca"
+    sha256 ventura:       "976a95ac1f84a430a00b7676913f2062a1d5220046cac729394a1e72111983a5"
+    sha256 x86_64_linux:  "4ee32980487592e405aa56880fdc9c75bacb5e461c1931c7806cbf8b9671ba6c"
   end
 
   def name_version
