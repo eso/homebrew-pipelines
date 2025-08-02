@@ -74,9 +74,11 @@ Or `brew tap eso/pipelines` and then `brew install <formula>`.
 
 ### ESO Recipe Execution Tool
 * esorex
+* pyesorex
 
 ### Libraries
 * cpl@7.3.2
+* pycpl
 * erfa
 * molecfit-third-party
 * telluriccorr
