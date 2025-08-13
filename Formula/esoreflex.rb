@@ -33,6 +33,8 @@ class Esoreflex < Formula
     rm "ptolemy/src/vendors/jogl/lib/natives/macosx-universal/libgluegen-rt.jnilib"
     rm "ptolemy/src/vendors/jogl/lib/natives/macosx-universal/libnativewindow_awt.jnilib"
     rm "common/lib/libgdalactor.jnilibPPC"
+    rm "common/lib/libgdalactor.so"
+    rm "common/lib/libproj.so"
     rm "common/lib/libptmatlab.so"
     rm "common/lib64/libptmatlab.so"
     rm "ptolemy/src/lib/libptmatlab.so"
