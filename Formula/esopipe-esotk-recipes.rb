@@ -11,11 +11,11 @@ class EsopipeEsotkRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-esotk-recipes-0.9.9-1"
-    sha256 cellar: :any,                 arm64_sequoia: "45cd6fc1ff64a40782d965efeab49b6f684177415066577c913e411b8f1c6e2c"
-    sha256 cellar: :any,                 arm64_sonoma:  "ad98b83cbfc70cbb0b50e265f13db60447fc2f8a903bf02f8f5c21de84212cb3"
-    sha256 cellar: :any,                 ventura:       "fd2916b28552ad419a4295edce0424a57e735eb81e6bdd4e1d52c5bbef1ab58a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "77119f82ee5ea5cd02eef74c5299cab8d74cca785cfb1401883c718df0ed793b"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-esotk-recipes-1.0.0"
+    sha256 cellar: :any,                 arm64_sequoia: "4cbb975c97f69c5be981212e045d2132eecb688e4fc458c52befa8ec83c570bf"
+    sha256 cellar: :any,                 arm64_sonoma:  "1e7cd4da58a9e973470c61381f81fde003c551f463fd896ad71110d027fb6fdf"
+    sha256 cellar: :any,                 ventura:       "abc6260b76820f195ab5ee3124c2c3c9c3fe43fb244ad1f53deb977987428fea"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "85a8a7f8750130d9bbbaeca4d5b106de1714018a5a8ee8ca40e6483bc796c457"
   end
 
   def name_version
