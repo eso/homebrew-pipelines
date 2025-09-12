@@ -1,8 +1,8 @@
 class EsopipeVisir < Formula
   desc "ESO VISIR instrument pipeline (static data)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/visir/visir-kit-4.6.2-1.tar.gz"
-  sha256 "18c669e78ba5479f583716f41855a8ac757ad78f257968510cdfdc360a555086"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/visir/visir-kit-4.6.3.tar.gz"
+  sha256 "15c3b1e7bed4e7c5556df739c063a67b36d5a46009ff1867040fe8c3f502b712"
   license "GPL-2.0-or-later"
 
   livecheck do
