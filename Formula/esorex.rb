@@ -4,7 +4,7 @@ class Esorex < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/libraries/esorex/esorex-3.13.10.tar.gz"
   sha256 "a989f9c6dbd6bbb6a9c7c678da8a3b7ad7a8c7e29c644b97c371579b45957dd6"
   license "GPL-2.0-or-later"
-  revision 3
+  revision 4
 
   livecheck do
     url "https://ftp.eso.org/pub/dfs/pipelines/libraries/esorex/"
