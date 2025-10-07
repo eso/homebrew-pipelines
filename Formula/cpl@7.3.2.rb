@@ -12,11 +12,12 @@ class CplAT732 < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/cpl@7.3.2-7.3.2_4"
-    sha256 cellar: :any,                 arm64_sequoia: "97f0e3daa7fe05a45787c606d9fd9b3da800784fd77e1f1e420533ad66427d9a"
-    sha256 cellar: :any,                 arm64_sonoma:  "05edc6ab0cc92626323ce11a31370013579e249b15e952843871fce5e51fa48e"
-    sha256 cellar: :any,                 ventura:       "391448fcdcb155e1ccdbfe35a637ba9d17bfa1f05b4cc3cc640ceaac4a16ee12"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "af8bc5af9bc753d234a19761dd1a704d670b50d56f68642a661ad4126d778f07"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/cpl@7.3.2-7.3.2_5"
+    sha256 cellar: :any,                 arm64_tahoe:   "6679d3b2bb3ee752f1ad943c23932abc0b9cd93545cb23eaa113f7ff216878ad"
+    sha256 cellar: :any,                 arm64_sequoia: "34bb9d449021634fb88185dc5700b32a93c29ed57483b7af9bee4e32dcdf229d"
+    sha256 cellar: :any,                 arm64_sonoma:  "ea323970e0b43c9d11808c2ab3f02f516c42ebf880e6fa64487ae2a7c7f0a0d4"
+    sha256 cellar: :any,                 sonoma:        "a5e79fcb8d5e1a40f3fd4881e2db3513182be90b3bad562220f29fbb9d5f1e2e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6c1b9b8b424a2068ef8015d0c8f644220d6de6687c94b99466d46d57740f3c6e"
   end
 
   keg_only :versioned_formula
