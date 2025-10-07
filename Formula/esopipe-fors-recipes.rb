@@ -11,11 +11,10 @@ class EsopipeForsRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-fors-recipes-5.8.4-1"
-    sha256 arm64_sequoia: "3e6fe02fabf80377a03309e895fae2618afb0de6d02c3c47ea950114f05ffb90"
-    sha256 arm64_sonoma:  "6aa6ace246bd03c6d4f02ee4a479cdfa919e2b0cf17eb2c97b7754935a31cd3a"
-    sha256 ventura:       "59eb32d7cfa507e037e986a93e1f900ae83b73624fa70ad76873baab724e3eed"
-    sha256 x86_64_linux:  "7937982710c881e0d071b03eeb959d96aa08ffc7b4296e5e5f38a5f297e09005"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-fors-recipes-5.8.5"
+    sha256 arm64_sequoia: "a7388d17458cbd315b70ef57894a757b5167c2ecf1c378ad5632097aa6bee74c"
+    sha256 arm64_sonoma:  "8c9a5bb39ee9dc46216623646ea54c0c3c3ab87669740afaaf9280089bc0e94e"
+    sha256 x86_64_linux:  "ff4976d0ce3bca329ebe210d9b3d19ab23cb176a5f6350e18c9eedcda9e83576"
   end
 
   def name_version
