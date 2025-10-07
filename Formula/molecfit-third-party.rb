@@ -4,6 +4,7 @@ class MolecfitThirdParty < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/libraries/molecfit_third_party/molecfit_third_party-1.9.5.tar"
   sha256 "d71ff1cbf1eaec211af64b6b0fa4d8400282274b0a63ddf992ba0ab494d59161"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url "https://ftp.eso.org/pub/dfs/pipelines/libraries/molecfit_third_party/"
