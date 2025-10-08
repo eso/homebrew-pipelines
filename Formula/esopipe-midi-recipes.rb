@@ -4,6 +4,7 @@ class EsopipeMidiRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/midi/midi-kit-2.9.6-9.tar.gz"
   sha256 "639e6ee81c458beaf0b99a84aa20281932db68c19566110176b7b1fd3b91d9b9"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url :homepage
