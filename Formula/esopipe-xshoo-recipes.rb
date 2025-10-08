@@ -4,6 +4,7 @@ class EsopipeXshooRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/xshooter/xshoo-kit-3.8.3-1.tar.gz"
   sha256 "cff7bff1ee3e880e75269e7b2a153078a018bec35bbaeaf0c382675a52100281"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url :homepage
