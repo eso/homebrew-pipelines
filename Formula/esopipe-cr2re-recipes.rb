@@ -4,6 +4,7 @@ class EsopipeCr2reRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/cr2res/cr2re-kit-1.6.10.tar.gz"
   sha256 "90d4eaf0a07765b22c75671115f67d79b922a06f95aebb2564d22cf418263c4f"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url :homepage
