@@ -4,6 +4,7 @@ class EsopipeAmberRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/amber/amber-kit-4.4.5-10.tar.gz"
   sha256 "62231d6512f6f509cbd134c5d349a8959b29acc53ca22998db7c00ce21cd1bf6"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url :homepage
