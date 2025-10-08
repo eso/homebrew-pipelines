@@ -4,6 +4,7 @@ class EsopipeMolecfitRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/molecfit/molecfit-kit-4.4.2-6.tar.gz"
   sha256 "fafc5593d125192bd396245255031be272f6bd0e10f31d1e4cbeb607a7725557"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url :homepage
