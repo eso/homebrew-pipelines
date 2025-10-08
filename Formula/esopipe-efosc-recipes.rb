@@ -4,6 +4,7 @@ class EsopipeEfoscRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/efosc/efosc-kit-2.3.11-2.tar.gz"
   sha256 "8c272756f8dab6499782211303e39ed83da228a77f8dc2e457bc4dbbf4f23fb9"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url :homepage
