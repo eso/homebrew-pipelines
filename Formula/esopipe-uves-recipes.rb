@@ -4,6 +4,7 @@ class EsopipeUvesRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/uves/uves-kit-6.5.3.tar.gz"
   sha256 "d1caf5474ad81d7c182b062e90badb4c9d7d11e0dd68233b10d216d83d5334d3"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url :homepage
