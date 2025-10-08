@@ -1,8 +1,8 @@
 class EsopipeFors < Formula
   desc "ESO FORS instrument pipeline (static data)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/fors/fors-kit-5.8.4-1.tar.gz"
-  sha256 "a6cc06b0c1f6bcbe4075ed845de97f351002acfbb7e5f8e7c70d24b93461a983"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/fors/fors-kit-5.8.5.tar.gz"
+  sha256 "955b7f417edfd61af681af0cd53eee3a41e8b4c74e0a44df7cce8101a93efb2e"
   license "GPL-2.0-or-later"
 
   livecheck do
