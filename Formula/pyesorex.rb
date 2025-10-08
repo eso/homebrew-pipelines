@@ -6,7 +6,7 @@ class Pyesorex < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/libraries/pyesorex/pyesorex-1.0.3.tar.gz"
   sha256 "8a496663448a46b8c071c521eda845b8705acf9fce9c15d46e3514a9124ecbfa"
   license "GPL-2.0-or-later"
-  revision 1
+  revision 2
 
   livecheck do
     url "https://ftp.eso.org/pub/dfs/pipelines/libraries/pyesorex/"
