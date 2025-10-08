@@ -4,6 +4,7 @@ class EsopipeSinfoRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/sinfoni/sinfo-kit-3.3.6-8.tar.gz"
   sha256 "f199776291765ca4f04077b43f6b86bd22812fea2ffcb6a9dbf43ed6f3733ed1"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url :homepage
