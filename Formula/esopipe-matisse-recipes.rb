@@ -12,11 +12,12 @@ class EsopipeMatisseRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-matisse-recipes-2.2.3-1"
-    sha256 cellar: :any,                 arm64_sequoia: "230df00e57a975bb242259cf56db6a7df0c8cc5ae3d36bd5498e5f425b32f813"
-    sha256 cellar: :any,                 arm64_sonoma:  "bad00bd962f60adf3490ef170b888bda5f2e05d6c2e7089941657bf0d1fa306e"
-    sha256 cellar: :any,                 ventura:       "3b27173647d5a46d95d935db503d58462f30dda25b06098117a0026c8b2881e4"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b6244da375606de77d532fde7081d8adbc5392f3bf6e3d6c14d454bd5ac0a3cc"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-matisse-recipes-2.2.3-1_1"
+    sha256 cellar: :any,                 arm64_tahoe:   "b31def6133e9815e437eb0fb2b560129f327bacb1a9a9e308c9f0356afcfd480"
+    sha256 cellar: :any,                 arm64_sequoia: "81865d8683e4480c1faa15731f5b2e6522decf7a0a2be4c94fd0507659402553"
+    sha256 cellar: :any,                 arm64_sonoma:  "5b8695c5cce8eb297a0aa85c8d64b0d318b75eb7895a0efc2f946d5441d84a93"
+    sha256 cellar: :any,                 sonoma:        "bfdcb9f7e022b77e8bc61d99e8179ca03d91726b2bbce7954f8ae7bc72e206be"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c623a22c2a4d72e14905aef72b9254b8e3a0112c29ae1dcc25cec6813b732d34"
   end
 
   def name_version
