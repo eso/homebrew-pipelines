@@ -1,23 +1,13 @@
 class EsopipeEfoscRecipes < Formula
   desc "ESO EFOSC instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/efosc/efosc-kit-2.3.11-2.tar.gz"
-  sha256 "8c272756f8dab6499782211303e39ed83da228a77f8dc2e457bc4dbbf4f23fb9"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/efosc/efosc-kit-2.3.12.tar.gz"
+  sha256 "8445b4d4dddb5e9fc660910335890c4fcb6da1e9a3d8eed64a8a5b6525454a9e"
   license "GPL-2.0-or-later"
-  revision 1
 
   livecheck do
     url :homepage
     regex(/href=.*?efosc-kit-(\d+(?:[.-]\d+)+)\.t/i)
-  end
-
-  bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-efosc-recipes-2.3.11-2_1"
-    sha256 arm64_tahoe:   "7049d3393b5f6bbba7f465f640f3fd274a09669fe2bf355f52bc87d5448d3f04"
-    sha256 arm64_sequoia: "99f0084ead9316f4d2d190a62972c561de9f01d521c3779960f75eaf4855ff21"
-    sha256 arm64_sonoma:  "1c91a07476940ee230fbc5df00fd035e1f951639a3c9bd6e5811d0ebea117a5d"
-    sha256 sonoma:        "87e60388702cf30d946c5b0d516a1c15a7e26a21a0647aafbe0eb67b7b42ac0b"
-    sha256 x86_64_linux:  "ee9bca47799229500f05a0035434a9bd6befae47e8bbc10bcabe78dc1c8b306f"
   end
 
   def name_version
