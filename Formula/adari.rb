@@ -24,13 +24,17 @@ class Adari < Formula
   depends_on "ninja" => :build
   depends_on "rust" => :build
   depends_on "freetype"
+  depends_on "jpeg-turbo"
   depends_on "lapack"
+  depends_on "libtiff"
   depends_on "libxcb"
   depends_on "libyaml"
+  depends_on "little-cms2"
   depends_on "openblas"
   depends_on "openjpeg"
   depends_on "python@3.11"
   depends_on "webp"
+  depends_on "zlib-ng"
 
   resource "annotated-doc" do
     url "https://files.pythonhosted.org/packages/57/ba/046ceea27344560984e26a590f90bc7f4a75b06701f653222458922b558c/annotated_doc-0.0.4.tar.gz"
