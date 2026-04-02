@@ -13,11 +13,12 @@ class Edps < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/edps-1.6.0"
-    sha256 cellar: :any,                 arm64_sequoia: "3f6c4e35dadc867e32f83c17448dc7493c0dd3fc633b592e7e2a4f2cbcece3e6"
-    sha256 cellar: :any,                 arm64_sonoma:  "1f7d691b412eb348fcae5ab4c9e0a609a87720cf021a3d2acf6b70c16b0157f9"
-    sha256 cellar: :any,                 ventura:       "10980fcef60c9fd40034d6ad6cf217bbe58e0db4f2a9788b8e980641ce241dba"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "90dbd3b8afe4da74442bb8b6bcff13fbaa1786332b837aa20cb4f1c41f5697d4"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/edps-1.7.1"
+    sha256 cellar: :any,                 arm64_tahoe:   "7303458113cc1b0d9d8a21ac74f1bd4e227e7e39bd947fae613768cf5bd01113"
+    sha256 cellar: :any,                 arm64_sequoia: "e06f1122e9ff767a0a12d768e9d4232525fa8bc51586edbd0c5b0d44656eabf9"
+    sha256 cellar: :any,                 arm64_sonoma:  "710b4123386c94de2c8a4e9300de0d5f2d5df97004615f3253506cd39f957a37"
+    sha256 cellar: :any,                 sonoma:        "70cce871fc31f0fc97f0087bb2ec9ab71447cac31f7b5f54c114aae49a5ef075"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "08780f0f1a7975f0d8465b4a689cd8e67ffe7fdf6861f264a512407f922f4bde"
   end
 
   depends_on "cmake" => :build
