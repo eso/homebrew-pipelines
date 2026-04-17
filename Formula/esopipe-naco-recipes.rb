@@ -11,12 +11,12 @@ class EsopipeNacoRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-naco-recipes-4.4.13-9_1"
-    sha256 cellar: :any,                 arm64_tahoe:   "2b32dbf43dce8fd96246dd9071cfdc86831e8960d9451430cde638cfb5da6db8"
-    sha256 cellar: :any,                 arm64_sequoia: "dcbc61fabb0cd73fc97e2f73f2423f0e1b8a1183f0e8b57209f1c3db9cece642"
-    sha256 cellar: :any,                 arm64_sonoma:  "37163104b00404f682bc159fdaeeb134d0d08913eb9323213893cdd2aee6b7a9"
-    sha256 cellar: :any,                 sonoma:        "a5a7551d73bdb6853293e72c754841048b73a5fcb82c0116ec9db1ce572542e4"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0998ba43886396a398ea65ad8dd8f4fab4c2e6acd41a4777024b301ca791f5c1"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-naco-recipes-4.4.13-12"
+    sha256 cellar: :any,                 arm64_tahoe:   "1208dcc928de2edca17aab5e18f8ef08ca8a305030921d15cbb581fdf17f7e0b"
+    sha256 cellar: :any,                 arm64_sequoia: "d81e5993d1b2c62a05765ef66665904180781211dbbf7bddf0e3926e8aa3c554"
+    sha256 cellar: :any,                 arm64_sonoma:  "8b6a31e657c9e940f84252ae2d6468813df93d26cde3012096abe4ed3ecc83b4"
+    sha256 cellar: :any,                 sonoma:        "c29d46780a6a618433e6bc1491b9dd82f4bd7e07ee35bd269d068dacc390a83c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9a21e86a975b70913480d73a3697495c4d3399ac42c77947a362fa95dda18e04"
   end
 
   def name_version
