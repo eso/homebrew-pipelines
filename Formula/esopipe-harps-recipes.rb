@@ -11,12 +11,12 @@ class EsopipeHarpsRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-harps-recipes-3.3.12-1_1"
-    sha256 arm64_tahoe:   "766524541b77d784f3f6b1f038c6c215f93e6ec6ea5f0570fc7572151203ba17"
-    sha256 arm64_sequoia: "a6c5361fc4b7f74b0e4939e9e0a93c6c276b1874c01619c9299afe2ee76d8ffc"
-    sha256 arm64_sonoma:  "1b37d50bcdf162472f9572dae62ea6e84b661d365ba496ac0c2df168243fd7e9"
-    sha256 sonoma:        "4821fc44d26919c2af8c57fc7b90f78f1d7e0ac0a47eb135fbbce0a138793085"
-    sha256 x86_64_linux:  "1b47bc9ab3f60d45caffa8b33806d11e18668e6468aaf158e336099b79a8d79a"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-harps-recipes-3.3.12-4"
+    sha256 arm64_tahoe:   "43c771d1515f1139e78c6de6c7c0551d05a5bfa14353cb254bb2432006fcab35"
+    sha256 arm64_sequoia: "6ff899b0b98a852fdbd99bf87caddf0f74eaa2b3dc9da9911334aabd8e66eefa"
+    sha256 arm64_sonoma:  "6036bcce8faf662d8d0feaf082f40a948f508a5b393e68cec548f298355cf214"
+    sha256 sonoma:        "77370005daea2a0ef92f63c4a319c3eada5652b2b0c0743daaa3aa7656b8ae54"
+    sha256 x86_64_linux:  "86fafc2405b3ec98d52bbb3e3e7806de1131412b0ee49d336977c7e78f990b18"
   end
 
   def name_version
