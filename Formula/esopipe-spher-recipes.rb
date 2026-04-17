@@ -28,6 +28,7 @@ class EsopipeSpherRecipes < Formula
   depends_on "cpl@7.3.2"
   depends_on "erfa"
   depends_on "esorex"
+  depends_on "fftw"
   depends_on "gsl"
 
   uses_from_macos "curl"
