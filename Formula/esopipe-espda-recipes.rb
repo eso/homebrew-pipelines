@@ -11,12 +11,12 @@ class EsopipeEspdaRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-espda-recipes-1.4.0-5_1"
-    sha256 cellar: :any,                 arm64_tahoe:   "55dddb61b36e38c517058e909155a983bf5fda9aa54a318bcff19298c063203a"
-    sha256 cellar: :any,                 arm64_sequoia: "43adf37a19dc2cbc10ee57cc05f4f3b83e2a834de99a50a5896690fac724ed95"
-    sha256 cellar: :any,                 arm64_sonoma:  "7ad3cd0486e9d5a42e34a38219a529253d4631373bc8bd16fe211c599887a92b"
-    sha256 cellar: :any,                 sonoma:        "a25654dfcff27e4fc65d7e270f99c0aba3db77fde37453bd245cb4fb977307af"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ac1bd1e34b3b0309436804f9ad429f07afcffe3314fe6005cf66205f60da68c5"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-espda-recipes-1.4.0-7"
+    sha256 cellar: :any,                 arm64_tahoe:   "83b86c5f79c38bbed405a697fca06f0b5dd360ed0f2da467cae734a1bacd3c43"
+    sha256 cellar: :any,                 arm64_sequoia: "9318e2f16ca77f1d1edc05113f6b489df4681f2208553163ae1a7178f3ee9e1c"
+    sha256 cellar: :any,                 arm64_sonoma:  "dfd9056aa51bd5e9fbe6ab51935c286d16115a2305e185f1e463bbfcbf8a39d5"
+    sha256 cellar: :any,                 sonoma:        "2dcd76456b96ca842ffd96d98b9d2f09eaa3da621bd8d1eab29b9ca99c03c33d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e286376baf81e613629d5b09c501010d128918acc5db4d701a21638dc1526f11"
   end
 
   def name_version
