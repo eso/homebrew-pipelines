@@ -11,12 +11,12 @@ class EsopipeHawkiRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-hawki-recipes-2.5.13-1_1"
-    sha256 cellar: :any,                 arm64_tahoe:   "1391381d13f244b13a79ddec5a1fe52712ce91990a9a0c1405928c14be904502"
-    sha256 cellar: :any,                 arm64_sequoia: "8f5947859834f15a14fcbe36d0925165109c4d6b359311925a74aabda6011b85"
-    sha256 cellar: :any,                 arm64_sonoma:  "ccac0ec6cfdf081ab65cff413267e169db028f762a02757d93fd8819b087291a"
-    sha256 cellar: :any,                 sonoma:        "450a87819f371654259737c40b528b5cc3732d8a861ec5c55105d23fb2a5a42c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "df69c9aab778460987aa72fa29fc2dcb3af8a7edde551c1184e6a8fabc11b34b"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-hawki-recipes-2.5.17-1"
+    sha256 cellar: :any,                 arm64_tahoe:   "99ebfeb2d0c0023e1078a513e92cd16ae802cf687cb93c7249662c306b538997"
+    sha256 cellar: :any,                 arm64_sequoia: "06d4a11e0c198af668ef7699175a32d8777f7570a8cc01b5de134306653b8b5f"
+    sha256 cellar: :any,                 arm64_sonoma:  "fb6b29146aaffa98fba210301daa7e9ecc7049cee961c800ff865323fd9efefe"
+    sha256 cellar: :any,                 sonoma:        "89650633092d3af38f08d44da841b420e789e9b2b69b242bfb56621913ed595a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "def19ea47af164c57fad445fc69f6ce5ea7af23b29a706eabce690a6b4cabb80"
   end
 
   def name_version
