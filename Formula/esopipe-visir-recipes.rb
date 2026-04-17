@@ -11,12 +11,12 @@ class EsopipeVisirRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-visir-recipes-4.6.4"
-    sha256 arm64_tahoe:   "a436a3a419169c3fbe9e554ef77cec6d863b702ec9b711d56abae565ec9af8ca"
-    sha256 arm64_sequoia: "fd57fd8ca10cd10b6684bdb396ec5f519d54ca4a527a324a9f5f29703ab5a7e0"
-    sha256 arm64_sonoma:  "bd660571cbba378d5217b0323772f1fe2b0e12ec923d9293a4e9d3613a8cd445"
-    sha256 sonoma:        "c6190b9350939017697e70c697e1a82ab4f7d17383f1922487d3f5f9f8b6aa9b"
-    sha256 x86_64_linux:  "6a54e76f00ed78caee4dc410118e7863700ed0b33c3b219c8ad37c7226c3eff6"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-visir-recipes-4.6.4-3"
+    sha256 arm64_tahoe:   "b692ef56ee01f7215a9278c4be735ccc0597c00586d47f0122c5c98ed19fc702"
+    sha256 arm64_sequoia: "c25773cfeff18baeeba627d3732c52609a694376875d47e083a12176b2113ebc"
+    sha256 arm64_sonoma:  "ff0d3095ae7bc3d670f6ff9ad3385bf229860f007d4b36727a3fdaaa6a2e3ff1"
+    sha256 sonoma:        "848a95d433c6178b345f17a9f139c9a3a54c7d71cc7d2ef7867ef532f16ab08f"
+    sha256 x86_64_linux:  "f58a7167c87b503a72278ac7639769bfa3c25bae1649ac9718b1931a14798bca"
   end
 
   def name_version
