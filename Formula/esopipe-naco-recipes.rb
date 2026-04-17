@@ -1,10 +1,9 @@
 class EsopipeNacoRecipes < Formula
   desc "ESO NACO instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/naco/naco-kit-4.4.13-9.tar.gz"
-  sha256 "bc667eb505015c069a96d92b8ddb9785a2e73bcef2fdbffbb6bdd03b0267190b"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/naco/naco-kit-4.4.13-12.tar.gz"
+  sha256 "319e633e3656b6650ab7f4989ee7f4319bac899439f4f4099e5b87481f95f37a"
   license "GPL-2.0-or-later"
-  revision 1
 
   livecheck do
     url :homepage
