@@ -1,10 +1,9 @@
 class EsopipeXshooRecipes < Formula
   desc "ESO XSHOOTER instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/xshooter/xshoo-kit-3.8.3-1.tar.gz"
-  sha256 "cff7bff1ee3e880e75269e7b2a153078a018bec35bbaeaf0c382675a52100281"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/xshooter/xshoo-kit-3.8.3-4.tar.gz"
+  sha256 "cdfb05231c5ccbe2610e8024af4855dde6cefee8589c45116ba50ded9d7e7369"
   license "GPL-2.0-or-later"
-  revision 1
 
   livecheck do
     url :homepage
