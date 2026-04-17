@@ -24,6 +24,7 @@ class EsopipeUvesRecipes < Formula
   end
 
   depends_on "pkgconf" => :build
+  depends_on "cfitsio"
   depends_on "cpl@7.3.2"
   depends_on "erfa"
   depends_on "esorex"
