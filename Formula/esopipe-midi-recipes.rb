@@ -1,10 +1,9 @@
 class EsopipeMidiRecipes < Formula
   desc "ESO MIDI instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/midi/midi-kit-2.9.6-9.tar.gz"
-  sha256 "639e6ee81c458beaf0b99a84aa20281932db68c19566110176b7b1fd3b91d9b9"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/midi/midi-kit-2.9.6-12.tar.gz"
+  sha256 "41efeafab116d7f0ff7920e3106a2c7aef8ddefe5a908f5d7326ba233b884d0e"
   license "GPL-2.0-or-later"
-  revision 1
 
   livecheck do
     url :homepage
