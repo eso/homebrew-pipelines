@@ -1,8 +1,8 @@
 class EsopipeVcam < Formula
   desc "ESO VIRCAM instrument pipeline (data static)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/vircam/vcam-kit-2.3.15-8.tar.gz"
-  sha256 "a6158029b151cce3972e64766bad178f6ed839d94cd07db82aa099f5fe6534ec"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/vircam/vcam-kit-2.3.17-2.tar.gz"
+  sha256 "9385619e16aa0fb53368eaa90168c3fb35175f0ec923acaf0e0c2d91bd50bd6f"
   license "GPL-2.0-or-later"
 
   livecheck do

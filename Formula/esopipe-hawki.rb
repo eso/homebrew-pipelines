@@ -1,8 +1,8 @@
 class EsopipeHawki < Formula
   desc "ESO HAWKI instrument pipeline (static data)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/hawki/hawki-kit-2.5.13-1.tar.gz"
-  sha256 "cede01906426cbfef483c1bb1c238b89c9b25f80cd67e6d6d313b8cd7e553896"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/hawki/hawki-kit-2.5.17-1.tar.gz"
+  sha256 "d9e83af0604064bc6f53890a0e14d033e64c97864319640e249507c7f2dc811d"
   license "GPL-2.0-or-later"
 
   livecheck do

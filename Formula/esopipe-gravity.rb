@@ -1,8 +1,8 @@
 class EsopipeGravity < Formula
   desc "ESO GRAVITY instrument pipeline (static data)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/gravity/gravity-kit-1.9.6.tar.gz"
-  sha256 "a7fe48a9819dde30f3855b0dea98004ea0f736ddea2dc9f6eb0426a79ca3e730"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/gravity/gravity-kit-1.9.6-3.tar.gz"
+  sha256 "64ea2677ef4b2a59c25bfdf8d23ad39e84ebed9399ca978b0003014b9f59cbe3"
   license "GPL-2.0-or-later"
 
   livecheck do

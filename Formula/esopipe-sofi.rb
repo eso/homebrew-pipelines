@@ -1,8 +1,8 @@
 class EsopipeSofi < Formula
   desc "ESO SOFI instrument pipeline (static data)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/sofi/sofi-kit-1.5.16-8.tar.gz"
-  sha256 "50410b71e3959d41e78c14199f3124acafafd03a7618d4309f80fe1e7f312375"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/sofi/sofi-kit-1.5.16-9.tar.gz"
+  sha256 "2c151e76deb878fbd462849cd69e07fc6af078ae7660bda8a9c309c6da26960f"
   license "GPL-2.0-or-later"
 
   livecheck do

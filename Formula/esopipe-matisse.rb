@@ -1,8 +1,8 @@
 class EsopipeMatisse < Formula
   desc "ESO MATISSE instrument pipeline (static data)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/matisse/matisse-kit-2.2.3-1.tar.gz"
-  sha256 "7e636864a577b76b7bc9c68fab7fe02147c0c11ac75c0985c528453d76fabdbb"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/matisse/matisse-kit-2.2.3-4.tar.gz"
+  sha256 "a48b69767773541105f68971665514a635ba8a34827e504449f9483a743147b9"
   license "GPL-2.0-or-later"
 
   livecheck do
