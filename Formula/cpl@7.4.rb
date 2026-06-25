@@ -10,12 +10,12 @@ class CplAT74 < Formula
     regex(/href=.*?cpl[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
+  keg_only :versioned_formula
+
   depends_on "cfitsio"
   depends_on "fftw"
   depends_on "libcext"
   depends_on "wcslib"
-
-  conflicts_with "gdal", because: "both install cpl_error.h"
 
   def install
     system "./configure", "--disable-debug",
