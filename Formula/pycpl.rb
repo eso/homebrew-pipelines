@@ -12,6 +12,15 @@ class Pycpl < Formula
     regex(/href=.*?pycpl[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/pycpl-1.0.4"
+    sha256 cellar: :any, arm64_tahoe:   "37a521d1d3bb0caf50f7cfd9cce12d0fdf786978d6ee02ef6516657f8b63e266"
+    sha256 cellar: :any, arm64_sequoia: "43b50566bba909470483b63dffbfe2719054866702b97ac711a986ab6a471106"
+    sha256 cellar: :any, arm64_sonoma:  "952ac9b977c7b0b4f522aaccb3ae2361a9cecc11c0456e176e90c422651e4acc"
+    sha256 cellar: :any, sonoma:        "5b44ea4fb7f5c58a187bc4da8fef4e4c1b21c57a5cb48528e60dabb56c365753"
+    sha256 cellar: :any, x86_64_linux:  "880f4f81d62631338bcbd4687f8c260f806d065d297e853ec183d07bb61105c9"
+  end
+
   depends_on "cmake" => :build
   depends_on "ninja" => :build
   depends_on "pkg-config" => :build
