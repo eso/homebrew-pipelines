@@ -34,9 +34,9 @@ class EsopipeSpherRecipes < Formula
   uses_from_macos "curl"
 
   def install
-    ENV.prepend "LDFLAGS", "-L#{Formula["fftw"].opt_lib}"
-    ENV.prepend "LDFLAGS", "-L#{Formula["wcslib"].opt_lib}"
-    ENV.prepend "LDFLAGS", "-L#{Formula["cfitsio"].opt_lib}"
+    ENV.prepend "LDFLAGS", "-L#{formula_opt_lib("fftw")}"
+    ENV.prepend "LDFLAGS", "-L#{formula_opt_lib("wcslib")}"
+    ENV.prepend "LDFLAGS", "-L#{formula_opt_lib("cfitsio")}"
 
     system "tar", "xf", "#{name_version}.tar.gz"
     cd name_version.to_s do
