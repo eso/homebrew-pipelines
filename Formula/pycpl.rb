@@ -14,6 +14,7 @@ class Pycpl < Formula
 
   depends_on "cmake" => :build
   depends_on "ninja" => :build
+  depends_on "pkg-config" => :build
   depends_on "cpl@7.4"
   depends_on "lapack"
   depends_on "libyaml"
