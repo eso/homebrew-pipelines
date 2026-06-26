@@ -20,14 +20,14 @@ class Telluriccorr < Formula
     sha256 x86_64_linux:  "a19e4d279005cc7777bece392c4774a22e8c5b8cd759c0dff97d08c9ce2c71fd"
   end
 
-  depends_on "cpl@7.3.2"
+  depends_on "cpl@7.4"
   depends_on "molecfit-third-party"
 
   uses_from_macos "curl"
 
   def install
     system "./configure", "--prefix=#{prefix}",
-                          "--with-cpl=#{Formula["cpl@7.3.2"].prefix}"
+                          "--with-cpl=#{Formula["cpl@7.4"].prefix}"
     system "make", "install"
   end
 
