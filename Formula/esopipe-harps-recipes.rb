@@ -10,15 +10,6 @@ class EsopipeHarpsRecipes < Formula
     regex(/href=.*?harps-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
-  bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-harps-recipes-3.3.12-4"
-    sha256 arm64_tahoe:   "43c771d1515f1139e78c6de6c7c0551d05a5bfa14353cb254bb2432006fcab35"
-    sha256 arm64_sequoia: "6ff899b0b98a852fdbd99bf87caddf0f74eaa2b3dc9da9911334aabd8e66eefa"
-    sha256 arm64_sonoma:  "6036bcce8faf662d8d0feaf082f40a948f508a5b393e68cec548f298355cf214"
-    sha256 sonoma:        "77370005daea2a0ef92f63c4a319c3eada5652b2b0c0743daaa3aa7656b8ae54"
-    sha256 x86_64_linux:  "86fafc2405b3ec98d52bbb3e3e7806de1131412b0ee49d336977c7e78f990b18"
-  end
-
   def name_version
     "harps-#{version.major_minor_patch}"
   end

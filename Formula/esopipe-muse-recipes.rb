@@ -10,15 +10,6 @@ class EsopipeMuseRecipes < Formula
     regex(/href=.*?muse-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
-  bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-muse-recipes-2.11.0"
-    sha256 cellar: :any,                 arm64_tahoe:   "8fb04faa9b80bfe5b92b6610be65c97a6971b53e903f75c33f542e8619eb6cee"
-    sha256 cellar: :any,                 arm64_sequoia: "7f9a3d87b7c7d1d9714b399d2dd1fa80ca3381903f039acaaad8d29b286ea31d"
-    sha256 cellar: :any,                 arm64_sonoma:  "0dfc6bfa3ccc8adb7b0c98ba547ff12ad6e0d13d036823b95a1f69f6cc78cb63"
-    sha256 cellar: :any,                 sonoma:        "7723204c26f2ec6ddbf8c15c437cd3130396bf531063720a1fc7c069f383dc04"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "446285b89e636b029002d28f9a1b7240530c70c1921f6aac249f1c40bdf8a1f8"
-  end
-
   def name_version
     "muse-#{version.major_minor_patch}"
   end

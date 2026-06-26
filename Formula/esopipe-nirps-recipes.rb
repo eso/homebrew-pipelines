@@ -10,15 +10,6 @@ class EsopipeNirpsRecipes < Formula
     regex(/href=.*?nirps-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
-  bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-nirps-recipes-3.3.12-4"
-    sha256 arm64_tahoe:   "0d95681a5782f1a7a13ff13dc313110bf05a3a85f9d09fcedc65da5a49805bd8"
-    sha256 arm64_sequoia: "3f4ae42a812e27902963353f7918954f2727c821a4f1fc25afefeaf100d3e2eb"
-    sha256 arm64_sonoma:  "c915bfadec0627fc7c89bcf1c7d79a9c7d4a2709403d54c917177999d40ca00b"
-    sha256 sonoma:        "b9687b752ef6ff6b9d1e6aa3263acf6cccd455291cf519d9b322bbfe594f7ee9"
-    sha256 x86_64_linux:  "f3ccfa846abe4729b3255efb482ba93db7d5daa52449e3f9e70467d301a8334d"
-  end
-
   def name_version
     "nirps-#{version.major_minor_patch}"
   end

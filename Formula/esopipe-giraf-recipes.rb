@@ -10,15 +10,6 @@ class EsopipeGirafRecipes < Formula
     regex(/href=.*?giraf-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
-  bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-giraf-recipes-2.18.4-4"
-    sha256 cellar: :any,                 arm64_tahoe:   "e598ee3558d70b169197b431dbe6cc31a14bd2f17b1cf997d6f5fd7a94bb6b5b"
-    sha256 cellar: :any,                 arm64_sequoia: "e30cb046200d7b6c671bec5337b4fc5956c2c323b8ea4bb6e1481996a7754b82"
-    sha256 cellar: :any,                 arm64_sonoma:  "f2bad804b1c571475b4b02e80d1d145fdba64139f0adffef6b166734bbbe54f0"
-    sha256 cellar: :any,                 sonoma:        "ac972a319db8118c200fcfd6577c6e05299ab8296943e169dadcb02c5475eeae"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c9610657df5c0740b99fd5359e7a083d75ecb75e6b448874e334206025b8a23b"
-  end
-
   def name_version
     "giraf-#{version.major_minor_patch}"
   end

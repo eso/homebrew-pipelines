@@ -10,15 +10,6 @@ class EsopipeSofiRecipes < Formula
     regex(/href=.*?sofi-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
-  bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-sofi-recipes-1.5.16-9"
-    sha256 cellar: :any,                 arm64_tahoe:   "216e990bd75422b2e936c20ba9e068b0f7ac4a3a73e86d7473f4812674ac15ad"
-    sha256 cellar: :any,                 arm64_sequoia: "98c4f8ddd4a041d242a175a9fe213d1686a64c740e7adb43b410c536c5c71363"
-    sha256 cellar: :any,                 arm64_sonoma:  "92b96bd68b3ec7ac40b21ac29b198ec22aa8b7389d6818fc0e5415923099b4b0"
-    sha256 cellar: :any,                 sonoma:        "6e2d30b0d9577228ec7617e874d171a26ade4c3064986a27cdded718c27757e8"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e7847a1d2fea0c327eca03e75020b085bb3b324ad5392f61d270c965bb46e706"
-  end
-
   def name_version
     "sofi-#{version.major_minor_patch}"
   end

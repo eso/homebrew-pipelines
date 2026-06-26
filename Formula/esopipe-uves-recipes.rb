@@ -10,15 +10,6 @@ class EsopipeUvesRecipes < Formula
     regex(/href=.*?uves-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
-  bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-uves-recipes-6.5.3-3"
-    sha256 cellar: :any,                 arm64_tahoe:   "f7c7b17fb818b880670a03518ee10014065036b285be24b4265a476c0b93820b"
-    sha256 cellar: :any,                 arm64_sequoia: "ad4a9479df49ac72cbb4ebe8be7ecaec5dc76d132ba9a5692cd4cf7deca9f43c"
-    sha256 cellar: :any,                 arm64_sonoma:  "98682e74539d61df23d147ec951c9cfbb92d4bbf3fcb893d5cb3b3c138ac5509"
-    sha256 cellar: :any,                 sonoma:        "e35c9abc306041f9a2236b8212d84920e0d62636f42f4196b9430f1fca21a606"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ec18555790fb6dfcabcfc4b90232b5d2592e7c210ab194d3fa0fdd0790540c92"
-  end
-
   def name_version
     "uves-#{version.major_minor_patch}"
   end
