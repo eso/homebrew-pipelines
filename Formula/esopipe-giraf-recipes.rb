@@ -1,8 +1,8 @@
 class EsopipeGirafRecipes < Formula
   desc "ESO GIRAFFE instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/giraffe/giraf-kit-2.18.4-4.tar.gz"
-  sha256 "97a0cbf687218f036f51cd84a1c60901a910a4fc9998ad77607e78784039d5ba"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/giraffe/giraf-kit-2.18.4-6.tar.gz"
+  sha256 "1dfe8b603a98541eb514dc2e915c618f8091734ca8690b5426799df84173ae47"
   license "GPL-2.0-or-later"
 
   livecheck do
