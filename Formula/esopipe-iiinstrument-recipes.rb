@@ -15,7 +15,7 @@ class EsopipeIiinstrumentRecipes < Formula
   end
 
   depends_on "pkgconf" => :build
-  depends_on "cpl@7.3.2"
+  depends_on "cpl@7.4"
   depends_on "erfa"
   depends_on "esorex"
   depends_on "gsl"
@@ -29,7 +29,7 @@ class EsopipeIiinstrumentRecipes < Formula
                             "--disable-debug",
                             "--disable-dependency-tracking",
                             "--disable-silent-rules",
-                            "--with-cpl=#{Formula["cpl@7.3.2"].prefix}",
+                            "--with-cpl=#{Formula["cpl@7.4"].prefix}",
                             "--with-erfa=#{Formula["erfa"].prefix}",
                             "--with-curl=#{Formula["curl"].prefix}",
                             "--with-gsl=#{Formula["gsl"].prefix}"
