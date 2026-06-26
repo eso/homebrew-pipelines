@@ -1,8 +1,8 @@
 class EsopipeErisRecipes < Formula
   desc "ESO ERIS instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/eris/eris-kit-2.0.0.tar.gz"
-  sha256 "99c973e8b71766bc6d2ea426023f89ebb343fa700dbb62e88624945961db80f3"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/eris/eris-kit-2.0.0-2.tar.gz"
+  sha256 "5b3f3450c22c9e9b81f89fb904937a230f66ba8ca71760fa360a69846ae1c2a5"
   license "GPL-2.0-or-later"
 
   livecheck do
