@@ -12,12 +12,12 @@ class Telluriccorr < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/telluriccorr-4.3.3_4"
-    sha256 arm64_tahoe:   "c4187966c93ec5fc0e0c1b775ec743366d499df1ab7c5dee6abb93fb028cb724"
-    sha256 arm64_sequoia: "062be9738d52947a9e0602bb0cd04fee00027fdc74bd3f8004ce2de75d6ff14a"
-    sha256 arm64_sonoma:  "8b2c3d9a522968df0d2c240940c1a25d87a27bef5b77d1999c8de279eb6c4a14"
-    sha256 sonoma:        "e98109d78c4cc4e925ddf34f8b754658761d4235d8cf152eef995e0609fb768e"
-    sha256 x86_64_linux:  "a19e4d279005cc7777bece392c4774a22e8c5b8cd759c0dff97d08c9ce2c71fd"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/telluriccorr-4.3.3_5"
+    sha256 arm64_tahoe:   "157c72f6bdbd660bbf6eedef80d54359ff3b6a6c297d4a8913c0042baf1df5c8"
+    sha256 arm64_sequoia: "777c419bc2bb6587e4f8dd08a915bf3f6e0656fc67a91d781bd7484d4094efef"
+    sha256 arm64_sonoma:  "a0d56a3cbb4c933fa287260a65d4979a2931df850e59bd278e367a2b159bbad9"
+    sha256 sonoma:        "afdb04c2affc347fc1c68de9447c97a16c33a57c91aab2dc912ce62545eb7fe5"
+    sha256 x86_64_linux:  "dc8cd4e5326084de8f2d25b6c097c9ea2d5bef4d07918f404d71985427df1da9"
   end
 
   depends_on "cpl@7.4"
