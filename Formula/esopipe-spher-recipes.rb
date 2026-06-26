@@ -1,8 +1,8 @@
 class EsopipeSpherRecipes < Formula
   desc "ESO SPHERE instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/sphere/spher-kit-0.59.1.tar.gz"
-  sha256 "999015945f6978930e022af3a7e52f861407cebe54035fd14d639d596067acb5"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/sphere/spher-kit-0.59.1-2.tar.gz"
+  sha256 "e7df60bfdec1b80083157f52147d314aa59c4e9a009c2f4f02233cbb1997ba8a"
   license "GPL-2.0-or-later"
 
   livecheck do
