@@ -21,6 +21,7 @@ class Esorex < Formula
 
   depends_on "cpl@7.4"
   depends_on "gsl"
+  depends_on "libcext"
   depends_on "libffi"
 
   def install
