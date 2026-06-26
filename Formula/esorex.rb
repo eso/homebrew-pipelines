@@ -1,10 +1,9 @@
 class Esorex < Formula
   desc "Execution Tool for European Southern Observatory pipelines"
   homepage "https://www.eso.org/sci/software/cpl/"
-  url "https://ftp.eso.org/pub/dfs/pipelines/libraries/esorex/esorex-3.13.10.tar.gz"
-  sha256 "a989f9c6dbd6bbb6a9c7c678da8a3b7ad7a8c7e29c644b97c371579b45957dd6"
+  url "https://ftp.eso.org/pub/dfs/pipelines/libraries/esorex/esorex-3.13.11.tar.gz"
+  sha256 "2aca384e4c6d2010cecc9a51621ce17570d37c07239b9dca62b25aab66aebb12"
   license "GPL-2.0-or-later"
-  revision 4
 
   livecheck do
     url "https://ftp.eso.org/pub/dfs/pipelines/libraries/esorex/"
