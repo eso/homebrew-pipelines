@@ -1,8 +1,8 @@
 class EsopipeCriresRecipes < Formula
   desc "ESO CRIRES instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/crires/crire-kit-2.3.19-11.tar.gz"
-  sha256 "b2d86add4428d3b08802759370fc6fd308bc5a70db30648380c6859fda7faf48"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/crires/crire-kit-2.3.19-14.tar.gz"
+  sha256 "4fcbee1c62ee6f57ed852aeb1dcabc7ed4ccb1ba6a3f7478d74ad10f037fd7fd"
   license "GPL-2.0-or-later"
 
   livecheck do
