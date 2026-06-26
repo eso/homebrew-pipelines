@@ -1,8 +1,8 @@
 class EsopipeDetmonRecipes < Formula
   desc "ESO DETMON instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/detmon/detmon-kit-1.3.15-7.tar.gz"
-  sha256 "68cb2b448e7bc193e70f86939b6d2c63c5dacf3ab2963984f1cf7514896426e9"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/detmon/detmon-kit-1.3.15-8.tar.gz"
+  sha256 "838bfa0ba1ab28f8c7f6c142d0874b96af7fc81238e167b98535f9a895c51d0d"
   license "GPL-2.0-or-later"
 
   livecheck do
