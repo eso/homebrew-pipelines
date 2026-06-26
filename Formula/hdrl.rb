@@ -14,12 +14,15 @@ class Hdrl < Formula
   depends_on "erfa"
   depends_on "gsl"
 
+  uses_from_macos "curl"
+
   def install
     system "./configure", "--enable-standalone",
                           "--prefix=#{prefix}",
                           "--with-cpl=#{Formula["cpl@7.4"].prefix}",
                           "--with-erfa=#{Formula["erfa"].prefix}",
-                          "--with-gsl=#{Formula["gsl"].prefix}"
+                          "--with-gsl=#{Formula["gsl"].prefix}",
+                          "--with-curl=#{Formula["curl"].prefix}"
     system "make", "install"
   end
 
