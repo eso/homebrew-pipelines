@@ -13,6 +13,7 @@ class Hdrl < Formula
   depends_on "cpl@7.4"
   depends_on "erfa"
   depends_on "gsl"
+  depends_on "libcext"
 
   uses_from_macos "curl"
 
