@@ -10,6 +10,15 @@ class EsopipeHawkiRecipes < Formula
     regex(/href=.*?hawki-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-hawki-recipes-2.5.17-4"
+    sha256 cellar: :any, arm64_tahoe:   "003e8f9388a84fca1e5d7cc0925cd6893d5ad62b4c8034293be167af7af71bad"
+    sha256 cellar: :any, arm64_sequoia: "da889cb0a2aff38062074d9ae7c831b3e8932da62a7873e0107351c3df701e1f"
+    sha256 cellar: :any, arm64_sonoma:  "5b1fa96b44b3754c286133ae7e4dc29edf1e55c94ccbf503e6c39b4db4d90a04"
+    sha256 cellar: :any, sonoma:        "ff5596e1aedd19db5dc0392b271a94c71cb40c6090c99409069504f589402935"
+    sha256 cellar: :any, x86_64_linux:  "3b58a1fc4afe882dec6793171c36f0698a5d77b8a78a881226e19c14b42782f2"
+  end
+
   def name_version
     "hawki-#{version.major_minor_patch}"
   end
