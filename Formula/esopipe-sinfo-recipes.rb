@@ -10,6 +10,15 @@ class EsopipeSinfoRecipes < Formula
     regex(/href=.*?sinfo-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-sinfo-recipes-3.3.6-12"
+    sha256 cellar: :any, arm64_tahoe:   "d6e65a3573b593c2d9a70f316289d54f7d6cc8beb04aaad4752a2982f5b841ea"
+    sha256 cellar: :any, arm64_sequoia: "d9cab47aaab611cabb38cf2628a9efd4c9af0ac3f59abd2f87e196c654d05a8c"
+    sha256 cellar: :any, arm64_sonoma:  "3e75510100753862154b5bc99910145124b1d6e87107c1ac5715e6e03817a869"
+    sha256 cellar: :any, sonoma:        "fae7c4e9fd4ebdc7cd1cb589acaa902a1f1d3f3ac2b94d210b9f2918259f45b4"
+    sha256 cellar: :any, x86_64_linux:  "f2b8b7150aeb8f0c3ced350c70263635776c30e5555088bf3d8dfdef8125cf6e"
+  end
+
   def name_version
     "sinfo-#{version.major_minor_patch}"
   end
