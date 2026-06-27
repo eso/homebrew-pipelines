@@ -10,6 +10,15 @@ class EsopipeGravityRecipes < Formula
     regex(/href=.*?gravity-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-gravity-recipes-1.10.2-3"
+    sha256 cellar: :any, arm64_tahoe:   "8d5ce1340f5b078e72b5377ab557fdcb9ba9788e98c7aedd63e0445febc69737"
+    sha256 cellar: :any, arm64_sequoia: "6db1231bd47093b5d808b31b121d254a550c90ed4ae8d496785b89a9b7f84745"
+    sha256 cellar: :any, arm64_sonoma:  "76f4c0ccabaf4429643ae299e709b7532310b912b9c56070f5f50844d8596153"
+    sha256 cellar: :any, sonoma:        "1aebf8b8b9d79034af07f9ff89f2074908e27cc7723e4467956e9de83c970592"
+    sha256 cellar: :any, x86_64_linux:  "39af840ef05a7ef5683a65b516aa0cdb229e48b6ca35926fba489f4ed25cb737"
+  end
+
   def name_version
     "gravity-#{version.major_minor_patch}"
   end
