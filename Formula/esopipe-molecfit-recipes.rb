@@ -1,8 +1,8 @@
 class EsopipeMolecfitRecipes < Formula
   desc "ESO MOLECFIT instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/molecfit/molecfit-kit-4.4.4-9.tar.gz"
-  sha256 "5b00ea5382448962c4daa9c25412f6d1cee944a512fa6b76a2cbeec004531b77"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/molecfit/molecfit-kit-4.4.4-10.tar.gz"
+  sha256 "ce539c12905ac7f8cd5537a9a56901843813b2055d4291c703f3140c5957092b"
   license "GPL-2.0-or-later"
 
   livecheck do
