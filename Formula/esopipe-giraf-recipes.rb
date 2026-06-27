@@ -18,6 +18,7 @@ class EsopipeGirafRecipes < Formula
   depends_on "cfitsio"
   depends_on "cpl@7.4"
   depends_on "esorex"
+  depends_on "libcext"
 
   def install
     system "tar", "xf", "#{name_version}.tar.gz"
