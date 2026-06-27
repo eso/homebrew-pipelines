@@ -21,6 +21,7 @@ class EsopipeAmberRecipes < Formula
   depends_on "esorex"
   depends_on "fftw"
   depends_on "gsl"
+  depends_on "libcext"
 
   uses_from_macos "curl"
 
