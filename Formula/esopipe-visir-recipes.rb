@@ -10,6 +10,15 @@ class EsopipeVisirRecipes < Formula
     regex(/href=.*?visir-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-visir-recipes-4.6.4-6"
+    sha256 arm64_tahoe:   "1850e30771a8ceba67b38b14230db0fc3ce0cbfd6e89632e59c4ef9583d4e91c"
+    sha256 arm64_sequoia: "5887af050dd5a721554a54a4d1c0bff45878cff19f3e0e5c4322e3ddc96b247e"
+    sha256 arm64_sonoma:  "dbe0c31b9cb8517d211152c0c914dab0b68273dac9ea0885063c79a6c643ec8d"
+    sha256 sonoma:        "b19251550b02da66d28c14ba792479225745e2e8d7fba2d5107b9f78c0d1aa93"
+    sha256 x86_64_linux:  "62f8060f4862befd060ed2b9284e4f4e2b27722828136336717c570ff8ad9e1f"
+  end
+
   def name_version
     "visir-#{version.major_minor_patch}"
   end
