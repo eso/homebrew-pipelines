@@ -12,6 +12,15 @@ class Pyhdrl < Formula
     regex(/href=.*?pyhdrl[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/pyhdrl-1.0.0"
+    sha256 cellar: :any, arm64_tahoe:   "bbef8af5f821ba475f5d034246427eae6f09f6f4f1f02ee2af8407ee333e3d77"
+    sha256 cellar: :any, arm64_sequoia: "87dae2e26dfc5db25af6577f5fe10235e7a063c967c5019a4f488e064c9575d7"
+    sha256 cellar: :any, arm64_sonoma:  "5f88b9d4c36bbe036e661bbe0bc9d9bc3960ae4476dbf8803f21cc4712f54189"
+    sha256 cellar: :any, sonoma:        "8524866ea970a9c8dfa69bba946a5e6b8b058b911e378cdcbee0a09662b78d4e"
+    sha256 cellar: :any, x86_64_linux:  "23f0a9c5e4c9d48d4f076165edbf84cf1e884e4e7f44479307445008bc205a4f"
+  end
+
   depends_on "cmake" => :build
   depends_on "ninja" => :build
   depends_on "pkg-config" => :build
