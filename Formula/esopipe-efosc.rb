@@ -1,8 +1,8 @@
 class EsopipeEfosc < Formula
   desc "ESO EFOSC instrument pipeline (static data)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/efosc/efosc-kit-2.3.12-1.tar.gz"
-  sha256 "3e81423924b2069e3f263c93e6c5fa03ef0d90d8dfd5b52023df3ee9ef7a3ecf"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/efosc/efosc-kit-2.3.12-4.tar.gz"
+  sha256 "266c66920c6c71d611eef38780833329f117dd0ac3666030e24b0486f37bad3b"
   license "GPL-2.0-or-later"
 
   livecheck do

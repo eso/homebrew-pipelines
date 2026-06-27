@@ -1,8 +1,8 @@
 class EsopipeXshoo < Formula
   desc "ESO XSHOOTER instrument pipeline (static data)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/xshooter/xshoo-kit-3.8.3-4.tar.gz"
-  sha256 "cdfb05231c5ccbe2610e8024af4855dde6cefee8589c45116ba50ded9d7e7369"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/xshooter/xshoo-kit-3.8.3-7.tar.gz"
+  sha256 "41c9a5a9c779882488746cb73ef3c43be14fa26a544b76ef3fc64df78bfe9c69"
   license "GPL-2.0-or-later"
 
   livecheck do
