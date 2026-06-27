@@ -11,12 +11,12 @@ class EsopipeMolecfitRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-molecfit-recipes-4.4.4-9"
-    sha256 cellar: :any, arm64_tahoe:   "1434da4509927a79c2798a6ad0280900639058c50f66cca488ec6e71960dd71c"
-    sha256 cellar: :any, arm64_sequoia: "eca68581a1e6691eb5c9181d2a88ea2ada0f238063c3add63238c2e0579e32a8"
-    sha256 cellar: :any, arm64_sonoma:  "bfad56d64f8d61aa06fdbb6014e951cf4a9350c90411f1dfe3c2843abe7c2526"
-    sha256 cellar: :any, sonoma:        "0567f66a0778a27bcd65ce71bc91a9c441e3e06ae6406257abe633e82e621f71"
-    sha256 cellar: :any, x86_64_linux:  "96e382fefb3a04481759b4edb4851d49113c02ef2d7c234961989192c4b2a6df"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-molecfit-recipes-4.4.4-10"
+    sha256 cellar: :any, arm64_tahoe:   "6b9445870dde5bd4a45ccbcd5bc218e19462f50dd30db76c184fee1c0d856c49"
+    sha256 cellar: :any, arm64_sequoia: "cbece82763a34330e3591112ef7e07bbe9e870ef2fbdcc79dfe63d4aaf58e2b8"
+    sha256 cellar: :any, arm64_sonoma:  "460d091542ca29fc82d861911d14a331403db4dc8e1393f0c278ec6120c6241e"
+    sha256 cellar: :any, sonoma:        "a314701a1aef27639505dae4b848556602492209acd508e34f5232d17911a8c6"
+    sha256 cellar: :any, x86_64_linux:  "448a0dac7c55ee52bbac6765fdd785633c3b83a414abd1c0026ad0e394663b0a"
   end
 
   def name_version
