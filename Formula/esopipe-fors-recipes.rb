@@ -20,6 +20,7 @@ class EsopipeForsRecipes < Formula
   depends_on "erfa"
   depends_on "esorex"
   depends_on "gsl"
+  depends_on "libcext"
   depends_on "telluriccorr"
 
   uses_from_macos "curl"
