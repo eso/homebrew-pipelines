@@ -10,6 +10,15 @@ class EsopipeDetmonRecipes < Formula
     regex(/href=.*?detmon-kit-(\d+(?:[.-]\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-detmon-recipes-1.3.15-9"
+    sha256 cellar: :any, arm64_tahoe:   "9558038c76f458c197258f10913851c139665e301f5234f143c4b91fe5020026"
+    sha256 cellar: :any, arm64_sequoia: "36eb3c45da9ee98074840b841c610fd3f6ba12d6fb47f4c009ce327465839481"
+    sha256 cellar: :any, arm64_sonoma:  "59978f26b122ab843316e73420bc650defd5e03a5353c8b12ff0b4253944b081"
+    sha256 cellar: :any, sonoma:        "3db89c19d29e12c59c6fdda3ddbebcb8b6a9cbf28ef0d3a018618aa936fd348e"
+    sha256 cellar: :any, x86_64_linux:  "64f4a92d50c2940b34020b52329e7b207e5d5683b1ed089e77b9c721d7afe6fb"
+  end
+
   def name_version
     "detmon-#{version.major_minor_patch}"
   end
