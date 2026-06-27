@@ -11,12 +11,12 @@ class EsopipeEfoscRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-efosc-recipes-2.3.12-3"
-    sha256 arm64_tahoe:   "ad03506732e262f32ec0d6b1b4de7ab38623d1ac8b26756274eee75e3e489ecf"
-    sha256 arm64_sequoia: "137a07d7f83f6fabcea65f0705e28f69575bfd230d787af844af4126d088cdb9"
-    sha256 arm64_sonoma:  "aa1df3cc14a51a273592e11c86099831ecb04ab18d00a62f3db36e1ecfd4e8bc"
-    sha256 sonoma:        "5acb0009bb8e89fc88bd72c23ca2bd0fa15003fb14394d23b387d02c785342d3"
-    sha256 x86_64_linux:  "ba93b2e7be9e6a5a41c31144d2e5213a2ace8c92be6f57ecacd4ec234690b410"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-efosc-recipes-2.3.12-4"
+    sha256 arm64_tahoe:   "b587b2450ac842029b720bd93f33c77029f8a642976767e122a8a7ae718c6d57"
+    sha256 arm64_sequoia: "670eddae3870fde132e0d062ab71d5b06c50736453985c864e1354e8c4f20655"
+    sha256 arm64_sonoma:  "2184e28dd7805d576547f351ac1910598dbca40dee01a7a284e3539a8ae4cf46"
+    sha256 sonoma:        "374a7421760fcb9ff48c9d5e2a25436c2a9372a5c15a692599fbf4db81dd5b80"
+    sha256 x86_64_linux:  "0a753e04e530c28b316b70591265c0b3bb51a03ceda7a3c14af1606cf7cb5241"
   end
 
   def name_version
