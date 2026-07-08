@@ -34,6 +34,19 @@ Two GitHub Actions workflows live in `.github/workflows/`:
 Those workflows are created when a new tap is created with `brew tap-new`, and they can be adjusted by the tap maintainer
 — for example, to change which GitHub runners build the packages.
 
+### Supported platforms
+
+| Platform | Runner |
+| --- | --- |
+| Linux x64 | `ubuntu-24.04` |
+| macOS Intel x64 | `macos-14-large` |
+| macOS arm64 | `macos-14`, `macos-15`, `macos-26` |
+
+Linux arm64 may be supported in the future.
+
+> Note: `macos-14-large` is not free like the other runners. GitHub bills its usage, and we have set a monthly budget
+> limit for it.
+
 ---
 
 ## Update Order
