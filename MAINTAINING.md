@@ -2,6 +2,28 @@
 
 This doc gives a quick overview of how the tap is structured and how to keep its formulae up to date.
 
+## Table of Contents
+
+- [Tap Structure](#tap-structure)
+  - [CI/CD](#cicd)
+  - [Supported platforms](#supported-platforms)
+- [Update Order](#update-order)
+- [Updating Formulae](#updating-formulae)
+  - [PR workflow for `-recipes` formulae](#pr-workflow-for--recipes-formulae)
+  - [`-static` and `-demo` formulae — direct to `main`](#-static-and--demo-formulae--direct-to-main)
+- [Automation](#automation)
+  - [Check for new versions](#check-for-new-versions)
+  - [Bump one or more `-recipes` formulae](#bump-one-or-more--recipes-formulae)
+  - [Bump all autobump-eligible formulae](#bump-all-autobump-eligible-formulae)
+  - [Rebuild bottles without a version change (revision bump)](#rebuild-bottles-without-a-version-change-revision-bump)
+- [Troubleshooting](#troubleshooting)
+  - [CI build fails](#ci-build-fails)
+- [Special Cases](#special-cases)
+  - [Python formulae](#python-formulae)
+  - [Why `cpl@7.4` instead of homebrew-core's `cpl`](#why-cpl74-instead-of-homebrew-cores-cpl)
+  - [Test blocks and `esorex` dependency](#test-blocks-and-esorex-dependency)
+  - [Testing a development version of a pipeline before publication](#testing-a-development-version-of-a-pipeline-before-publication)
+
 ## Tap Structure
 
 Each instrument pipeline has **three formulae**:
