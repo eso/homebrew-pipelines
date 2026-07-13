@@ -3,28 +3,6 @@
 This doc gives a quick overview of how the tap is structured and how to keep
 its formulae up to date.
 
-## Table of Contents
-
-- [Tap Structure](#tap-structure)
-  - [CI/CD](#cicd)
-  - [Supported platforms](#supported-platforms)
-- [Update Order](#update-order)
-- [Updating Formulae](#updating-formulae)
-  - [PR workflow for `-recipes` formulae](#pr-workflow-for--recipes-formulae)
-  - [`-static` and `-demo` formulae — direct to `main`](#-static-and--demo-formulae--direct-to-main)
-- [Automation](#automation)
-  - [Check for new versions](#check-for-new-versions)
-  - [Bump one or more `-recipes` formulae](#bump-one-or-more--recipes-formulae)
-  - [Bump all autobump-eligible formulae](#bump-all-autobump-eligible-formulae)
-  - [Rebuild bottles without a version change (revision bump)](#rebuild-bottles-without-a-version-change-revision-bump)
-- [Troubleshooting](#troubleshooting)
-  - [CI build fails](#ci-build-fails)
-- [Special Cases](#special-cases)
-  - [Python formulae](#python-formulae)
-  - [Why `cpl@7.4` instead of homebrew-core's `cpl`](#why-cpl74-instead-of-homebrew-cores-cpl)
-  - [Test blocks and `esorex` dependency](#test-blocks-and-esorex-dependency)
-  - [Testing a development version of a pipeline before publication](#testing-a-development-version-of-a-pipeline-before-publication)
-
 ## Tap Structure
 
 Each instrument pipeline has **three formulae**:
@@ -103,9 +81,10 @@ time because nothing else depends on them.
    ```
 4. Push the branch and open a PR. CI will build the bottles.
 5. Once checks pass, apply the **`pr-pull`** label to trigger the following actions:
-   - CI publishes the bottles to GitHub Packages.
-   - CI merges the PR into `main`.
-   - CI creates a new release tag for the formula.
+
+- CI publishes the bottles to GitHub Packages.
+- CI merges the PR into `main`.
+- CI creates a new release tag for the formula.
 
 Use one branch and one PR per formula. Multiple formulae can be updated simultaneously using separate branches/PRs.
 
@@ -115,15 +94,15 @@ Once the corresponding `-recipes` formula is published, copy its `url` and
 `sha256` (lines 4-5) into the corresponding static formula and commit
 **directly to `main`**. Demo data changes much less frequently than recipes.
 
-The following commands can be used to check that the `url` and `sha256` of the
-recipes formula match the static and demo formulae:
+The following commands can be used to compare the `url` and `sha256` of the
+static formula with the corresponding `-recipes` formula:
 
 ```bash
 diff <(sed -n '4,5p' $1) <(sed -n '4,5p' $2)
 ```
 
 The following script can be used to update the static formula from the
-corresponding recipes formula:
+corresponding `-recipes` formula:
 
 ```bash
 gsed -n '4,5p' $1 > tmp
@@ -131,7 +110,7 @@ gsed -i '4,5d' $2
 gsed -i '3r tmp' $2
 ```
 
-Where `$1` is the recipes formula and `$2` is the static formula.
+Where `$1` is the `-recipes` formula and `$2` is the static formula.
 
 ## Automation
 
@@ -228,24 +207,30 @@ A workaround is to remove the bottle blocks from all `-recipes` formulae,
 bump `esorex`, and then rebuild all `-recipes` formulae to generate new
 bottles.
 
-### Testing a development version of a pipeline before publication
+### Installing a development version of a pipeline before making an official release
 
-Since the development version is not available on the public FTP, it is not
-possible to update the version in GitHub.
-
-To test a development version, edit the formula and update lines 4 and 5
-(`url` and `sha256`) so they point to the development source kit tarball.
+The following workflow can be used to install a development version of a pipeline (from a tag or a branch) before it is
+officially released.
+This is useful for testing and validation purposes.
 
 ```bash
-brew edit <formula>
+brew bump-formula-pr --write-only --url <development-tarball-url> --version <version> <formula>
+brew install -s <formula>
 ```
 
-After editing the formula, run `brew style <formula>` to check for style
-issues, and finally run `brew install -s <formula>` to build the formula from
-source.
-
-To compute the sha256 of the development version, download the tarball from the FTP and run:
+Example:
 
 ```bash
-shasum -a 256 <tarball>
+brew bump-formula-pr --write-only --url https://ftp.eso.org/pub/dfs/pipelines/kit_devel/xshoo-kit-3.8.20-git_P4aba7996_Cefa2e198.tar.gz --version 3.8.20 esopipe-xshoo
+brew install -s esopipe-xshoo
+```
+
+Note that this workflow must be applied twice, once for the `-recipes` formula and once for the static formula.
+
+To restore your local Homebrew installation to the previous state:
+
+```bash
+cd "$(brew --repository eso/pipelines)"
+git reset --hard
+brew reinstall --force <formula>
 ```
