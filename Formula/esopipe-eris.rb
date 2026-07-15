@@ -1,8 +1,8 @@
 class EsopipeEris < Formula
   desc "ESO ERIS instrument pipeline (static data)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/eris/eris-kit-2.0.0-2.tar.gz"
-  sha256 "5b3f3450c22c9e9b81f89fb904937a230f66ba8ca71760fa360a69846ae1c2a5"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/eris/eris-kit-2.0.6-1.tar.gz"
+  sha256 "cf33c1ff6ff002e6fc6b9c9412fcd2e1d2984629b9adafc72c910881df8d435d"
   license "GPL-2.0-or-later"
 
   livecheck do
