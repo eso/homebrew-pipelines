@@ -1,8 +1,8 @@
 class EsopipeEspdrRecipes < Formula
   desc "ESO ESPRESSO instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/espresso/espdr-kit-3.3.19-5.tar.gz"
-  sha256 "df75e5c2bc6b17b83a5c3abf278634fc243262907dbee13b68001a347c7763eb"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/espresso/espdr-kit-3.6.0.tar.gz"
+  sha256 "af577157f742790a121e02e3d0ba44330c4ab6bcc26545cc74fa4c61503ec9b7"
   license "GPL-2.0-or-later"
 
   livecheck do
