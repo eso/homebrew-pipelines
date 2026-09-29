@@ -17,8 +17,11 @@ class EsopipeForsDemo < Formula
     (prefix/"share/esopipes/datademo/fors").install Dir["*"]
   end
 
-  def post_install
-    system "brew", "cleanup", "--prune=all", "esopipe-fors-demo"
+  def caveats
+    <<~EOS
+      Demo data can be several gigabytes in size. To reclaim temporary cache space:
+        brew cleanup --prune=all #{name}
+    EOS
   end
 
   test do

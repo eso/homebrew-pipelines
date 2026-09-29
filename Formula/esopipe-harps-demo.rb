@@ -17,8 +17,11 @@ class EsopipeHarpsDemo < Formula
     (prefix/"share/esopipes/datademo/harps").install Dir["*"]
   end
 
-  def post_install
-    system "brew", "cleanup", "--prune=all", "esopipe-harps-demo"
+  def caveats
+    <<~EOS
+      Demo data can be several gigabytes in size. To reclaim temporary cache space:
+        brew cleanup --prune=all #{name}
+    EOS
   end
 
   test do

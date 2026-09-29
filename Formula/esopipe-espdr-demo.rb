@@ -17,8 +17,11 @@ class EsopipeEspdrDemo < Formula
     (prefix/"share/esopipes/datademo/espdr").install Dir["*"]
   end
 
-  def post_install
-    system "brew", "cleanup", "--prune=all", "esopipe-espdr-demo"
+  def caveats
+    <<~EOS
+      Demo data can be several gigabytes in size. To reclaim temporary cache space:
+        brew cleanup --prune=all #{name}
+    EOS
   end
 
   test do
