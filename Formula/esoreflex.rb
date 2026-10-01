@@ -112,20 +112,24 @@ class Esoreflex < Formula
     EOS
   end
 
-  def post_install
-    if OS.mac?
-      system python3, "-m", "pip", "install",
-             "astropy",
-             "matplotlib",
-             "numpy",
-             "packaging",
-             "wxpython",
-             "pyyaml"
-    end
-  end
-
   def caveats
-    on_linux do
+    if OS.mac?
+      <<~EOS
+        On macOS please install the following Python packages for Reflex:
+          astropy
+          matplotlib
+          numpy
+          packaging
+          wxPython
+          PyYAML
+
+        Run:
+          python3.11 -m pip install astropy matplotlib numpy packaging wxpython pyyaml
+
+        See also:
+          https://www.eso.org/sci/software/pipelines/installation/software_prerequisites.html#software_prerequisites_reflex
+      EOS
+    elsif OS.linux?
       <<~EOS
         On Linux please install the following packages using the system package manager:
           Python 3.11
