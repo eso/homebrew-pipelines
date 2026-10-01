@@ -1,8 +1,8 @@
 class EsopipeGravityRecipes < Formula
   desc "ESO GRAVITY instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/gravity/gravity-kit-1.11.0.tar.gz"
-  sha256 "00ac2ad2abb8c4393361064d4576ed7fca8acd0dbbe1a3afb6f7a21cad405d58"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/gravity/gravity-kit-1.12.0.tar.gz"
+  sha256 "81794dc68a5afc1bfe9b117df7fa842aa7e3581e6df348336d443176d8e15122"
   license "GPL-2.0-or-later"
 
   livecheck do
