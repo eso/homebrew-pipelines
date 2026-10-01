@@ -37,6 +37,7 @@ class EsopipeIsaacRecipes < Formula
                             "--with-cpl=#{Formula["cpl@7.4"].prefix}",
                             "--with-gsl=#{Formula["gsl"].prefix}"
       system "make", "install"
+      update_workflows
     end
   end
 

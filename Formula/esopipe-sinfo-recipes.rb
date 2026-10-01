@@ -41,6 +41,7 @@ class EsopipeSinfoRecipes < Formula
                             "--with-erfa=#{Formula["erfa"].prefix}",
                             "--with-gsl=#{Formula["gsl"].prefix}"
       system "make", "install"
+      update_workflows
     end
   end
 

@@ -36,6 +36,7 @@ class EsopipeGirafRecipes < Formula
                             "--with-cfitsio=#{Formula["cfitsio"].prefix}",
                             "--with-cpl=#{Formula["cpl@7.4"].prefix}"
       system "make", "install"
+      update_workflows
     end
   end
 

@@ -41,6 +41,7 @@ class EsopipeNacoRecipes < Formula
                             "--with-curl=#{Formula["curl"].prefix}",
                             "--with-gsl=#{Formula["gsl"].prefix}"
       system "make", "install"
+      update_workflows
     end
   end
 

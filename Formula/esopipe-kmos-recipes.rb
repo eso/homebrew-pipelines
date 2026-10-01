@@ -35,6 +35,7 @@ class EsopipeKmosRecipes < Formula
                             "--with-cpl=#{Formula["cpl@7.4"].prefix}",
                             "--with-telluriccorr=#{Formula["telluriccorr"].prefix}"
       system "make", "install"
+      update_workflows
       rm bin/"kmos_calib.py"
       rm bin/"kmos_verify.py"
     end

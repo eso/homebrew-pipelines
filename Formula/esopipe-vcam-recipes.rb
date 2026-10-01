@@ -33,6 +33,7 @@ class EsopipeVcamRecipes < Formula
       system "./configure", "--prefix=#{prefix}",
                             "--with-cpl=#{Formula["cpl@7.4"].prefix}"
       system "make", "install"
+      update_workflows
     end
   end
 

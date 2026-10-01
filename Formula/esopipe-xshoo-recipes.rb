@@ -45,6 +45,7 @@ class EsopipeXshooRecipes < Formula
                             "--with-telluriccorr=#{Formula["telluriccorr"].prefix}",
                             "--with-gsl=#{Formula["gsl"].prefix}"
       system "make", "install"
+      update_workflows
     end
   end
 

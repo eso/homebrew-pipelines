@@ -35,6 +35,7 @@ class EsopipeMolecfitRecipes < Formula
                             "--with-cpl=#{Formula["cpl@7.4"].prefix}",
                             "--with-telluriccorr=#{Formula["telluriccorr"].prefix}"
       system "make", "install"
+      update_workflows
     end
   end
 
