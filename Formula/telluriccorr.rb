@@ -31,12 +31,25 @@ class Telluriccorr < Formula
     system "make", "install"
   end
 
-  def post_install
-    ln_sf "#{Formula["molecfit-third-party"].share}/molecfit/data/hitran", "#{share}/molecfit/data/"
-    ln_sf Formula["molecfit-third-party"].bin, prefix
-    url = "https://ftp.eso.org/pub/dfs/pipelines/skytools/molecfit/gdas/gdas_profiles_C-70.4-24.6.tar.gz"
-    filename = "#{share}/molecfit/data/profiles/gdas/gdas_profiles_C-70.4-24.6.tar.gz"
-    system "curl", "-L", "-o", filename, url
+  def post_install_steps
+    [
+      {
+        command: "ln",
+        args:    [
+          "-sf",
+          "#{Formula["molecfit-third-party"].share}/molecfit/data/hitran",
+          "#{share}/molecfit/data/",
+        ],
+      },
+      {
+        command: "ln",
+        args:    [
+          "-sf",
+          Formula["molecfit-third-party"].bin.to_s,
+          prefix.to_s,
+        ],
+      },
+    ]
   end
 
   test do
