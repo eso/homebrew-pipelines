@@ -12,12 +12,10 @@ class EsopipeEspdrRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-espdr-recipes-3.6.0"
-    sha256 arm64_tahoe:   "1e25be51c59709ec0603aa95e0874f7bf7182eb165ec0a811907b8ac08c7d834"
-    sha256 arm64_sequoia: "e99caa6350024bb8eb7f3412e7c8109e52619eab1d58cac2e603a814e0a0105f"
-    sha256 arm64_sonoma:  "0b68a3ecbff7cb91fe2bbba478a24826078c5d5f15fa10ca739490c16b35ebac"
-    sha256 sonoma:        "1cbaf695692eadcaa6911c17335fa72e48b3d7120212ad7d78fd035d81068ac5"
-    sha256 x86_64_linux:  "56c86e85fa4fb7595f90912da339b4ac1081dfbf2c1290296fdeb8081afd70ac"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-espdr-recipes-3.6.0_1"
+    sha256 arm64_tahoe:   "a5b640ef3abf2c2bf5caee125842c1b71c127b6ca9368e189f0fb85dacebd5c2"
+    sha256 arm64_sequoia: "caa82bbe53bf7797e19812b7bf874bf608576ea1a971670b7893872ae39c494c"
+    sha256 x86_64_linux:  "347abd6fe8a03ba2bdbf6c333e29139103035728617c7cc9729d982d1f27c51b"
   end
 
   def name_version
