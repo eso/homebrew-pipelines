@@ -4,6 +4,7 @@ class EsopipeHawkiRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/hawki/hawki-kit-2.5.17-5.tar.gz"
   sha256 "8510bf1f6eea5ec2d0a4673bf9d6e5c288a04536fa1a90923f28b62767d12150"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url :homepage
