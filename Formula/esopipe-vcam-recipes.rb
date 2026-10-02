@@ -4,6 +4,7 @@ class EsopipeVcamRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/vircam/vcam-kit-2.3.17-5.tar.gz"
   sha256 "15e63b1c74641294653770074ec55a4008b95e043bc0c6ba0f6b7d0b41f1eb20"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url :homepage
