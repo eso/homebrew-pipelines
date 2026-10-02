@@ -4,6 +4,7 @@ class EsopipeEspdaRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/espresso-das/espda-kit-1.4.0-9.tar.gz"
   sha256 "4d1c273894c9f1212c06a8bb1d58166914ad09140ed8281439202a605c796999"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url :homepage
