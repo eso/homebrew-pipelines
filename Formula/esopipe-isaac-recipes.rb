@@ -4,6 +4,7 @@ class EsopipeIsaacRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/isaac/isaac-kit-6.2.5-15.tar.gz"
   sha256 "7652c07fe44a07f36601379d7a3e2bb19b655b281b4012827fb30ffbd97ad94c"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url :homepage
