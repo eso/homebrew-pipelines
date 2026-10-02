@@ -12,12 +12,10 @@ class EsopipeVcamRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-vcam-recipes-2.3.17-5"
-    sha256 cellar: :any, arm64_tahoe:   "90e7c830ae9a0081d0aa6b748d0cf0afdc11b35606f25afcd8da4372cd0a5b30"
-    sha256 cellar: :any, arm64_sequoia: "1a1745c206e7207d2b74418f1d1e7c503b5a2adec0c48500b9748cf2f8c237fd"
-    sha256 cellar: :any, arm64_sonoma:  "d58d2b714e7623e9e7332a5ce3fab9793113d02cd20efbca127cd6b4057f7254"
-    sha256 cellar: :any, sonoma:        "8c5a96d0f97b35da63ae55f3a3999db60f678c485d0b50f74444dde488c0b878"
-    sha256 cellar: :any, x86_64_linux:  "559defc7a2f7bd6ff2f45be87fc006f5e17fad23058eacb02ea387fa482b0bb5"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-vcam-recipes-2.3.17-5_1"
+    sha256 cellar: :any, arm64_tahoe:   "a5e3a4039679f3c563c983d6bc79fef2a4c11b171ff74685568e0a3444bfe1f9"
+    sha256 cellar: :any, arm64_sequoia: "c9cdbec0119fe45971340d407fc85525b3cfd3a8780d18e1ac4c5e4b25d269d0"
+    sha256 cellar: :any, x86_64_linux:  "626697c0d6096a83afd9fa16d33387c61367ca066b15eb7916622bb30e587473"
   end
 
   def name_version
