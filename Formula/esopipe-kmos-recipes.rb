@@ -4,6 +4,7 @@ class EsopipeKmosRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/kmos/kmos-kit-4.5.3-6.tar.gz"
   sha256 "ce0797eb5624ed68535903691e0675ff84be612e48957020bcf40768ec9f67de"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url :homepage
