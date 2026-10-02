@@ -4,6 +4,7 @@ class EsopipeNirpsRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/nirps/nirps-kit-3.6.0.tar.gz"
   sha256 "f9bdb110714d21126d6acb0b0a21190d2bf56a9f3ffe093e3d3e0611e0fc03ba"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url :homepage
