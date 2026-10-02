@@ -4,6 +4,7 @@ class EsopipeDetmonRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/detmon/detmon-kit-1.3.15-9.tar.gz"
   sha256 "71226a1b63ed65f3671f9e4fa753bac71adc8c11f22e16c23809eec859f4b98c"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url :homepage
