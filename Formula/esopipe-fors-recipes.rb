@@ -54,22 +54,17 @@ class EsopipeForsRecipes < Formula
     workflow_dir_1 = prefix/"share/reflex/workflows/#{name_version}"
     workflow_dir_2 = prefix/"share/esopipes/#{name_version}/reflex"
 
+    replacements = {
+      "CALIB_DATA_PATH_TO_REPLACE"  => (HOMEBREW_PREFIX/"share/esopipes/datastatic").to_s,
+      "ROOT_DATA_PATH_TO_REPLACE"   => "$HOME/reflex_data",
+      "$ROOT_DATA_DIR/reflex_input" => (HOMEBREW_PREFIX/"share/esopipes/datademo").to_s,
+      "RAW_DATA_PATH_TO_REPLACE/"   => (HOMEBREW_PREFIX/"share/esopipes/datademo/fors").to_s,
+    }
+
     workflow_dir_1.glob("*.xml").each do |workflow|
-      inreplace workflow,
-                "CALIB_DATA_PATH_TO_REPLACE",
-                (HOMEBREW_PREFIX/"share/esopipes/datastatic").to_s
-
-      inreplace workflow,
-                "ROOT_DATA_PATH_TO_REPLACE",
-                "$HOME/reflex_data"
-
-      inreplace workflow,
-                "$ROOT_DATA_DIR/reflex_input",
-                (HOMEBREW_PREFIX/"share/esopipes/datademo").to_s
-
-      inreplace workflow,
-                "RAW_DATA_PATH_TO_REPLACE/",
-                (HOMEBREW_PREFIX/"share/esopipes/datademo/fors").to_s
+      replacements.each do |before, after|
+        inreplace workflow, before, after, audit_result: false
+      end
 
       cp workflow, workflow_dir_2
     end
