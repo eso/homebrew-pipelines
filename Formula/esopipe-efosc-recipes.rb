@@ -47,15 +47,18 @@ class EsopipeEfoscRecipes < Formula
     workflow_dir_1.glob("*.xml").each do |workflow|
       inreplace workflow,
                 "CALIB_DATA_PATH_TO_REPLACE",
-                (HOMEBREW_PREFIX/"share/esopipes/datastatic").to_s
+                (HOMEBREW_PREFIX/"share/esopipes/datastatic").to_s,
+                audit_result: false
 
       inreplace workflow,
                 "ROOT_DATA_PATH_TO_REPLACE/reflex_input",
-                (HOMEBREW_PREFIX/"share/esopipes/datademo").to_s
+                (HOMEBREW_PREFIX/"share/esopipes/datademo").to_s,
+                audit_result: false
 
       inreplace workflow,
                 "ROOT_DATA_PATH_TO_REPLACE",
-                "$HOME/reflex_data"
+                "$HOME/reflex_data",
+                audit_result: false
 
       cp workflow, workflow_dir_2
     end
