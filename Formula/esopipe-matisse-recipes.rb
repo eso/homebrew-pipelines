@@ -4,6 +4,7 @@ class EsopipeMatisseRecipes < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/instruments/matisse/matisse-kit-2.2.3-6.tar.gz"
   sha256 "32979cff4861d7c16175ed1a399643ac1164a176f603b1d75088b4483ca1c714"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url :homepage
