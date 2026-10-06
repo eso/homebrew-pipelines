@@ -11,7 +11,6 @@ class EsopipeKmosDemo < Formula
   end
 
   depends_on "esopipe-kmos"
-  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/kmos").install Dir["*"]

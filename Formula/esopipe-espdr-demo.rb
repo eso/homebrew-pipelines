@@ -11,7 +11,6 @@ class EsopipeEspdrDemo < Formula
   end
 
   depends_on "esopipe-espdr"
-  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/espdr").install Dir["*"]

@@ -11,7 +11,6 @@ class EsopipeIiinstrumentDemo < Formula
   end
 
   depends_on "esopipe-iiinstrument"
-  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/iiinstrument").install Dir["*"]

@@ -11,7 +11,6 @@ class EsopipeGirafDemo < Formula
   end
 
   depends_on "esopipe-giraf"
-  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/giraf").install Dir["*"]

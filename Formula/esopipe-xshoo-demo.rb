@@ -11,7 +11,6 @@ class EsopipeXshooDemo < Formula
   end
 
   depends_on "esopipe-xshoo"
-  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/xshooter").install Dir["*"]

@@ -11,7 +11,6 @@ class EsopipeHawkiDemo < Formula
   end
 
   depends_on "esopipe-hawki"
-  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/hawki").install Dir["*"]

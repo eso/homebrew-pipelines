@@ -11,7 +11,6 @@ class EsopipeMatisseDemo < Formula
   end
 
   depends_on "esopipe-matisse"
-  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/matisse").install Dir["*"]

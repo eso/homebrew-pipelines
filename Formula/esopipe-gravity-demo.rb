@@ -11,7 +11,6 @@ class EsopipeGravityDemo < Formula
   end
 
   depends_on "esopipe-gravity"
-  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/gravity").install Dir["*"]

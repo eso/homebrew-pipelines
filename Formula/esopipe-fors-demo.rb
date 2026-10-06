@@ -11,7 +11,6 @@ class EsopipeForsDemo < Formula
   end
 
   depends_on "esopipe-fors"
-  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/fors").install Dir["*"]

@@ -11,7 +11,6 @@ class EsopipeHarpsDemo < Formula
   end
 
   depends_on "esopipe-harps"
-  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/harps").install Dir["*"]

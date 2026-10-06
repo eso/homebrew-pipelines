@@ -11,7 +11,6 @@ class EsopipeMolecfitDemo < Formula
   end
 
   depends_on "esopipe-molecfit"
-  depends_on "esoreflex"
 
   def install
     (prefix/"share/esopipes/datademo/molecfit").install Dir["*"]
