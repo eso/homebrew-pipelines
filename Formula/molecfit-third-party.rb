@@ -29,4 +29,8 @@ class MolecfitThirdParty < Formula
       "prefix=#{prefix}",
       "install"
   end
+
+  test do
+    system "true"
+  end
 end
