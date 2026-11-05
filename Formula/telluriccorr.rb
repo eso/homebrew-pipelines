@@ -4,7 +4,7 @@ class Telluriccorr < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/libraries/telluriccorr/telluriccorr-4.3.3.tar.gz"
   sha256 "dffc4ef40d7d279f11ab402fc711724b3fd52412331b0baffb6ccf100d3b39d3"
   license "GPL-2.0-or-later"
-  revision 5
+  revision 6
 
   livecheck do
     url "https://ftp.eso.org/pub/dfs/pipelines/libraries/telluriccorr/"
@@ -29,27 +29,10 @@ class Telluriccorr < Formula
     system "./configure", "--prefix=#{prefix}",
                           "--with-cpl=#{Formula["cpl@7.4"].prefix}"
     system "make", "install"
-  end
 
-  def post_install_steps
-    [
-      {
-        command: "ln",
-        args:    [
-          "-sf",
-          "#{Formula["molecfit-third-party"].share}/molecfit/data/hitran",
-          "#{share}/molecfit/data/",
-        ],
-      },
-      {
-        command: "ln",
-        args:    [
-          "-sf",
-          Formula["molecfit-third-party"].bin.to_s,
-          prefix.to_s,
-        ],
-      },
-    ]
+    mkdir_p share/"molecfit/data"
+    ln_sf Formula["molecfit-third-party"].share/"molecfit/data/hitran", share/"molecfit/data"
+    ln_sf Formula["molecfit-third-party"].bin, prefix
   end
 
   test do
