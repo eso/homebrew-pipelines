@@ -11,10 +11,10 @@ class EsopipeVcamRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-vcam-recipes-2.3.17-5_1"
-    sha256 cellar: :any, arm64_tahoe:   "a5e3a4039679f3c563c983d6bc79fef2a4c11b171ff74685568e0a3444bfe1f9"
-    sha256 cellar: :any, arm64_sequoia: "c9cdbec0119fe45971340d407fc85525b3cfd3a8780d18e1ac4c5e4b25d269d0"
-    sha256 cellar: :any, x86_64_linux:  "626697c0d6096a83afd9fa16d33387c61367ca066b15eb7916622bb30e587473"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-vcam-recipes-2.3.17-6"
+    sha256 cellar: :any, arm64_tahoe:   "074e3b12bdf892f05d8aec6a6a28ad722b39f73fa8d20698e1134be3c88b0c18"
+    sha256 cellar: :any, arm64_sequoia: "58f9c5088bc7a03061b358a6b235aa7b4f0200935033fabcfba7c4698ad201a6"
+    sha256 cellar: :any, x86_64_linux:  "7f64ea84f0457f412e4e59485676268fae15dd1a1dcdb8d80951ed8c68e89c9a"
   end
 
   def name_version
