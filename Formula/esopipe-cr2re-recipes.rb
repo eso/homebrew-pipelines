@@ -11,10 +11,10 @@ class EsopipeCr2reRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-cr2re-recipes-1.6.11-5_1"
-    sha256 cellar: :any, arm64_tahoe:   "568f93305875df0183b98804fd66f741b90cb6769f7c70e489903564d8d29340"
-    sha256 cellar: :any, arm64_sequoia: "9847511dfd7e913f9281bf5e8e8fa08eb0ba4cb94af18957a613aa72d6e289fd"
-    sha256 cellar: :any, x86_64_linux:  "2e888b6b2273bae677eedab275c119f70576d15fc5756a3418be2fda61971e5a"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-cr2re-recipes-1.6.11-6"
+    sha256 cellar: :any, arm64_tahoe:   "666acd88194fe46766159216f570b903bd53cb05bcaa0e08e042ec3be6f5de34"
+    sha256 cellar: :any, arm64_sequoia: "8d0f063bf1bb05948e0bc04566781c5dab18aa419b12940e6390c05757a2aa55"
+    sha256 cellar: :any, x86_64_linux:  "7e3c29290e315e1f6a6a5422eaf01a12526a3d74b468b1bcfaeb9db8ed29693c"
   end
 
   def name_version
