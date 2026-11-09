@@ -1,10 +1,9 @@
 class EsopipeEfoscRecipes < Formula
   desc "ESO EFOSC instrument pipeline (recipe plugins)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/efosc/efosc-kit-2.3.12-4.tar.gz"
-  sha256 "266c66920c6c71d611eef38780833329f117dd0ac3666030e24b0486f37bad3b"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/efosc/efosc-kit-2.3.12-5.tar.gz"
+  sha256 "c12beaf9948f9766c3c2dd15b22246f6c8cbacd79a62cc022e7238ac44c2a95d"
   license "GPL-2.0-or-later"
-  revision 1
 
   livecheck do
     url :homepage
