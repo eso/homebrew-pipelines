@@ -11,10 +11,10 @@ class EsopipeDetmonRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-detmon-recipes-1.3.15-9_1"
-    sha256 cellar: :any, arm64_tahoe:   "ae7ee2aa9d88649e599043cda91600b1a116486bfb02ad5f0d5f87e565052cd9"
-    sha256 cellar: :any, arm64_sequoia: "bda5525f3b739677d0fe5e69cc0d8b6d3d196d22a7a0d970fa261fad72571bc0"
-    sha256 cellar: :any, x86_64_linux:  "e8909895511099ceab2868f6a09af89e1eac248b56b50dfc9db452906d0fc861"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-detmon-recipes-1.3.15-10"
+    sha256 cellar: :any, arm64_tahoe:   "f7a27ac42dfd66db73d6dc3f41c203466892b498867a9a2cfbf94feee53dff73"
+    sha256 cellar: :any, arm64_sequoia: "d186de8b224e4b562aceeb627e86109194202b9acee21f880f9e5c64b9210645"
+    sha256 cellar: :any, x86_64_linux:  "20caf8d875995931bd0ae40af19ab2848889813ebf66dced14cf8c032e7fbc69"
   end
 
   def name_version
