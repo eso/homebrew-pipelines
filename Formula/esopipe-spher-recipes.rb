@@ -11,10 +11,10 @@ class EsopipeSpherRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-spher-recipes-0.59.3"
-    sha256 cellar: :any, arm64_tahoe:   "e966a4dd803a660966f6c104b9f3f84bc1aa4a1fbf921098b8f89248d4f572f5"
-    sha256 cellar: :any, arm64_sequoia: "23a5e73ba382b292d317cf0d3ff877de132f93c94c182e7491b153b3d24e4fe1"
-    sha256 cellar: :any, x86_64_linux:  "db58a071174492fba60040e4172cdc58a97bec6127514cf375acd1d7aa07623f"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-spher-recipes-0.59.4-1"
+    sha256 cellar: :any, arm64_tahoe:   "a9531590e8171273c4f4655f2e4b1941e21c5195a225255ab8c94ef7d1f15825"
+    sha256 cellar: :any, arm64_sequoia: "41b6bef05d1a7f94a9eabbc2bf7335ac7adc1162b5a98f86927971e4cf137dc1"
+    sha256 cellar: :any, x86_64_linux:  "af90590aa8104b19b50bc44e964b38fc01fb34f2ad79bf8de646c47edefb1b13"
   end
 
   def name_version
