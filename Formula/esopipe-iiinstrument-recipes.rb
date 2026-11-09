@@ -11,10 +11,10 @@ class EsopipeIiinstrumentRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-iiinstrument-recipes-0.1.16-6_1"
-    sha256 cellar: :any, arm64_tahoe:   "c437e6eb1928a273f8142a9c65221f90998582b24b9968ddda16be8cbe8f296f"
-    sha256 cellar: :any, arm64_sequoia: "b6bc5392b1ab01fecd47e3b80d9d53b381ce9beb082162630a1f6a6626287fe1"
-    sha256 cellar: :any, x86_64_linux:  "4bbf624eacf9b0aa5f4393bdfdaf6691fe553aae01207024ec42b6c19c09d7f2"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-iiinstrument-recipes-0.1.16-7"
+    sha256 cellar: :any, arm64_tahoe:   "499ec23379d12a9b20b0990dd69dbde70f1b3234a4c56ae2a7166abb3342822b"
+    sha256 cellar: :any, arm64_sequoia: "87f03ca8040488452b3e2e683628df71da801c13f5730e05979297b9be574da3"
+    sha256 cellar: :any, x86_64_linux:  "74d782ab8676be79de3503f7ac3176ec9b3bc83abb530d8b7812fd15b8e590ec"
   end
 
   def name_version
