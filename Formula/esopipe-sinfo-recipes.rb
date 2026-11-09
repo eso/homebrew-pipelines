@@ -11,10 +11,10 @@ class EsopipeSinfoRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-sinfo-recipes-3.3.6-12_1"
-    sha256 cellar: :any, arm64_tahoe:   "9619e9627c47d065509de05bc5df6e56799ce60e10896ecfe99bef44c301afd1"
-    sha256 cellar: :any, arm64_sequoia: "95461741dd4455927df3c4f24973e33003c7c0c7e70d4ccd67dbf88ddc375ea6"
-    sha256 cellar: :any, x86_64_linux:  "78c692445852d12782ce11196d8b31ee2fe5d8d81363cc55bf566722e383c7a9"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-sinfo-recipes-3.3.6-13"
+    sha256 cellar: :any, arm64_tahoe:   "73185262d6485fd7b56a57667620cac1c696074d7f9046c979948755eae0163b"
+    sha256 cellar: :any, arm64_sequoia: "0b058576abe1f791ac7e48c7850cb1ca1c7718f3343b00480fd7bd8db2729aea"
+    sha256 cellar: :any, x86_64_linux:  "7c9ef96ecaa2b703bed9287baa073dc20d4999709c7375ea8d2934362e38b98c"
   end
 
   def name_version
