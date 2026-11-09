@@ -11,10 +11,10 @@ class EsopipeNirpsRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-nirps-recipes-3.6.0_1"
-    sha256 arm64_tahoe:   "27b0eafd5ae7bb521444af9ea26667c6661de66c08d70944df2d44fab8ea6c3d"
-    sha256 arm64_sequoia: "0ab68aa1029417b0ce180af849952111d2a5bdd24bca3c46915f585db2c1e606"
-    sha256 x86_64_linux:  "fb8edb6927f2ece04dc313bfaba773d2561aa32ae1d345571b8dd82500ff142a"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-nirps-recipes-3.6.0-1"
+    sha256 arm64_tahoe:   "c833d7425018fd05fd1a52188d92a485786702fa77f83be5147c42567faeaf8d"
+    sha256 arm64_sequoia: "c2f46b49fc00825b08dcf5164c3a437af8a321716f60e4641e759473e2787f69"
+    sha256 x86_64_linux:  "c5260e164eca80c5553cf4c131e4e5492a02f1f970f39011e9d54d7d8b8e8cfd"
   end
 
   def name_version
