@@ -11,10 +11,10 @@ class EsopipeAmberRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-amber-recipes-4.4.5-16_1"
-    sha256 cellar: :any, arm64_tahoe:   "fc985548005c4dd968daccccac2e3e42cbc74846a0058fc9309cef2eab196d22"
-    sha256 cellar: :any, arm64_sequoia: "a4112373f3b9e74f315fe40862ce1888eba4519107c88793446d87f304c02e5b"
-    sha256 cellar: :any, x86_64_linux:  "a195b9452ecd370f10a829b98265cbd9d8d9823b4b0e102d561bb2a1a96dd310"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-amber-recipes-4.4.5-17"
+    sha256 cellar: :any, arm64_tahoe:   "55905abb780e614a9661f5d58428386ca556e976b89fe117e9a943fbcc42cf8c"
+    sha256 cellar: :any, arm64_sequoia: "c0b156d194c12bd0a5874678bd4b82669c4472fa5d91774fd10762f8faad5cf3"
+    sha256 cellar: :any, x86_64_linux:  "6f8bb41e03d7a65f06f98ef9c36c5311859d8345e59f6b8fcb975bec4ff93854"
   end
 
   def name_version
