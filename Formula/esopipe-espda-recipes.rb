@@ -11,10 +11,10 @@ class EsopipeEspdaRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-espda-recipes-1.4.0-9_1"
-    sha256 cellar: :any, arm64_tahoe:   "0beef18ff47d14ad0b84ebfdd4a176ab8051bdb92ffdaf0964d9c793a758d96b"
-    sha256 cellar: :any, arm64_sequoia: "9946d3a6d5edc1f01ad87f0791a73f3c05e318c012cd458025fcdbad0e4dca59"
-    sha256 cellar: :any, x86_64_linux:  "99fcc4b619b0f1da9ad9343532d124ca1be486a75e0f7ac7b85d0352d7be9d4b"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-espda-recipes-1.4.0-10"
+    sha256 cellar: :any, arm64_tahoe:   "64827dae4c3410db3d846b66acf45c4e2369b8d8cad16e39b3864d3a5b64516c"
+    sha256 cellar: :any, arm64_sequoia: "dd6205cc6c075eed050e49c62fcb5b21fba3066c7d45fa8ad531a3df5efee8d0"
+    sha256 cellar: :any, x86_64_linux:  "e9aff9eff9d0e846905135a6bc04e4940163fb261ecf3e8ed146ef5a418bd6fb"
   end
 
   def name_version
