@@ -11,10 +11,10 @@ class EsopipeXshooRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-xshoo-recipes-3.8.3-7_1"
-    sha256 cellar: :any, arm64_tahoe:   "5be505678fe53c3feb675fd12503b732f7fd3321db55985d2c2e2052556cced5"
-    sha256 cellar: :any, arm64_sequoia: "cf9181e6c77bcd8219be70eefc5afd942c187750278addb4d52d4f2ed660b7f4"
-    sha256 cellar: :any, x86_64_linux:  "59de3a87ec17290bce7a9ff32bfc63e3b5ff68cfa39278c66e9adec1a464c5f8"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-xshoo-recipes-3.8.3-8"
+    sha256 cellar: :any, arm64_tahoe:   "1a0ead0f70f0acc4a49abbe378cd1324ed885c8c2d1e8bad96e5a35876e1c904"
+    sha256 cellar: :any, arm64_sequoia: "c3985d041ebb795769f67cc99f9d30830e71d1e6d0beaace3a36770a6dd396a3"
+    sha256 cellar: :any, x86_64_linux:  "4b25fa7885563355d5daade5817e9ac98fec336c34fef8b69cc986f034cd1da4"
   end
 
   def name_version
