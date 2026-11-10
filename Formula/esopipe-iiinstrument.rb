@@ -1,8 +1,8 @@
 class EsopipeIiinstrument < Formula
   desc "ESO example template instrument pipeline (static data)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/iiinstrument/iiinstrument-kit-0.1.16-6.tar.gz"
-  sha256 "57d62106ad3f26582dce3d6c5467b76a8a75835429fd074786a9cf4dbc7b1806"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/iiinstrument/iiinstrument-kit-0.1.16-7.tar.gz"
+  sha256 "9424f0403bb98dcec0c0969caef14b58bd5ab4a88544f8df19d37549fed8c0c8"
   license "GPL-2.0-or-later"
 
   livecheck do

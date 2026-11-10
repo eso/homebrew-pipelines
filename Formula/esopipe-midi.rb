@@ -1,8 +1,8 @@
 class EsopipeMidi < Formula
   desc "ESO MIDI instrument pipeline (static data)"
   homepage "https://www.eso.org/sci/software/pipe_aem_table.html"
-  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/midi/midi-kit-2.9.6-15.tar.gz"
-  sha256 "9ebeab4df18fc74e7ca8b343599b21c5c325a1695198d1901a8c594deb00d30f"
+  url "https://ftp.eso.org/pub/dfs/pipelines/instruments/midi/midi-kit-2.9.6-16.tar.gz"
+  sha256 "c0fbb0486e5ebe08bcdb055f989552b46c16d7e0039f7d722b559b17718d4eae"
   license "GPL-2.0-or-later"
 
   def pipeline
