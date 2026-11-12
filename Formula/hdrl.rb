@@ -4,6 +4,7 @@ class Hdrl < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/libraries/hdrl/hdrl-1.6.0.tar.gz"
   sha256 "647cb40200f612013abda2964a4b66cf170a07afa586fc118ff4107462b93378"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url "https://ftp.eso.org/pub/dfs/pipelines/libraries/hdrl/"
