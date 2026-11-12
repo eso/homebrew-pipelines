@@ -12,12 +12,11 @@ class Hdrl < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/hdrl-1.6.0"
-    sha256 cellar: :any, arm64_tahoe:   "64f09218d7915a974395ff14df7fed64146fd92eb469dcf3b0f89e15d45f9b08"
-    sha256 cellar: :any, arm64_sequoia: "4fdd027a7a86dfffe5607af3b1f237259010fce6ba81659dfc97d8abfb3eac9b"
-    sha256 cellar: :any, arm64_sonoma:  "d836db0f2de90719a73289a794240a68c745d359c5d1137cbd10d82628c54eb0"
-    sha256 cellar: :any, sonoma:        "a927e112606b28d644b82340d7eb2089e96ec335de75741a8e189b2b7faa3ee0"
-    sha256 cellar: :any, x86_64_linux:  "c536bc9ad115e0368ea3df574cd9f7f1269c071729eb130cfb04c7cc923e8bae"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/hdrl-1.6.0_1"
+    sha256 cellar: :any, arm64_golden_gate: "5c6c4211214925cdbe99d241069f0331163d17f4a7cd395c7e63d3af39b99d25"
+    sha256 cellar: :any, arm64_tahoe:       "30af6f594bb122dd12a3a01a3591367d3f535035ff67a6843f59d11790125f84"
+    sha256 cellar: :any, arm64_sequoia:     "8c7d68523e030ec769e958a2e07e5b58dbf2e7a82065c448c6a192695bc521ed"
+    sha256 cellar: :any, x86_64_linux:      "b5106751d8ede6cdff56bf909b37292f4ed1b8c24114f76c40ad54fd16a56608"
   end
 
   depends_on "pkg-config" => :build
