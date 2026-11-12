@@ -11,10 +11,11 @@ class EsopipeErisRecipes < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-eris-recipes-2.0.6-2"
-    sha256 cellar: :any, arm64_tahoe:   "47f956991431de38ccc44302ce8986b23278b8ac03d44d5cc8cc5761e43d261e"
-    sha256 cellar: :any, arm64_sequoia: "a2ee286dcc5af3f4394070863b977ba630bd7661943e2eca7ecaad3be638f33a"
-    sha256 cellar: :any, x86_64_linux:  "4cd9168958466be7584530b880d6d0e70cfb050c9b029c48962f44b18123096c"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esopipe-eris-recipes-2.1.0"
+    sha256 cellar: :any, arm64_golden_gate: "76c72b9a359306624a30edaea9b9ed3a547d91f3307dcf992a43e38fac26709f"
+    sha256 cellar: :any, arm64_tahoe:       "143ff6d0fe3c9c734f636538ab49e654bcc8c0e5053395bf0c14a13246750d75"
+    sha256 cellar: :any, arm64_sequoia:     "1eff1486f12ad01e24dee825956e569bea050ef930246d5225915cee86db5988"
+    sha256 cellar: :any, x86_64_linux:      "7b1b761cdb793ad801ae82365378008a6b625df0ea0fa893bb40bc926abc332f"
   end
 
   def name_version
