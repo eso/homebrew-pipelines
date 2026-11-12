@@ -6,6 +6,7 @@ class Pycpl < Formula
   url "https://ftp.eso.org/pub/dfs/pipelines/libraries/pycpl/pycpl-1.0.4.tar.gz"
   sha256 "85e5d3750a0d5bec4be47bce840bfcb47c7c54f0b31587e66b75b6c4ac46a9c4"
   license "GPL-2.0-or-later"
+  revision 1
 
   livecheck do
     url "https://ftp.eso.org/pub/dfs/pipelines/libraries/pycpl/"
