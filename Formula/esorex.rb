@@ -12,12 +12,11 @@ class Esorex < Formula
   end
 
   bottle do
-    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esorex-3.13.11"
-    sha256 arm64_tahoe:   "cee7051ceab9456a0c320b563699d44f9f2335e3a60b7f9de729a7140b48a057"
-    sha256 arm64_sequoia: "2a2e566d955861b86789db07a1aa9e122008c9cfce522e5fc0a4152adad584e6"
-    sha256 arm64_sonoma:  "bcb9458d44eec6f5b7016aa2a6d53fa4cf98b36424e61ebc7f053642f9102cb9"
-    sha256 sonoma:        "ab16b4eb1c397c25f3e978bc88aa702c7c61d46f151f4ac81bd73d46ff6cbadc"
-    sha256 x86_64_linux:  "69d3700a5b6fcfefedb7656bf8611b99b33eeb28665cac604374f75adcf9c578"
+    root_url "https://github.com/eso/homebrew-pipelines/releases/download/esorex-3.13.11_1"
+    sha256 arm64_golden_gate: "0e1ce5f0c908110bbd73e8b2dd90d1e79ebd125ed60bf0c530e58d61d1466183"
+    sha256 arm64_tahoe:       "cd50fead33e24d17cfac6a9c0eccfd9226fbcc51d4fbec0b8ae354beb0145d87"
+    sha256 arm64_sequoia:     "418e307130bab7dcd67fa6db967e58040b563872c13c69663c7da7c719aa952a"
+    sha256 x86_64_linux:      "5c688a92d8881cf7802b8d45df1372123566d46ebc90abb9291cf79fd35935fe"
   end
 
   depends_on "cpl@7.4"
