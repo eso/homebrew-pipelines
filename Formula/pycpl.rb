@@ -30,13 +30,13 @@ class Pycpl < Formula
   depends_on "python@3.11"
 
   resource "astropy" do
-    url "https://files.pythonhosted.org/packages/94/d2/d2081156845793570dede8454cbe312dec7f337a842b437d00f48d65ecf4/astropy-8.0.0.tar.gz"
-    sha256 "7f4de5db41f26f140433eddd78458abfc1c19b8037f9f8a89c33853cfba1fdc3"
+    url "https://files.pythonhosted.org/packages/64/4a/38a84e2a73cffab7469c46daf044edd48a1ed5dfaf084f016fe7df52cf2b/astropy-8.0.3.tar.gz"
+    sha256 "ac61e25a291a45c1611e7d21cee42bd93484febafe3bc62ecb90d2f56aba9e3f"
   end
 
   resource "astropy-iers-data" do
-    url "https://files.pythonhosted.org/packages/67/3c/534eb2ec8c29efbb46cd4986392e92177a055780468a86d5e3f921f75bca/astropy_iers_data-0.2026.6.22.1.23.34.tar.gz"
-    sha256 "15e12a6863a366ff4a4d246087afb75f71a00d1fed86b9fd6d86f29a71809d38"
+    url "https://files.pythonhosted.org/packages/a4/b2/d4b43d2b6f20f8430156a35afac8153a95e70ff28ed9a18286aa2482c780/astropy_iers_data-0.2026.11.23.0.35.53.tar.gz"
+    sha256 "33c6f7c6b17282ae52ac91a33f4d73c8132438e85d60c140f8b441b612fd3560"
   end
 
   resource "numpy" do
@@ -45,8 +45,8 @@ class Pycpl < Formula
   end
 
   resource "packaging" do
-    url "https://files.pythonhosted.org/packages/d7/f1/e7a6dd94a8d4a5626c03e4e99c87f241ba9e350cd9e6d75123f992427270/packaging-26.2.tar.gz"
-    sha256 "ff452ff5a3e828ce110190feff1178bb1f2ea2281fa2075aadb987c2fb221661"
+    url "https://files.pythonhosted.org/packages/c3/75/ffb1dc0ed12352139fb4ca0e3fde4325a23e3d0f3f40efe89717bc4f557b/packaging-26.4.tar.gz"
+    sha256 "c4b671c41ddb9bf26e543c37723610d28fb6bf7affc4da17cf048d419d2c062a"
   end
 
   resource "pyerfa" do
@@ -55,8 +55,8 @@ class Pycpl < Formula
   end
 
   resource "pyyaml" do
-    url "https://files.pythonhosted.org/packages/05/8e/961c0007c59b8dd7729d542c61a4d537767a59645b82a0b521206e1e25c2/pyyaml-6.0.3.tar.gz"
-    sha256 "d76623373421df22fb4cf8817020cbb7ef15c725b9d5e45f17e189bfc384190f"
+    url "https://files.pythonhosted.org/packages/76/b8/c0b780928e2fb1c87e9e375818c6f121da2398b071012d1747be300b83f4/pyyaml-6.0.4.tar.gz"
+    sha256 "e24bf71af8a432d7808fabff134d38dfe16d3cbb41f2873bb4b1e42422de0a1a"
   end
 
   def python3
