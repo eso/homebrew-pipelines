@@ -3,10 +3,9 @@ class Pycpl < Formula
 
   desc "Python Language Bindings for CPL"
   homepage "https://www.eso.org/sci/software/pycpl/"
-  url "https://ftp.eso.org/pub/dfs/pipelines/libraries/pycpl/pycpl-1.0.4.tar.gz"
-  sha256 "85e5d3750a0d5bec4be47bce840bfcb47c7c54f0b31587e66b75b6c4ac46a9c4"
+  url "https://ftp.eso.org/pub/dfs/pipelines/libraries/pycpl/pycpl-1.0.5.tar.gz"
+  sha256 "0baa50f160ebb6fc5e6db0d1cfcea09e730c96cd2a0ac3a42fe5a54950eb7227"
   license "GPL-2.0-or-later"
-  revision 1
 
   livecheck do
     url "https://ftp.eso.org/pub/dfs/pipelines/libraries/pycpl/"
